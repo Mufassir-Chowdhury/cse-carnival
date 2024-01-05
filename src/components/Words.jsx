@@ -7,25 +7,25 @@ const quotesData = [
   {
     id: 1,
     name: 'John Doe',
-    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     imageUrl: 'https://placekitten.com/100/100', // Replace with actual image URL
   },
   {
     id: 2,
     name: 'Jane Smith',
-    quote: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     imageUrl: 'https://placekitten.com/100/100', // Replace with actual image URL
   },
   {
     id: 3,
     name: 'Jane Smith',
-    quote: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     imageUrl: 'https://placekitten.com/100/100', // Replace with actual image URL
   },
   {
     id: 4,
     name: 'Jane Smith',
-    quote: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     imageUrl: 'https://placekitten.com/100/100', // Replace with actual image URL
   },
   // Add more quotes as needed
@@ -55,8 +55,8 @@ const Words = () => {
         <h1 className="text-3xl font-bold mb-6 text-navbar-button-hover">Few Words From...</h1>
         <Slider {...settings} className="py-6" ref={sliderRef}>
           {quotesData.map((quote) => (
-            <div key={quote.id} className="flex-shrink-0 mx-3" style={{ minWidth: '300px' }}>
-              <div className="bg-card-body p-4 rounded-lg w-72">
+            <div key={quote.id} className="flex-shrink-0 px-3 w-1/3" >
+              <div className="bg-card-body p-4 rounded-lg w-full h-96 ">
                 <img src={quote.imageUrl} alt={quote.name} className="w-24 rounded-2xl mx-auto mb-4" />
                 <h2 className="text-lg font-semibold mb-2 text-navbar-button">{quote.name}</h2>
                 <p className="text-navbar font-semibold">{quote.quote}</p>
