@@ -35,8 +35,8 @@ const CodeBattle = () => {
   return (
     <div className=''>
       <div className='z-0 relative'>
-        {/* <DLSprintLeft />
-        <DLSprintRight /> */}
+        <DLSprintLeft />
+        <DLSprintRight />
       </div>
       <div className='text-navbar z-10 relative px-4 lg:px-28'>
         <Banner link="/image/banner/bannerCodeBattle.jpg" />

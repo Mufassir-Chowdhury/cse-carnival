@@ -66,7 +66,7 @@ export const DLSprintLeft = () => {
         <img
             src="/image/background/DLSprintLeft.png"
             alt="Vector Art 2"
-            style={{ position: 'absolute', top: '39rem', left: '-5rem' }}
+            style={{ position: 'absolute', top: '39rem', left: '0rem' }}
         />
     );
 };
@@ -76,7 +76,7 @@ export const DLSprintRight = () => {
         <img
             src="/image/background/DLSprintRight.png"
             alt="Vector Art 2"
-            style={{ position: 'absolute', top: '30.3rem', right: '-5.5rem' }}
+            style={{ position: 'absolute', top: '30.3rem', right: '0rem' }}
         />
     );
 };
