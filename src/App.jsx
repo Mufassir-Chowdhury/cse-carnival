@@ -15,7 +15,7 @@ import Organizer from "./components/Organizer";
 
 const App = () => {
   return (
-    <main className="bg-body ">
+    <main className="bg-body w-screen">
 
       <Navbar />
       {/* <Banner/> */}

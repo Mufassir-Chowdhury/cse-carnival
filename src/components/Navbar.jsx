@@ -44,7 +44,7 @@ const Navbar = () => {
   ];
   return (
     <header className="bg-white">
-      <nav className="bg-navbar-texture bg-cover fixed w-full top-0 z-40"  aria-label="Global">
+      <nav className="bg-navbar-texture bg-cover fixed w-screen top-0 z-40"  aria-label="Global">
         <div className="container mx-auto flex flex-row justify-between items-center px-4 gap-10 xl:px-20">
           {/* Logo */}
           <div className="text-white font-bold text-lg ">
@@ -87,7 +87,7 @@ const Navbar = () => {
       
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full h-fit overflow-y-auto bg-iupc-border sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full h-fit overflow-y-auto bg-menu-body sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="bg-navbar-texture bg-cover flex items-center justify-between px-4 ">
             <div className="text-white font-bold text-lg ">
               <Link to="/" onClick={() => setMobileMenuOpen(false)}>
