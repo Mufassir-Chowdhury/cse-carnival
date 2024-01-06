@@ -44,7 +44,7 @@ const Navbar = () => {
   ];
   return (
     <header className="bg-white">
-      <nav className="bg-navbar-texture bg-cover p-1 fixed w-full top-0 z-40"  aria-label="Global">
+      <nav className="bg-navbar-texture bg-cover fixed w-full top-0 z-40"  aria-label="Global">
         <div className="container mx-auto flex flex-row justify-between items-center px-4 gap-10 xl:px-20">
           {/* Logo */}
           <div className="text-white font-bold text-lg ">
@@ -87,8 +87,8 @@ const Navbar = () => {
       
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="bg-navbar-texture bg-cover flex items-center justify-between px-6 py-6 ">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full h-fit overflow-y-auto bg-iupc-border sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="bg-navbar-texture bg-cover flex items-center justify-between px-4 ">
             <div className="text-white font-bold text-lg ">
               <Link to="/" onClick={() => setMobileMenuOpen(false)}>
                 <img
@@ -107,12 +107,12 @@ const Navbar = () => {
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="mt-6 flow-root px-6 py-2 ">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
+          <div className="my-6 flow-root px-6 py-2 ">
+            <div className="-my-6 divide-y divide-gray-500/10 text-right">
+              <div className="space-y-2">
                 {navigation.map((item) => (
                   <Link key={item.link} to={item.link} onClick={() => setMobileMenuOpen(false)}>
-                    <div className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                    <div className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navbar">
                       {item.name}
                     </div>
                   </Link>
