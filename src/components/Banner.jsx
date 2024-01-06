@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const Banner = ({link}) => {
     return (
-        <div className="container mx-auto mt-20 px-20 pt-8 z-10">
-            <div className="flex justify-center h-80">
+        <div className="mt-20 py-8 z-10 flex justify-center">
+            <div className="flex justify-center sm:h-80 aspect-video">
                 <img src={link} alt="banner" className="" />
             </div>
         </div>

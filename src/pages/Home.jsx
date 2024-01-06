@@ -19,7 +19,7 @@ const Home = () => {
         <HomeRight2 />
 
       </div>
-      <div className='z-10 relative px-28'>
+      <div className='z-10 relative px-4 lg:px-28'>
         <Banner link="/image/banner/bannerHome.png" />
         <Events />
         <AboutUs />
