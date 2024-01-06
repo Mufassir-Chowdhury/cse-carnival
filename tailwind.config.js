@@ -38,7 +38,7 @@ export default {
         'aboutus-body' : '#F0E0C647',
         'aboutus-border' : '#F0E0C6',
         'event-details-border' : '#FFFAF1',
-        
+        'menu-body':'#F0E0C6CC'
       },
       backgroundImage: {
         'navbar-texture': "url('/image/background/Navbar Background Image.png')",
