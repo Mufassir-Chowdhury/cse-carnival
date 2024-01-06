@@ -57,7 +57,7 @@ const Navbar = () => {
             </Link>
           </div>
           {/* Navigation Links */}
-          <div className='md:flex md:flex-row md:w-full justify-between items-center hidden md:visible'>
+          <div className='md:flex md:flex-row md:w-screen justify-between items-center hidden md:visible'>
               {navigation.map((item) => (
                 <Link key={item.link} to={item.link}>
                   <div className={`text-navbar-link hover:border-b pb-1 px-1 ${
@@ -87,7 +87,7 @@ const Navbar = () => {
       
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full h-fit overflow-y-auto bg-menu-body sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-screen h-fit overflow-y-auto bg-menu-body sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="bg-navbar-texture bg-cover flex items-center justify-between px-4 ">
             <div className="text-white font-bold text-lg ">
               <Link to="/" onClick={() => setMobileMenuOpen(false)}>
