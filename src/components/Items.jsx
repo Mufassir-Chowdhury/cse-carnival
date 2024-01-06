@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const EventItems = ({ event }) => {
     return (
-        <div className={`flex  flex-col lg:flex-row ${event.bg} ${event.border} lg:odd:justify-between lg:odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
+        <div className={`flex flex-col lg:flex-row ${event.bg} ${event.border} lg:odd:justify-between lg:odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
             <div className="flex-shrink-0">
                 <img src={event.image} alt="Event 1" className="" />
             </div>
