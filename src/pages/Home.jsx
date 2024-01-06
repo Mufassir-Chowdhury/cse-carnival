@@ -13,10 +13,10 @@ const Home = () => {
   return (
     <div className=''>
       <div className='z-0 relative'>
-        <HomeLeft />
+        {/* <HomeLeft />
         <HomeLeft2 />
         <HomeRight />
-        <HomeRight2 />
+        <HomeRight2 /> */}
 
       </div>
       <div className='z-10 relative px-4 lg:px-28'>

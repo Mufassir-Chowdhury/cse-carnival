@@ -36,8 +36,8 @@ const IUPC = () => {
   return (
     <div>
       <div className='z-0 relative'>
-        <IUPCLeft />
-        <IUPCRight />
+        {/* <IUPCLeft />
+        <IUPCRight /> */}
       </div>
       <div className='text-navbar z-10 relative px-4 lg:px-28'>
         <Banner link="/image/banner/bannerHackathon.jpg" />
