@@ -35,7 +35,7 @@ const EventItems = ({ event }) => {
 
 const SponsorItem = ({ sponsor }) => {
     return (
-        <div className={`flex odd:justify-between odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-4 rounded-2xl`}>
+        <div className={`flex flex-col lg:flex-row lg:odd:justify-between lg:odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-4 rounded-2xl`}>
             <div className="flex-shrink-0">
                 <img src={sponsor.image} alt="sponsor 1" className="h-40" />
             </div>
@@ -50,7 +50,7 @@ const SponsorItem = ({ sponsor }) => {
 
 const SponsorList = ({ sponsor }) => {
     return (
-        <div className={`flex odd:justify-between odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-4 rounded-2xl`}>
+        <div className={`flex flex-col lg:flex-row lg:odd:justify-between lg:odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-4 rounded-2xl`}>
             <div className="flex-shrink-0">
                 <img src={sponsor.image} alt="sponsor 1" className="h-40" />
             </div>
