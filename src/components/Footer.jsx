@@ -4,16 +4,19 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="bg-footer-texture bg-cover py-8 z-50 relative">
-            <div className="container mx-auto flex justify-center items-center space-x-32">
+        <footer className="bg-footer-texture bg-cover py-8 px-4 z-50 relative">
+            <div className="flex justify-center items-center space-x-10 lg:space-x-32">
                 {/* First Section: Logo */}
-                <div className="mr-8">
-                    <img src="/image/logo/Carnival logo.png" alt="Footer Logo" className="h-48" />
+                <div className="lg:mr-8 hidden md:block">
+                    <img src="/image/logo/Carnival logo.png" alt="Footer Logo" className="h-32 lg:h-48" />
                 </div>
 
                 {/* Second Section: Links */}
                 <div className="text-navbar-link text-sm">
-                    <p className="text-lg font-bold mb-4">Company</p>
+                    <div className="">
+                        <img src="/image/logo/Carnival logo.png" alt="Footer Logo" className="h-24 md:hidden" />
+                    </div>
+                    <p className="text-lg font-bold mb-4 hidden md:block">Company</p>
                     <a href="#" className="block mb-2">News</a>
                     <a href="#" className="block mb-2">About Us</a>
                     <a href="#" className="block mb-2">Contact us</a>
