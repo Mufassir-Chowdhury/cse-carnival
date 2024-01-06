@@ -4,7 +4,7 @@ import React from 'react';
 
 const AboutUs = () => {
   return (
-    <div className="container mx-auto px-20 pb-8 pt-8 bg-aboutus-body rounded-2xl">
+    <div className="container mx-auto px-10 lg:px-20 pb-8 pt-8 bg-aboutus-body rounded-2xl">
       <h2 className="text-3xl font-bold text-center mb-6 text-title">ABOUT US</h2>
 
       <div>

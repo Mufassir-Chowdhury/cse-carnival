@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -31,16 +31,39 @@ const quotesData = [
   // Add more quotes as needed
 ];
 
+
+
 const Words = () => {
-    const sliderRef = React.useRef(null);
-  
+  const sliderRef = React.useRef(null);
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth <= 768) {
+          setSlidesToShow(1);
+        } else if (window.innerWidth <= 1120) {
+          setSlidesToShow(2);
+        } else {
+          setSlidesToShow(3);
+        }
+      };
+    
+      window.addEventListener('resize', handleResize);
+      handleResize(); // Call the function initially to set the state based on the initial window size
+    
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+    
     const settings = {
       dots: false,
       infinite: true,
       speed: 500,
-      slidesToShow: 3,
+      slidesToShow: slidesToShow,
       slidesToScroll: 1,
     };
+
   
     const handleNext = () => {
       sliderRef.current.slickNext();
