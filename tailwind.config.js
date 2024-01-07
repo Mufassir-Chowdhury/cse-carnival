@@ -50,7 +50,9 @@ export default {
         'navbar-texture': "url('/image/background/Navbar Background Image.png')",
         'footer-texture': "url('/image/background/Footer Background Image.png')",
         'vector-home-left': "url('/image/background/HomeLeft.png')",
-        
+        'banner': "url('/image/banner/bannerHome.png')",
+        'banner-hackathon': "url('/image/banner/bannerHackathon.jpg')",
+        'banner-code-battle': "url('/image/banner/bannerCodebattle.jpg')",
       },
       
     },

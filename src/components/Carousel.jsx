@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import PropTypes from 'prop-types';
+import Banner from './Banner';
 
 
 const images = [
@@ -16,7 +17,11 @@ const images = [
         link: '/image/banner/bannerHackathon.jpg',
     },
 ]
-
+const bgURL = {
+  "/image/banner/bannerCodeBattle.jpg": "bg-[url('/image/banner/bannerCodeBattle.jpg')]",
+  "/image/banner/bannerHackathon.jpg": "bg-[url('/image/banner/bannerHackathon.jpg')]",
+  "/image/banner/bannerHome.png": "bg-[url('/image/banner/bannerHome.png')]",
+}
 
 const Carousel = () => {
   const sliderRef = React.useRef(null);
@@ -51,11 +56,7 @@ const Carousel = () => {
       <div>
         <Slider {...settings} className="py-2" ref={sliderRef}>
           {images.map((image) => (
-            <div key={image.link} className="mt-20 pt-8 z-10">
-                <div className="w-full flex justify-center sm:h-80 aspect-video">
-                    <img src={image.link} alt="banner" className="" />
-                </div>
-            </div>
+            <Banner key={image.link} link={image.link} />
           ))}
         </Slider>
         <div className="flex justify-center">
