@@ -20,7 +20,7 @@ export const events = {
               value: "2 - 16 February"
             },
             {
-              title: "Registration Fee: Free",
+              title: "Registration Fee",
               value: "Free"
             },
             {

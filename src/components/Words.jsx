@@ -97,24 +97,27 @@ const Words = () => {
     );
   };
   
-  const NextArrow = (props) => {
-    const { onClick } = props;
+  const NextArrow = ({ onClick }) => {
     return (
-      <div className="slick-arrow next-arrow" onClick={onClick}>
+      <button className="slick-arrow next-arrow" onClick={onClick}>
         {/* Your custom Next Arrow icon (e.g., right arrow) */}
         <img src="/image/arrow/left.svg" alt="left arrow" className="" />
-      </div>
+      </button>
     );
   };
-  
-  const PrevArrow = (props) => {
-    const { onClick } = props;
+  NextArrow.propTypes = {
+    onClick: PropTypes.func.isRequired,
+};
+  const PrevArrow = ({ onClick }) => {
     return (
-      <div className="slick-arrow prev-arrow" onClick={onClick}>
+      <button className="slick-arrow prev-arrow" onClick={onClick}>
         {/* Your custom Prev Arrow icon (e.g., left arrow) */}
         <img src="/image/arrow/right.svg" alt="left arrow" className="" />
-      </div>
+      </button>
     );
   };
+  PrevArrow.propTypes = {
+    onClick: PropTypes.func.isRequired,
+};
   
   export default Words;

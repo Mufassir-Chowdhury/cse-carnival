@@ -3,11 +3,11 @@
 import React from 'react';
 import Events from '../components/Events';
 import AboutUs from '../components/AboutUs';
-import Banner from '../components/Banner';
 import SponsoredBy from '../components/SponsoredBy';
 import { sponsors } from '../data/data';
 import { HomeLeft, HomeLeft2, HomeRight, HomeRight2 } from '../data/vector';
 import Words from '../components/Words';
+import Carousel from '../components/Carousel';
 
 const Home = () => {
   return (
@@ -20,7 +20,7 @@ const Home = () => {
 
       </div>
       <div className='z-10 relative px-4 lg:px-28'>
-        <Banner link="/image/banner/bannerHome.png" />
+        <Carousel />
         <Events />
         <AboutUs />
         <Words />

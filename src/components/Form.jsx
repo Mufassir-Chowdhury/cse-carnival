@@ -7,7 +7,7 @@ const FormField = ({ label, type, name, classValue }) => {
 
     return (
         <label className={`flex flex-col gap-2 label ${classValue}`}>
-            <span className="text-md font-bold text-field-title leading-6 pl-3">{label}</span>
+            <span className="text-lg font-serif font-bold text-field-title leading-6 pl-3">{label}</span>
             <div className="flex rounded-full shadow-sm border border-field-border bg-field-body sm:max-w-md">
                 <input
                     required
@@ -15,7 +15,7 @@ const FormField = ({ label, type, name, classValue }) => {
                     name={id}
                     id={id}
                     autoComplete={id}
-                    className="block font-medium flex-1 border-0 bg-transparent py-1.5 px-4 text-field-title placeholder:text-field-placeholder sm:text-sm sm:leading-6"
+                    className="block focus:outline-none font-medium flex-1 border-0 bg-transparent py-1.5 px-4 text-field-title placeholder:text-field-placeholder sm:text-sm sm:leading-6"
                     placeholder={placeholderText}
                 />
             </div>
@@ -31,7 +31,7 @@ const SelectField = ({ label, name, classValue, options }) => {
 
     return (
         <label className={`flex flex-col gap-2 label ${classValue}`}>
-            <span className="text-md font-bold text-field-title leading-6 pl-3">{label}</span>
+            <span className="text-lg font-serif font-bold text-field-title leading-6 pl-3">{label}</span>
 
             <div className="flex rounded-full shadow-sm border border-selectfield-border bg-selectfield-body   sm:max-w-md ">
 

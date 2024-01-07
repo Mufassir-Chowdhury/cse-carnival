@@ -7,7 +7,7 @@ const Organizer = () => {
         <h1 className="text-3xl font-bold mb-4 text-title">Organized By</h1>
         <img
           src="/image/logo/CSE Society.png" // Replace with your image URL
-          alt="Centered Image"
+          alt="Centered logo"
           className="rounded-lg bg-organizer-body p-5"
         />
       </div>
