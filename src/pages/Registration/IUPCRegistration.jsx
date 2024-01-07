@@ -14,7 +14,7 @@ const IUPCRegistraion = () => {
         <IUPCLeft />
         <IUPCRight />
       </div>
-      <div className='text-navbar z-10 relative px-4  py-10 lg:px-28'>
+      <div className='text-navbar z-10 relative px-4  py-10 pb-0 lg:px-28'>
         <Banner link="/image/banner/bannerHackathon.jpg" />
 
         <h2 className=" text-4xl font-bold md:my-6 py-5 md:mx-20  text-navbar-button text-center ">
@@ -64,7 +64,7 @@ const IUPCRegistraion = () => {
         <div className='py-10 w-full flex justify-center'>
           <PrimaryButton text='Submit' />
         </div>
-        <SponsoredBy list={"list"} sponsors={events['iupc'].sponsors} />
+        <SponsoredBy title={"Sponsored By"} list={""} sponsors={events['iupc'].sponsors} />
       </div>
     </div>
   );

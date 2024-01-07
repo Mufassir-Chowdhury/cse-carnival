@@ -5,12 +5,12 @@ import { SponsorItem, SponsorList } from './Items';
 import PropTypes from 'prop-types';
 // import { sponsors } from '../data/data';
 
-const SponsoredBy = ({ list, sponsors }) => {
+const SponsoredBy = ({title, list, sponsors }) => {
 
   return (
     <div>
       <div className="container mx-auto pb-8 pt-8 font-semibold">
-        <h2 className="text-3xl font-bold text-center mb-6 text-title">SPONSORED BY</h2>
+        <h2 className="text-3xl font-bold text-center mb-6 text-title">{title}</h2>
 
         {list === 'list' ? (
           <div className="flex justify-center items-center space-x-8  mb-8">
@@ -50,6 +50,7 @@ const SponsoredBy = ({ list, sponsors }) => {
 
 SponsoredBy.propTypes = {
   sponsors: PropTypes.object.isRequired,
+  // title: PropTypes.string.isRequired,
 };
 
 export default SponsoredBy;

@@ -45,7 +45,7 @@ export const events = {
         name: "Re:cruit",
         description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
         image: "/image/sponsor/Recruit.png",
-      }
+      },
     ]
   },
   "hackathon": {
@@ -91,10 +91,10 @@ export const events = {
     ],
     sponsors: [
       {
-        name: "Dynamic Solution Innovators",
-        description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        image: "/image/sponsor/DSI.png",
-      }
+        name: "Re:cruit",
+        description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
+        image: "/image/sponsor/Recruit.png",
+      },
     ]
   },
   "dlsprint": {
@@ -193,32 +193,32 @@ export const events = {
     ],
     sponsors: [
       {
-        name: "Dynamic Solution Innovators",
-        description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        image: "/image/sponsor/DSI.png",
+        name: "Re:cruit",
+        description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
+        image: "/image/sponsor/Recruit.png",
       }
     ]
   }
 }
 
-export const sponsors = [
-  {
-    name: "Re:cruit",
-    description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
-    image: "/image/sponsor/Recruit.png",
-  },
+
+export const poweredby = [
   {
     name: "Dynamic Solution Innovators",
     description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "/image/sponsor/DSI.png",
   }
 ]
-
-export const organizers = [
+export const aboutus = [
   {image: "/image/logo/sust_logo.png"},
   {image: "/image/logo/CSE Society.png"},
   {image: "/image/logo/CRTC.png"},
 ]
+
+export const organizers = [
+  {image: "/image/logo/CSE Society.png"},
+]
+
 
 export const t_shirt_size = [
   { value: 'S', name: 'S' },

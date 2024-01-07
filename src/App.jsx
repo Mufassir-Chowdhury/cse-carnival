@@ -16,7 +16,7 @@ import IUPCRegistraion from "./pages/Registration/IUPCRegistration";
 import HackathonRegistration from "./pages/Registration/HackathonRegistration";
 import DLSprintRegistration from "./pages/Registration/DLSprintRegistration";
 import CodeBattleRegistration from "./pages/Registration/CodeBattleRegistration";
-import { organizers } from "./data/data";
+import { organizers, poweredby } from "./data/data";
 
 const App = () => {
   return (
@@ -39,7 +39,11 @@ const App = () => {
         </Routes>
       </section>
       {/* <SponsoredBy/> */}
-      <Organizer organizers={organizers} />
+      <div className="mx-10 lg:mx-0">
+        <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} />
+        <SponsoredBy title={"Organized By"} list={"list"} sponsors={organizers} />
+        {/* <Organizer organizers={organizers} /> */}
+      </div>
       <Footer />
 
     </main>

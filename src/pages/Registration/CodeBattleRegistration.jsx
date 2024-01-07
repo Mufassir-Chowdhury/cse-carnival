@@ -13,14 +13,14 @@ const CodeBattleRegistration = () => {
         <IUPCLeft />
         <IUPCRight />
       </div>
-      <div className='text-navbar z-10 relative px-4  py-10 lg:px-28'>
+      <div className='text-navbar z-10 relative px-4  py-10 pb-0 lg:px-28'>
         <Banner link="/image/banner/bannerHackathon.jpg" />
         <h2 className=" text-4xl font-bold md:my-6 py-5 md:mx-20  text-navbar-button text-center ">
           Register
         </h2>
 
         <form method='post' className='flex flex-col gap-3'>
-          
+
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-4'>
             <FormField label="Perticipant's Name" type="text" name="" classValue="" />
             <FormField label="University Name" type="text" name="" classValue="" />
@@ -38,7 +38,8 @@ const CodeBattleRegistration = () => {
         <div className='py-10 w-full flex justify-center'>
           <PrimaryButton text='Submit' />
         </div>
-        <SponsoredBy list={"list"} sponsors={events['codebattle'].sponsors} />
+        {/* <SponsoredBy title={"Sponsored By"} list={"list"} sponsors={events['codebattle'].sponsors} /> */}
+        <SponsoredBy title={"Sponsored By"} list={""} sponsors={events['codebattle'].sponsors} />
       </div>
     </div>
   );

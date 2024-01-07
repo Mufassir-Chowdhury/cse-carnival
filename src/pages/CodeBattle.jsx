@@ -13,11 +13,11 @@ const CodeBattle = () => {
   const description = (
     <div className='flex flex-col px-4 gap-10'>
       <div className='flex flex-col gap-2 '>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={events['codebattle'].shortDescription[0]}/>
-        <QuickDetails className="bg-slate-500 border-slate-500" description={events['codebattle'].shortDescription[1]}/>
-        <QuickDetails className="bg-amber-100 border-amber-100" description={events['codebattle'].shortDescription[2]}/>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={events['codebattle'].shortDescription[3]}/>
-        <QuickDetails className="bg-amber-600 border-orange-600" description={events['codebattle'].shortDescription[4]}/>
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events['codebattle'].shortDescription[0]} />
+        <QuickDetails className="bg-slate-500 border-slate-500" description={events['codebattle'].shortDescription[1]} />
+        <QuickDetails className="bg-amber-100 border-amber-100" description={events['codebattle'].shortDescription[2]} />
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events['codebattle'].shortDescription[3]} />
+        <QuickDetails className="bg-amber-600 border-orange-600" description={events['codebattle'].shortDescription[4]} />
       </div>
       {events['codebattle'].longDescription.map((item) => (
         <Details key={item.title} description={item} />
@@ -40,7 +40,7 @@ const CodeBattle = () => {
         <DLSprintLeft />
         <DLSprintRight />
       </div>
-      <div className='text-navbar z-10 relative px-4 py-10 lg:px-28'>
+      <div className='text-navbar z-10 relative px-4 py-10 pb-0 lg:px-28'>
         <Banner link="/image/banner/bannerCodeBattle.jpg" />
         <EventTitle title="Code Battle" />
         <Tab child1={description} child2={announcment} child3={download} />
@@ -49,7 +49,7 @@ const CodeBattle = () => {
             <PrimaryButton text='Register' />
           </div>
         </Link>
-        <SponsoredBy list={""} sponsors={events['codebattle'].sponsors} />
+        <SponsoredBy title={"Sponsored By"} list={""} sponsors={events['codebattle'].sponsors} />
       </div>
     </div>
   );

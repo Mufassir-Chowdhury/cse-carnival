@@ -8,14 +8,14 @@ import { FormField, SelectField } from '../../components/Form';
 
 
 const DLSprintRegistration = () => {
-  
+
   return (
     <div>
       <div className='z-0 relative'>
         <IUPCLeft />
         <IUPCRight />
       </div>
-      <div className='text-navbar z-10 relative px-4  py-10 lg:px-28'>
+      <div className='text-navbar z-10 relative px-4  py-10 pb-0 lg:px-28'>
         <Banner link="/image/banner/bannerHackathon.jpg" />
         <h2 className=" text-4xl font-bold md:my-6 py-5 md:mx-20  text-navbar-button text-center ">
           Register
@@ -44,7 +44,7 @@ const DLSprintRegistration = () => {
               <SelectField label="T-Shirt size" name="" classValue="" options={t_shirt_size} />
 
             </div>
-            
+
             <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4 rounded-2xl'>
               <span className="text-2xl text-center sm:text-left font-serif font-bold text-field-title leading-6 pl-3 mb-2">Member 2</span>
               <FormField label="Member's name" type="text" name="" classValue="" />
@@ -100,7 +100,7 @@ const DLSprintRegistration = () => {
         <div className='py-10 w-full flex justify-center'>
           <PrimaryButton text='Submit' />
         </div>
-        <SponsoredBy list={"list"} sponsors={events['dlsprint'].sponsors} />
+        <SponsoredBy title={"Sponsored By"} list={""} sponsors={events['dlsprint'].sponsors} />
       </div>
     </div>
   );

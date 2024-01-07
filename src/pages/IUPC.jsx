@@ -4,7 +4,7 @@ import Tab from '../components/Tab';
 import { PrimaryButton } from '../components/Button';
 import Banner from '../components/Banner';
 import SponsoredBy from '../components/SponsoredBy';
-import { events } from '../data/data';
+import { events, poweredby } from '../data/data';
 import { IUPCLeft, IUPCRight } from '../data/vector';
 import { Details, QuickDetails } from '../components/Details';
 import { Link } from 'react-router-dom';
@@ -41,7 +41,7 @@ const IUPC = () => {
         <IUPCLeft />
         <IUPCRight />
       </div>
-      <div className='text-navbar z-10 relative px-4   py-10 lg:px-28'>
+      <div className='text-navbar z-10 relative px-4   py-10 pb-0 lg:px-28'>
         <Banner link="/image/banner/bannerHackathon.jpg" />
         <EventTitle title="Inter University Programming Contest" />
         <Tab child1={description} child2={announcment} child3={download} />
@@ -50,7 +50,8 @@ const IUPC = () => {
             <PrimaryButton text='Register' />
           </div>
         </Link>
-        <SponsoredBy list={""} sponsors={events['iupc'].sponsors} />
+        <SponsoredBy title={"Sponsored By"} list={""} sponsors={events['iupc'].sponsors} />
+        {/* <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} /> */}
       </div>
     </div>
   );
