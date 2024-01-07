@@ -214,6 +214,12 @@ export const sponsors = [
   }
 ]
 
+export const organizers = [
+  {image: "/image/logo/sust_logo.png"},
+  {image: "/image/logo/CSE Society.png"},
+  {image: "/image/logo/CRTC.png"},
+]
+
 export const t_shirt_size = [
   { value: 'S', name: 'S' },
   { value: 'M', name: 'M' },

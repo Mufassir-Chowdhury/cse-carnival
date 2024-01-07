@@ -50,7 +50,7 @@ const IUPC = () => {
             <PrimaryButton text='Register' />
           </div>
         </Link>
-        <SponsoredBy list={"list"} sponsors={events['iupc'].sponsors} />
+        <SponsoredBy list={""} sponsors={events['iupc'].sponsors} />
       </div>
     </div>
   );

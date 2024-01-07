@@ -1,14 +1,17 @@
 // Footer.js
 
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 const Footer = () => {
     return (
-        <footer className="bg-footer-texture bg-cover py-8 px-4 z-50 relative">
+        <footer className="bg-footer-texture bg-cover px-4 z-50 relative">
             <div className="flex justify-center items-center space-x-5 md:space-x-10 lg:space-x-32">
                 {/* First Section: Logo */}
                 <div className="lg:mr-8 hidden md:block">
-                    <img src="/image/logo/Carnival logo.png" alt="Footer Logo" className="h-32 lg:h-48" />
+                    <img src="/image/logo/Carnival logo.png" alt="Footer Logo" className="h-32 lg:h-40" />
                 </div>
 
                 {/* Second Section: Links */}
@@ -16,28 +19,34 @@ const Footer = () => {
                     <div className="">
                         <img src="/image/logo/Carnival logo.png" alt="Footer Logo" className="h-20 w-32 md:hidden" />
                     </div>
-                    <p className="text-lg font-bold mb-4 hidden md:block">Company</p>
-                    <a href="#" className="block mb-2">News</a>
-                    <a href="#" className="block mb-2">About Us</a>
-                    <a href="#" className="block mb-2">Contact us</a>
-                    <a href="#" className="block mb-2">Join us</a>
+                    <p className="text-lg font-bold mb-4 hidden md:block">Social Media Links</p>
+                    <div className="flex space-x-4">
+                        {/* Facebook */}
+                        <a href="https://www.facebook.com/your-facebook-page" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faFacebook} className="text-2xl hover:text-blue-500" />
+                        </a>
+                        
+                        {/* Instagram */}
+                        <a href="https://www.instagram.com/your-instagram-account" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faInstagram} className="text-2xl hover:text-pink-500" />
+                        </a>
+                        
+                        {/* LinkedIn */}
+                        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faLinkedin} className="text-2xl hover:text-blue-500" />
+                        </a>
+                    </div>
                 </div>
 
-                Third Section: Title, Description, Email Textbox, and Send Button
+                {/* Third Section: Title, Description, Email Textbox, and Send Button */}
                 <div className="text-navbar-link">
-                    <h4 className="text-2xl font-bold mb-2">
-                        <span>
-                            Newsdealers
-                        </span>
-                        <span className='text-title text-2xl'> !</span>
+                    <h4 className="">
+
+                        &copy; {new Date().getFullYear()} CSE Society, SUST
+                        <p>
+                            All rights reserved.
+                        </p>
                     </h4>
-                    <p className="mb-2">Subscribe us to get .........</p>
-                    <input
-                        type="email"
-                        placeholder=""
-                        className="bg-navbar-link text-black px-4 py-2 rounded-md mb-2"
-                    />
-                    <button className="bg-navbar-button text-white px-4 py-2 sm:ml-6 rounded-md">Send</button>
                 </div>
             </div>
         </footer>

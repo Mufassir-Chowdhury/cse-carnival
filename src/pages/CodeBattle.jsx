@@ -49,7 +49,7 @@ const CodeBattle = () => {
             <PrimaryButton text='Register' />
           </div>
         </Link>
-        <SponsoredBy list={"list"} sponsors={events['codebattle'].sponsors} />
+        <SponsoredBy list={""} sponsors={events['codebattle'].sponsors} />
       </div>
     </div>
   );

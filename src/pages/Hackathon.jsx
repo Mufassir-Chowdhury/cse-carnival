@@ -50,7 +50,7 @@ const Hackathon = () => {
             <PrimaryButton text='Register' />
           </div>
         </Link>
-        <SponsoredBy list={"list"} sponsors={events['hackathon'].sponsors} />
+        <SponsoredBy list={""} sponsors={events['hackathon'].sponsors} />
       </div>
     </div>
   );

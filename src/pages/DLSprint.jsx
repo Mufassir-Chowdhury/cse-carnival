@@ -49,7 +49,7 @@ const DLSprint = () => {
             <PrimaryButton text='Register' />
           </div>
         </Link>
-        <SponsoredBy list={"list"} sponsors={events['dlsprint'].sponsors}/>
+        <SponsoredBy list={""} sponsors={events['dlsprint'].sponsors}/>
       </div>
     </div>
   );

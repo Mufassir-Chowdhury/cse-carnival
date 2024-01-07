@@ -16,6 +16,7 @@ import IUPCRegistraion from "./pages/Registration/IUPCRegistration";
 import HackathonRegistration from "./pages/Registration/HackathonRegistration";
 import DLSprintRegistration from "./pages/Registration/DLSprintRegistration";
 import CodeBattleRegistration from "./pages/Registration/CodeBattleRegistration";
+import { organizers } from "./data/data";
 
 const App = () => {
   return (
@@ -38,7 +39,7 @@ const App = () => {
         </Routes>
       </section>
       {/* <SponsoredBy/> */}
-      <Organizer/>
+      <Organizer organizers={organizers} />
       <Footer />
 
     </main>
