@@ -23,7 +23,7 @@ const Footer = () => {
                     <a href="#" className="block mb-2">Join us</a>
                 </div>
 
-                {/* Third Section: Title, Description, Email Textbox, and Send Button */}
+                Third Section: Title, Description, Email Textbox, and Send Button
                 <div className="text-navbar-link">
                     <h4 className="text-2xl font-bold mb-2">
                         <span>

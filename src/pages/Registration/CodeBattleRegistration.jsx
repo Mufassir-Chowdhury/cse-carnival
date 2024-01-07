@@ -20,19 +20,18 @@ const CodeBattleRegistration = () => {
         </h2>
 
         <form method='post' className='flex flex-col gap-3'>
-          <div>
+          
+          <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-4'>
             <FormField label="Perticipant's Name" type="text" name="" classValue="" />
-          </div>
-          <div>
             <FormField label="University Name" type="text" name="" classValue="" />
-          </div>
-          <div className='flex flex-col  gap-y-2'>
-            <FormField label="Email" type="email" name="" classValue="" />
-            <FormField label="Phone number" type="tel" name="" classValue="" />
-          </div>
-          <div className='flex flex-col gap-y-2'>
-            <FormField label="Code Battle Username (optional)" type="text" name="" classValue="" />
-            <SelectField label="T-Shirt size" name="" classValue="" options={t_shirt_size} />
+            <div className='flex flex-col  gap-y-2'>
+              <FormField label="Email" type="email" name="" classValue="" />
+              <FormField label="Phone number" type="tel" name="" classValue="" />
+            </div>
+            <div className='flex flex-col gap-y-2'>
+              <FormField label="Code Battle Username (optional)" type="text" name="" classValue="" />
+              <SelectField label="T-Shirt size" name="" classValue="" options={t_shirt_size} />
+            </div>
           </div>
         </form>
 

@@ -28,7 +28,7 @@ const DLSprintRegistration = () => {
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
 
-            <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4'>
+            <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4 rounded-2xl'>
               <span className="text-2xl text-center sm:text-left font-serif font-bold text-field-title leading-6 pl-3 mb-2">Member 1</span>
               <FormField label="Member's name" type="text" name="" classValue="" />
               <FormField label="Email" type="email" name="" classValue="" />
@@ -45,7 +45,7 @@ const DLSprintRegistration = () => {
 
             </div>
             
-            <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4'>
+            <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4 rounded-2xl'>
               <span className="text-2xl text-center sm:text-left font-serif font-bold text-field-title leading-6 pl-3 mb-2">Member 2</span>
               <FormField label="Member's name" type="text" name="" classValue="" />
               <FormField label="Email" type="email" name="" classValue="" />
@@ -61,7 +61,7 @@ const DLSprintRegistration = () => {
               <SelectField label="T-Shirt size" name="" classValue="" options={t_shirt_size} />
 
             </div>
-            <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4'>
+            <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4 rounded-2xl'>
               <span className="text-2xl text-center sm:text-left font-serif font-bold text-field-title leading-6 pl-3 mb-2">Member 3</span>
               <FormField label="Member's name" type="text" name="" classValue="" />
               <FormField label="Email" type="email" name="" classValue="" />
@@ -78,7 +78,7 @@ const DLSprintRegistration = () => {
 
             </div>
 
-            <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4'>
+            <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4 rounded-2xl'>
               <span className="text-2xl text-center sm:text-left font-serif font-bold text-field-title leading-6 pl-3 mb-2">Member 4</span>
               <FormField label="Member's name" type="text" name="" classValue="" />
               <FormField label="Email" type="email" name="" classValue="" />

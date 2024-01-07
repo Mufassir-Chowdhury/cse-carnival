@@ -30,7 +30,7 @@ const Navbar = () => {
       link: '/hackathon',
     },
     {
-      name: 'DL Sprint',
+      name: 'DL Enigma 1.0',
       link: '/dlsprint',
     },
     {
@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <header className="bg-white">
       <nav className="bg-navbar-texture bg-cover fixed w-screen top-0 z-40"  aria-label="Global">
-        <div className="container mx-auto flex flex-row justify-between items-center px-4 gap-10 xl:px-20">
+        <div className="container mx-auto flex flex-row justify-between items-center px-4 gap-10 xl:px-10">
           {/* Logo */}
           <div className="text-white font-bold text-lg ">
             <Link to="/">

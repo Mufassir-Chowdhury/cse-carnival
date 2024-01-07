@@ -98,7 +98,7 @@ export const events = {
     ]
   },
   "dlsprint": {
-    name: "DL Sprint",
+    name: "DL Enigma 1.0",
     description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "/image/event/Event 1.png",
     registration: "/dlsprint/registration",
