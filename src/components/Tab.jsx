@@ -10,7 +10,7 @@ const Tab = ({ child1, child2, child3 }) => {
 
     return (
         <div className=' w-full border rounded-lg border-event-details-border overflow-hidden'>
-            <div className="tab-header p-1 bg-tab-header flex gap-2 text-sm">
+            <div className="tab-header p-1 bg-tab-header flex gap-2 text-sm md:text-base">
                 <button
                     className={activeTab === 0 ? 'bg-navbar text-white px-4 py-1 rounded-md' : 'bg-body text-navbar px-4 py-1 rounded-md'}
                     onClick={() => handleTabClick(0)}

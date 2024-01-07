@@ -7,11 +7,6 @@ import { IUPCLeft, IUPCRight } from '../../data/vector';
 import { FormField, SelectField } from '../../components/Form';
 
 const CodeBattleRegistration = () => {
-  const firstOptions = [
-    { value: 'student', name: 'Student' },
-    { value: 'faculty', name: 'Faculty' },
-    { value: 'other', name: 'Other' },
-  ]
   return (
     <div>
       <div className='z-0 relative'>
@@ -30,23 +25,14 @@ const CodeBattleRegistration = () => {
           </div>
           <div>
             <FormField label="University Name" type="text" name="" classValue="" />
-
           </div>
           <div className='flex flex-col  gap-y-2'>
-            {/* <span className="text-2xl font-serif font-bold text-field-title leading-6 pl-3 mb-2">Perticipant 1</span> */}
-            {/* <FormField label="Perticipant's name" type="text" name="" classValue="" /> */}
             <FormField label="Email" type="email" name="" classValue="" />
             <FormField label="Phone number" type="tel" name="" classValue="" />
-            {/* <SelectField label="T-Shirt size" name="" classValue="" options={t_shirt_size} /> */}
-
           </div>
           <div className='flex flex-col gap-y-2'>
-            {/* <span className="text-2xl font-serif font-bold text-field-title leading-6 pl-3 mb-2">Perticipant 1</span> */}
             <FormField label="Code Battle Username (optional)" type="text" name="" classValue="" />
-            {/* <FormField label="Email" type="email" name="" classValue="" /> */}
-            {/* <FormField label="Phone number" type="tel" name="" classValue="" /> */}
             <SelectField label="T-Shirt size" name="" classValue="" options={t_shirt_size} />
-
           </div>
         </form>
 
