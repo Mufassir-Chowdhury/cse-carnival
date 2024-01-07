@@ -40,7 +40,7 @@ const DLSprint = () => {
         <DLSprintLeft />
         <DLSprintRight />
       </div>
-      <div className='text-navbar z-10 relative px-4 lg:px-28'>
+      <div className='text-navbar z-10 relative px-4  py-10 lg:px-28'>
         <Banner link="/image/banner/bannerCodeBattle.jpg" />
         <EventTitle title="Deep Learning Enigma 1.0" />
         <Tab child1={description} child2={announcment} child3={download} />
