@@ -38,7 +38,13 @@ export default {
         'aboutus-body' : '#F0E0C647',
         'aboutus-border' : '#F0E0C6',
         'event-details-border' : '#FFFAF1',
-        'menu-body':'#F0E0C6CC'
+        'menu-body':'#F0E0C6CC',
+        'field-body':'#F0E0C680',
+        'field-border' : '#E7D1AE',
+        'selectfield-body':'#3F7A7B26',
+        'selectfield-border' : '#3F7A7B80',
+        'field-title':'#280847',
+        'field-placeholder' : '#280847C4',
       },
       backgroundImage: {
         'navbar-texture': "url('/image/background/Navbar Background Image.png')",

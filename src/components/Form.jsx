@@ -2,25 +2,47 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const FormField = ({ label, type, name, classValue }) => {
-    const id = name.replaceAll(' ', '-').toLowerCase()
+    const id = name.replaceAll(' ', '-').toLowerCase();
+    const placeholderText = `Enter ${label}`;
+
     return (
-        <label className={`label ${classValue}`}>
-            <span className="text-sm font-medium text-gray-900 leading-6">{label}</span>
-            <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-400 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-                <input required type={type} name={id} id={id} autoComplete={id} className="block flex-1 border-0 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder={name}/>
+        <label className={`flex flex-col gap-2 label ${classValue}`}>
+            <span className="text-md font-bold text-field-title leading-6 pl-3">{label}</span>
+            <div className="flex rounded-full shadow-sm border border-field-border bg-field-body sm:max-w-md">
+                <input
+                    required
+                    type={type}
+                    name={id}
+                    id={id}
+                    autoComplete={id}
+                    className="block font-medium flex-1 border-0 bg-transparent py-1.5 px-4 text-field-title placeholder:text-field-placeholder sm:text-sm sm:leading-6"
+                    placeholder={placeholderText}
+                />
             </div>
         </label>
     );
 };
 
+
+
 const SelectField = ({ label, name, classValue, options }) => {
-    const id = name.replaceAll(' ', '-').toLowerCase()
+    const id = name.replaceAll(' ', '-').toLowerCase();
+    const placeholderText = `Select ${label}`;
 
     return (
-        <label className={`label ${classValue}`}>
-            <span className="text-sm font-medium text-gray-900 leading-6">{label}</span>
-            <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-400 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
-                <select required name={name} id={id} className="select block flex-1 border-0 bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6">
+        <label className={`flex flex-col gap-2 label ${classValue}`}>
+            <span className="text-md font-bold text-field-title leading-6 pl-3">{label}</span>
+
+            <div className="flex rounded-full shadow-sm border border-selectfield-border bg-selectfield-body   sm:max-w-md ">
+
+                <select
+                    required
+                    name={name}
+                    id={id}
+                    className="block font-medium flex-1 border-0 bg-transparent py-1.5 mx-4 text-field-title placeholder:text-field-placeholder  sm:text-sm sm:leading-6"
+
+                >
+                    <option value="" hidden>{placeholderText}</option>
                     {options.map((option) => (
                         <option key={option.value} value={option.value}>{option.name}</option>
                     ))}
@@ -29,6 +51,10 @@ const SelectField = ({ label, name, classValue, options }) => {
         </label>
     );
 };
+
+// Example usage:
+// <SelectField label="Country" name="country" classValue="your-custom-class" options={[{ value: 'us', name: 'United States' }, { value: 'ca', name: 'Canada' }]} />
+
 
 FormField.propTypes = {
     label: PropTypes.string.isRequired,

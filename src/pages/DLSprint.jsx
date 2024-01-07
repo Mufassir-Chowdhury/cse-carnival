@@ -6,6 +6,7 @@ import SponsoredBy from '../components/SponsoredBy';
 import { events } from '../data/data';
 import { DLSprintLeft, DLSprintRight } from '../data/vector';
 import { Details, QuickDetails } from '../components/Details';
+import { Link } from 'react-router-dom';
 
 const DLSprint = () => {
   const description = (
@@ -42,9 +43,11 @@ const DLSprint = () => {
         <Banner link="/image/banner/bannerCodeBattle.jpg" />
         <h2 className="text-4xl font-bold md:my-6 py-5 md:mx-64 text-navbar-button text-center bg-navbar-button bg-opacity-10 rounded-2xl border border-navbar-button border-opacity-30">Deep Learning Sprint</h2>
         <Tab child1={description} child2={announcment} child3={download} />
-        <div className='py-10 w-full flex justify-center'>
-          <PrimaryButton text='Register' />
-        </div>
+        <Link to={events['dlsprint'].registration}>
+          <div className='py-10 w-full flex justify-center'>
+            <PrimaryButton text='Register' />
+          </div>
+        </Link>
         <SponsoredBy list={"list"} sponsors={events['dlsprint'].sponsors}/>
       </div>
     </div>
