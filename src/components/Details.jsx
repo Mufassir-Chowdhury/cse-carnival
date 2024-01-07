@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 const QuickDetails = ({ className, description  }) => {
     return (
-        <div className={`h-11 px-5 py-2.5 bg-opacity-10 rounded-3xl border border-orange-600 border-opacity-50 backdrop-blur justify-start items-center gap-5 inline-flex ${className} `}>
-            <div className="text-indigo-950 text-lg font-bold font-['Merriweather']">{description .title}:</div>
-            <div className="text-indigo-950 text-lg font-semibold">{description .value}</div>
+        <div className={`px-3 md:px-5 py-2.5 bg-opacity-10 rounded-3xl border border-orange-600 border-opacity-50 backdrop-blur justify-start items-center gap-3 md:gap-5 inline-flex ${className} `}>
+            <div className="text-indigo-950 font-bold font-['Merriweather']">{description .title}:</div>
+            <div className="text-indigo-950 font-semibold">{description .value}</div>
         </div>
     );
 };

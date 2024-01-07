@@ -8,6 +8,7 @@ import { events } from '../data/data';
 import { IUPCLeft, IUPCRight } from '../data/vector';
 import { Details, QuickDetails } from '../components/Details';
 import { Link } from 'react-router-dom';
+import EventTitle from '../components/EventTitle';
 
 const IUPC = () => {
   const description = (
@@ -42,7 +43,7 @@ const IUPC = () => {
       </div>
       <div className='text-navbar z-10 relative px-4 lg:px-28'>
         <Banner link="/image/banner/bannerHackathon.jpg" />
-        <h2 className=" text-4xl font-bold md:my-6 py-5 md:mx-20  text-navbar-button text-center bg-navbar-button bg-opacity-10 rounded-2xl border border-navbar-button border-opacity-30">Inter University Programming Contest</h2>
+        <EventTitle title="Inter University Programming Contest" />
         <Tab child1={description} child2={announcment} child3={download} />
         <Link to={events['iupc'].registration}>
           <div className='py-10 w-full flex justify-center'>

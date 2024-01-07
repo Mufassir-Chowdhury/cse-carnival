@@ -5,7 +5,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className="bg-footer-texture bg-cover py-8 px-4 z-50 relative">
-            <div className="flex justify-center items-center space-x-10 lg:space-x-32">
+            <div className="flex justify-center items-center space-x-5 md:space-x-10 lg:space-x-32">
                 {/* First Section: Logo */}
                 <div className="lg:mr-8 hidden md:block">
                     <img src="/image/logo/Carnival logo.png" alt="Footer Logo" className="h-32 lg:h-48" />
@@ -14,7 +14,7 @@ const Footer = () => {
                 {/* Second Section: Links */}
                 <div className="text-navbar-link text-sm">
                     <div className="">
-                        <img src="/image/logo/Carnival logo.png" alt="Footer Logo" className="h-24 md:hidden" />
+                        <img src="/image/logo/Carnival logo.png" alt="Footer Logo" className="h-20 w-32 md:hidden" />
                     </div>
                     <p className="text-lg font-bold mb-4 hidden md:block">Company</p>
                     <a href="#" className="block mb-2">News</a>
@@ -37,7 +37,7 @@ const Footer = () => {
                         placeholder=""
                         className="bg-navbar-link text-black px-4 py-2 rounded-md mb-2"
                     />
-                    <button className="bg-navbar-button text-white px-4 py-2 ml-6 rounded-md">Send</button>
+                    <button className="bg-navbar-button text-white px-4 py-2 sm:ml-6 rounded-md">Send</button>
                 </div>
             </div>
         </footer>

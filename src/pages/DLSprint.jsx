@@ -7,6 +7,7 @@ import { events } from '../data/data';
 import { DLSprintLeft, DLSprintRight } from '../data/vector';
 import { Details, QuickDetails } from '../components/Details';
 import { Link } from 'react-router-dom';
+import EventTitle from '../components/EventTitle';
 
 const DLSprint = () => {
   const description = (
@@ -41,7 +42,7 @@ const DLSprint = () => {
       </div>
       <div className='text-navbar z-10 relative px-4 lg:px-28'>
         <Banner link="/image/banner/bannerCodeBattle.jpg" />
-        <h2 className="text-4xl font-bold md:my-6 py-5 md:mx-64 text-navbar-button text-center bg-navbar-button bg-opacity-10 rounded-2xl border border-navbar-button border-opacity-30">Deep Learning Sprint</h2>
+        <EventTitle title="Deep Learning Sprint" />
         <Tab child1={description} child2={announcment} child3={download} />
         <Link to={events['dlsprint'].registration}>
           <div className='py-10 w-full flex justify-center'>

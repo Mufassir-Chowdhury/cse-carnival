@@ -7,6 +7,7 @@ import { events } from '../data/data';
 import { Details, QuickDetails } from '../components/Details';
 import { DLSprintLeft, DLSprintRight } from '../data/vector';
 import { Link } from 'react-router-dom';
+import EventTitle from '../components/EventTitle';
 
 const Hackathon = () => {
   const description = (
@@ -42,7 +43,7 @@ const Hackathon = () => {
       </div>
       <div className='text-navbar z-10 relative px-4 lg:px-28'>
         <Banner link="/image/banner/bannerHackathon.jpg"/>
-        <h2 className="text-4xl font-bold md:my-6 py-5 md:mx-64 text-navbar-button text-center bg-navbar-button bg-opacity-10 rounded-2xl border border-navbar-button border-opacity-30">Hackathon</h2>
+        <EventTitle title="Hackathon" />
         <Tab child1={description} child2={announcment} child3={download} />
         <Link to={events['hackathon'].registration}>
           <div className='py-10 w-full flex justify-center'>
