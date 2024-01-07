@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 
 const FormField = ({ label, type, name, classValue }) => {
     const id = name.replaceAll(' ', '-').toLowerCase();
-    const placeholderText = `Enter ${label}`;
+    const isOptional = label.toLowerCase().includes('(optional)');
+    const placeholderText = isOptional ? 'Enter if available' : `Enter ${label}`;
+
+    
+    // const placeholderText = `Enter ${label}`;
 
     return (
         <label className={`flex flex-col gap-2 label ${classValue}`}>
@@ -27,6 +31,7 @@ const FormField = ({ label, type, name, classValue }) => {
 
 const SelectField = ({ label, name, classValue, options }) => {
     const id = name.replaceAll(' ', '-').toLowerCase();
+    
     const placeholderText = `Select ${label}`;
 
     return (
@@ -39,7 +44,7 @@ const SelectField = ({ label, name, classValue, options }) => {
                     required
                     name={name}
                     id={id}
-                    className="block font-medium flex-1 border-0 bg-transparent py-1.5 mx-4 text-field-title placeholder:text-field-placeholder  sm:text-sm sm:leading-6"
+                    className="block focus:outline-none font-medium flex-1 border-0 bg-transparent py-1.5 mx-4 text-field-title placeholder:text-field-placeholder  sm:text-sm sm:leading-6"
 
                 >
                     <option value="" hidden>{placeholderText}</option>
