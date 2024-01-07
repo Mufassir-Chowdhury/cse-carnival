@@ -41,7 +41,7 @@ const Hackathon = () => {
         <DLSprintLeft />
         <DLSprintRight />
       </div>
-      <div className='text-navbar z-10 relative px-4 lg:px-28'>
+      <div className='text-navbar z-10 relative px-4  py-10 lg:px-28'>
         <Banner link="/image/banner/bannerHackathon.jpg"/>
         <EventTitle title="Hackathon" />
         <Tab child1={description} child2={announcment} child3={download} />

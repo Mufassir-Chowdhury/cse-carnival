@@ -15,7 +15,7 @@ const DLSprintRegistration = () => {
         <IUPCLeft />
         <IUPCRight />
       </div>
-      <div className='text-navbar z-10 relative px-4 lg:px-28'>
+      <div className='text-navbar z-10 relative px-4  py-10 lg:px-28'>
         <Banner link="/image/banner/bannerHackathon.jpg" />
         <h2 className=" text-4xl font-bold md:my-6 py-5 md:mx-20  text-navbar-button text-center ">
           Register
