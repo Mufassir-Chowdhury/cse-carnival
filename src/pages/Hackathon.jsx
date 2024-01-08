@@ -1,13 +1,8 @@
 import React from 'react';
 import Tab from '../components/Tab';
-import { PrimaryButton } from '../components/Button';
-import Banner from '../components/Banner';
-import SponsoredBy from '../components/SponsoredBy';
 import { events } from '../data/data';
 import { Details, QuickDetails } from '../components/Details';
-import { DLSprintLeft, DLSprintRight } from '../data/vector';
-import { Link } from 'react-router-dom';
-import EventTitle from '../components/EventTitle';
+import { EventPage } from '../components/EventPage';
 
 const Hackathon = () => {
   const description = (
@@ -36,24 +31,9 @@ const Hackathon = () => {
     </div>
   )
   return (
-    <div>
-      <div className='z-0 relative'>
-        <DLSprintLeft />
-        <DLSprintRight />
-      </div>
-      <div className='text-navbar z-10 relative px-4  py-10 pb-0 lg:px-28'>
-        <Banner link="/image/banner/bannerHackathon.jpg" />
-        <EventTitle title="Hackathon" />
-        <Tab child1={description} child2={announcment} child3={download} />
-        <Link to={events['hackathon'].registration}>
-          <div className='py-10 w-full flex justify-center'>
-            <PrimaryButton text='Register' />
-          </div>
-        </Link>
-        <SponsoredBy title={"Sponsored By"} list={""} sponsors={events['hackathon'].sponsors} />
-
-      </div>
-    </div>
+    <EventPage title="Hackathon" id="hackathon" >
+      <Tab child1={description} child2={announcment} child3={download} />
+    </EventPage>
   );
 };
 

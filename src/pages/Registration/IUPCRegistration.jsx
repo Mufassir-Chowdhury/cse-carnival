@@ -1,26 +1,12 @@
 import React from 'react';
-import { PrimaryButton } from '../../components/Button';
-import Banner from '../../components/Banner';
-import SponsoredBy from '../../components/SponsoredBy';
-import { events, t_shirt_size } from '../../data/data';
-import { IUPCLeft, IUPCRight } from '../../data/vector';
+import { t_shirt_size } from '../../data/data';
 import { FormField, SelectField } from '../../components/Form';
+import { EventRegistrationPage } from '../../components/EventPage';
 
 
 const IUPCRegistraion = () => {
   return (
-    <div>
-      <div className='z-0 relative'>
-        <IUPCLeft />
-        <IUPCRight />
-      </div>
-      <div className='text-navbar z-10 relative px-4  py-10 pb-0 lg:px-28'>
-        <Banner link="/image/banner/bannerHackathon.jpg" />
-
-        <h2 className=" text-4xl font-bold md:my-6 py-5 md:mx-20  text-navbar-button text-center ">
-          Register
-        </h2>
-
+    <EventRegistrationPage title="IUPC" id="iupc">
         <form method='post' className='flex flex-col gap-3'>
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
             <FormField label="Team Name" type="text" name="" classValue="" />
@@ -60,13 +46,7 @@ const IUPCRegistraion = () => {
             </div>
           </div>
         </form>
-
-        <div className='py-10 w-full flex justify-center'>
-          <PrimaryButton text='Submit' />
-        </div>
-        <SponsoredBy title={"Sponsored By"} list={""} sponsors={events['iupc'].sponsors} />
-      </div>
-    </div>
+    </EventRegistrationPage>
   );
 };
 
