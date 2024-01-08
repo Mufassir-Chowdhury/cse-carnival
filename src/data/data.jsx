@@ -46,6 +46,19 @@ export const events = {
         description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
         image: "/image/sponsor/Recruit.png",
       },
+    ],
+    contact: [
+      {
+        name: "MD. Moksedur Rahman Sohan",
+        gmail: "moksedur.rahman.sohan@gmail.com",
+        phone: "01980582626"
+        
+      },
+      {
+        name: "Kawchar Husain",
+        gmail: "kawsarhn1@gmail.com ",
+        phone: "+8801741874600",
+      }
     ]
   },
   "hackathon": {
@@ -95,6 +108,19 @@ export const events = {
         description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
         image: "/image/sponsor/Recruit.png",
       },
+    ],
+    contact: [
+      {
+        name: "MD. Moksedur Rahman Sohan",
+        gmail: "moksedur.rahman.sohan@gmail.com",
+        phone: "01980582626"
+        
+      },
+      {
+        name: "Kawchar Husain",
+        gmail: "kawsarhn1@gmail.com ",
+        phone: "+8801741874600",
+      }
     ]
   },
   "dlsprint": {
@@ -148,6 +174,23 @@ export const events = {
         description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
         image: "/image/sponsor/Recruit.png",
       }
+    ],
+    contact: [
+      {
+        name: "---------------",
+        gmail: "nihalmd1@gmail.com",
+        phone: "01854794578"
+      },
+      {
+        name: "---------------",
+        gmail: "ataullha00@gmail.com",
+        phone: "01879093418",
+      },
+      {
+        name: "------------",
+        gmail: "tarifulislamfahim12@gmail.com",
+        phone: "01534577441",
+      }
     ]
   },
   "codebattle": {
@@ -197,6 +240,14 @@ export const events = {
         description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
         image: "/image/sponsor/Recruit.png",
       }
+    ],
+    contact: [
+      {
+        name: "-------------",
+        gmail: "faridul.reza.sagor@gmail.com",
+        phone: "01953737832"
+        
+      },
     ]
   }
 }
@@ -210,13 +261,13 @@ export const poweredby = [
   }
 ]
 export const aboutus = [
-  {image: "/image/logo/sust_logo.png"},
-  {image: "/image/logo/CSE Society.png"},
-  {image: "/image/logo/CRTC.png"},
+  { image: "/image/logo/sust_logo.png" },
+  { image: "/image/logo/CSE Society.png" },
+  { image: "/image/logo/CRTC.png" },
 ]
 
 export const organizers = [
-  {image: "/image/logo/CSE Society.png"},
+  { image: "/image/logo/CSE Society.png" },
 ]
 
 

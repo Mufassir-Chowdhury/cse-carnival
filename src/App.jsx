@@ -17,6 +17,7 @@ import HackathonRegistration from "./pages/Registration/HackathonRegistration";
 import DLSprintRegistration from "./pages/Registration/DLSprintRegistration";
 import CodeBattleRegistration from "./pages/Registration/CodeBattleRegistration";
 import { organizers, poweredby } from "./data/data";
+import ContactUs from "./pages/ContactUs";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/hackathon" element={<Hackathon />}></Route>
           <Route path="/dlsprint" element={<DLSprint />}></Route>
           <Route path="/codebattle" element={<CodeBattle />}></Route>
+          <Route path="/contactus" element={<ContactUs />}></Route>
 
           <Route path="/iupc/registration" element={<IUPCRegistraion />}></Route>
           <Route path="/hackathon/registration" element={<HackathonRegistration />}></Route>

@@ -33,6 +33,40 @@ const EventItems = ({ event }) => {
     );
 }
 
+const ContactItems = ({ contact }) => {
+    return (
+        <div className={`flex flex-col md:flex-row ${contact.bg} ${contact.border} md:odd:justify-between md:odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
+            <div className="flex-shrink-0">
+                <img src={contact.image} alt={`contact ${contact.id}`} className="" />
+            </div>
+            <div className="text-navbar">
+                <h3 className="text-2xl font-bold md:mb-2">{contact.name}</h3>
+                <div className='grid grid-cols-3 gap-4'>
+                    {contact.contact.map((item) => (
+                        <div className="flex flex-col items-start space-y-4">
+                            <div>
+                                {/* <p className="text-sm font-semibold">Name:</p> */}
+                                <p className="text-sm">{item.name}</p>
+                            </div>
+                            <div>
+                                {/* <p className="text-sm font-semibold">Gmail:</p> */}
+                                <p className="text-sm">{item.gmail}</p>
+                            </div>
+                            <div>
+                                {/* <p className="text-sm font-semibold">Contact Number:</p> */}
+                                <p className="text-sm">{item.phone}</p>
+                            </div>
+                        </div>
+                    ))}
+                    {/* Display Name, Gmail, and Contact Number in a single column */}
+                </div>
+
+            </div>
+        </div>
+    );
+};
+
+
 const SponsorItem = ({ sponsor }) => {
     return (
         <div className={`flex flex-col md:flex-row md:odd:justify-between md:odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-4 rounded-2xl`}>
@@ -62,6 +96,10 @@ const SponsorList = ({ sponsor }) => {
 EventItems.propTypes = {
     event: PropTypes.object.isRequired,
 };
+
+ContactItems.propTypes = {
+    contact: PropTypes.object.isRequired,
+};
 SponsorList.propTypes = {
     sponsor: PropTypes.object.isRequired,
 };
@@ -70,4 +108,6 @@ SponsorItem.propTypes = {
     sponsor: PropTypes.object.isRequired,
 };
 
-export { EventItems, SponsorList, SponsorItem };
+
+
+export { EventItems, ContactItems, SponsorList, SponsorItem };

@@ -39,7 +39,7 @@ const Navbar = () => {
     },
     {
       name: 'Contact us',
-      link: '/',
+      link: '/contactus',
     },
   ];
   return (
