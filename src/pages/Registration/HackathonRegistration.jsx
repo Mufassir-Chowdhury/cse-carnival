@@ -1,48 +1,80 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { t_shirt_size } from '../../data/data';
 import { FormField, SelectField } from '../../components/Form';
 import { EventRegistrationPage } from '../../components/EventPage';
-
+import { PrimaryButton } from '../../components/Button';
 
 const HackathonRegistration = () => {
+  const [formData, setFormData] = useState({
+    teamname: '',
+    universityname: '',
+    member1name: '',
+    member1email: '',
+    member1phonenumber: '',
+    member1githublink: '',
+    member1tshirtsize: '',
+    member2name: '',
+    member2email: '',
+    member2phonenumber: '',
+    member2githublink: '',
+    member2tshirtsize: '',
+    member3name: '',
+    member3email: '',
+    member3phonenumber: '',
+    member3githublink: '',
+    member3tshirtsize: '',
+  });
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+    // Here you can handle the form submission, e.g., send the data to a server
+  };
   return (
     <EventRegistrationPage title="Hackathon" id="hackathon">
-      <form method='post' className='flex flex-col gap-3'>
+      <form method='post' className='flex flex-col gap-3' onSubmit={handleSubmit}>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-          <FormField label="Team Name" type="text" name="" classValue="" />
-          <FormField label="University Name" type="text" name="" classValue="" />
+          <FormField label="Team Name" name="teamname" onChange={handleChange}/>
+          <FormField label="University Name" name="universityname" onChange={handleChange}/>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
 
           <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4 rounded-2xl'>
             <span className="text-2xl text-center sm:text-left font-serif font-bold text-field-title leading-6 pl-3 mb-2">Participant 1</span>
-            <FormField label="Participant's name" type="text" name="" classValue="" />
-            <FormField label="Email" type="email" name="" classValue="" />
-            <FormField label="Phone number" type="tel" name="" classValue="" />
-            <FormField label="Github link" type="text" name="" classValue="" />
-            <SelectField label="T-Shirt size" name="" classValue="" options={t_shirt_size} />
+            <FormField label="Participant's name" name="member1name" onChange={handleChange}/>
+            <FormField label="Email" type="email" name="member1email" onChange={handleChange}/>
+            <FormField label="Phone number" type="tel" name="member1phonenumber" onChange={handleChange}/>
+            <FormField label="Github link" name="member1githublink" onChange={handleChange}/>
+            <SelectField label="T-Shirt size" name="member1tshirtsize" options={t_shirt_size} onChange={handleChange} />
 
           </div>
           <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4 rounded-2xl'>
             <span className="text-2xl text-center sm:text-left font-serif font-bold text-field-title leading-6 pl-3 mb-2">Participant 2</span>
-            <FormField label="Participant's name" type="text" name="" classValue="" />
-            <FormField label="Email" type="email" name="" classValue="" />
-            <FormField label="Phone number" type="tel" name="" classValue="" />
-            <FormField label="Github link" type="text" name="" classValue="" />
-            <SelectField label="T-Shirt size" name="" classValue="" options={t_shirt_size} />
+            <FormField label="Participant's name" name="member2name" onChange={handleChange}/>
+            <FormField label="Email" type="email" name="member2email" onChange={handleChange}/>
+            <FormField label="Phone number" type="tel" name="member2phonenumber" onChange={handleChange}/>
+            <FormField label="Github link" name="member2githublink" onChange={handleChange}/>
+            <SelectField label="T-Shirt size" name="member2tshirtsize" options={t_shirt_size} onChange={handleChange}/>
           </div>
 
           <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4 rounded-2xl sm:col-span-2 container mx-auto'>
             <span className="text-2xl text-center sm:text-left font-serif font-bold text-field-title leading-6 pl-3 mb-2">Participant 3</span>
-            <FormField label="Participant's name" type="text" name="" classValue="" />
-            <FormField label="Email" type="email" name="" classValue="" />
-            <FormField label="Phone number" type="tel" name="" classValue="" />
-            <FormField label="Github link" type="text" name="" classValue="" />
-            <SelectField label="T-Shirt size" name="" classValue="" options={t_shirt_size} />
+            <FormField label="Participant's name" name="member3name" onChange={handleChange}/>
+            <FormField label="Email" type="email" name="member3email" onChange={handleChange}/>
+            <FormField label="Phone number" type="tel" name="member3phonenumber" onChange={handleChange}/>
+            <FormField label="Github link" name="member3githublink" onChange={handleChange}/>
+            <SelectField label="T-Shirt size" name="member3tshirtsize" options={t_shirt_size} onChange={handleChange}/>
           </div>
         </div>
-
+        <div className='w-full flex justify-center'>
+            <PrimaryButton type="submit" text="Submit" />
+          </div>
 
 
       </form>
