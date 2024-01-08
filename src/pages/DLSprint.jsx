@@ -1,13 +1,8 @@
 import React from 'react';
 import Tab from '../components/Tab';
-import { PrimaryButton } from '../components/Button';
-import Banner from '../components/Banner';
-import SponsoredBy from '../components/SponsoredBy';
 import { events } from '../data/data';
-import { DLSprintLeft, DLSprintRight } from '../data/vector';
 import { Details, QuickDetails } from '../components/Details';
-import { Link } from 'react-router-dom';
-import EventTitle from '../components/EventTitle';
+import { EventPage } from '../components/EventPage';
 
 const DLSprint = () => {
   const description = (
@@ -35,23 +30,9 @@ const DLSprint = () => {
     </div>
   )
   return (
-    <div className=''>
-      <div className='z-0 relative'>
-        <DLSprintLeft />
-        <DLSprintRight />
-      </div>
-      <div className='text-navbar z-10 relative px-4  py-10 pb-0 lg:px-28'>
-        <Banner link="/image/banner/bannerCodeBattle.jpg" />
-        <EventTitle title="Deep Learning Enigma 1.0" />
+    <EventPage title="Deep Learning Enigma 1.0" id="dlsprint" >
         <Tab child1={description} child2={announcment} child3={download} />
-        <Link to={events['dlsprint'].registration}>
-          <div className='py-10 w-full flex justify-center'>
-            <PrimaryButton text='Register' />
-          </div>
-        </Link>
-        <SponsoredBy title={"Sponsored By"} list={""} sponsors={events['dlsprint'].sponsors} />
-      </div>
-    </div>
+    </EventPage>
   );
 };
 

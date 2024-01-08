@@ -1,7 +1,6 @@
 //App.jsx
 
 import Navbar from "./components/Navbar";
-import Banner from "./components/Banner";
 import SponsoredBy from "./components/SponsoredBy";
 import Footer from "./components/Footer";
 
@@ -11,7 +10,6 @@ import IUPC from "./pages/IUPC";
 import Hackathon from "./pages/Hackathon";
 import DLSprint from "./pages/DLSprint";
 import CodeBattle from "./pages/CodeBattle";
-import Organizer from "./components/Organizer";
 import IUPCRegistraion from "./pages/Registration/IUPCRegistration";
 import HackathonRegistration from "./pages/Registration/HackathonRegistration";
 import DLSprintRegistration from "./pages/Registration/DLSprintRegistration";
@@ -24,7 +22,6 @@ const App = () => {
     <main className="bg-body">
 
       <Navbar />
-      {/* <Banner/> */}
       <section className="">
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -41,7 +38,7 @@ const App = () => {
         </Routes>
       </section>
       {/* <SponsoredBy/> */}
-      <div className="mx-10 lg:mx-0">
+      <div className="mx-10 lg:mx-0 relative z-10">
         <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} />
         <SponsoredBy title={"Organized By"} list={"list"} sponsors={organizers} />
         {/* <Organizer organizers={organizers} /> */}
