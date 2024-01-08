@@ -12,10 +12,15 @@ const EventItems = ({ event }) => {
             <div className="text-navbar">
                 <h3 className="text-2xl font-bold md:mb-2 ">{event.name}</h3>
                 <p className="md:mb-2">{event.description}</p>
-                <p className="font-bold ">{event.shortDescription[1].title} : <span className="">{event.shortDescription[1].value}</span> </p>
-                <p className="font-bold ">{event.shortDescription[2].title} : <span className="">{event.shortDescription[2].value}</span> </p>
-                <p className="font-bold ">{event.shortDescription[3].title} : <span className="">{event.shortDescription[3].value}</span> </p>
-                <p className="font-bold ">{event.shortDescription[4].title} : <span className="">{event.shortDescription[4].value}</span> </p>
+
+                <p className="md:mb-2">{event.description}</p>
+
+                {event.frontDescription.map((item, index) => (
+                    <p key={index} className="font-bold">
+                        {item.title} : <span className="">{item.value}</span>
+                    </p>
+                ))}
+
                 <div className="flex mt-4 space-x-6 w-full justify-center md:justify-start">
                     {event.registration && (
                         <Link to={event.registration}>

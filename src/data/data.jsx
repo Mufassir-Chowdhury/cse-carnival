@@ -1,42 +1,83 @@
 export const events = {
   "iupc": {
     name: "IUPC",
-    description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
+    description: "",
     image: "/image/event/Event 1.jpg",
     registration: "/iupc/registration",
     link: "/iupc",
     details: "",
     shortDescription: [
       {
-        title: "Platform",
-        value: "CodingGame"
+        title: "Pre-registration starts",
+        value: "8th January,2024"
       },
       {
-        title: "Registration Date",
-        value: "15 January - 1 February"
+        title: "Pre-registration ends",
+        value: "15th January,2024"
       },
       {
-        title: "Running Time",
-        value: "2 - 16 February"
+        title: "Slot Distribution",
+        value: "25th January,2024"
+      },
+      {
+        title: "Mock Contest",
+        value: "16th February,2024"
+      },
+      {
+        title: "Main Contest",
+        value: "17th February,2024"
       },
       {
         title: "Registration Fee",
-        value: "Free"
+        value: "5000 tk per team"
       },
       {
-        title: "Prize",
-        value: "TBA"
+        title: "Payement Window",
+        value: "26 January - 31 January"
+      },
+    ],
+    frontDescription: [
+      {
+        title: "Pre-registration starts",
+        value: "8th January,2024"
+      },
+      {
+        title: "Pre-registration ends",
+        value: "15th January,2024"
+      },
+      {
+        title: "Slot Distribution",
+        value: "25th January,2024"
+      },
+      {
+        title: "Mock Contest",
+        value: "16th February,2024"
+      },
+      {
+        title: "Main Contest",
+        value: "17th February,2024"
+      },
+      {
+        title: "Registration Fee",
+        value: "5000 tk per team"
+      },
+      {
+        title: "Payement Window",
+        value: "26 January - 31 January"
       },
     ],
     longDescription: [
       {
-        title: "Resource Needed",
-        value: "1. Banner <br/> 2. Announcement Template"
+        title: "",
+        value: "Welcome to a brand new episode of SUST CSE Carnival-2024 beginning with the Inter University Programming Contest (IUPC) - an epic clash of coding expertise where the bright minds from universities across the country converge to fight the final battle. Join us for a day filled with coding challenges, problem solving, and nail-biting competition!"
       },
       {
-        title: "Details",
-        value: "Do you love gaming? Do you also love coding?<br/><br/>We have news for you.<br/><br/>We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme."
+        title: "Contest Highlights and Details",
+        value: "The contest will be conducted following the standard ICPC format. <ul style=\"list-style-type: disc; padding-left: 20px;\"> <li> Each team must have 3 members.</li> <li> Team members must be enrolled in the same institution.</li><li>Lucrative kits will be provided to all teams.</li><li>Certificates will be given to all the participants.</li></ul>",
       }
+    ],
+    prize: [
+      
     ],
     bg: "bg-iupc-body",
     border: "border-iupc-border",
@@ -92,6 +133,36 @@ export const events = {
         value: "TBA"
       },
     ],
+    frontDescription: [
+      {
+        title: "Pre-registration starts",
+        value: "8th January,2024"
+      },
+      {
+        title: "Pre-registration ends",
+        value: "15th January,2024"
+      },
+      {
+        title: "Slot Distribution",
+        value: "25th January,2024"
+      },
+      {
+        title: "Mock Contest",
+        value: "16th February,2024"
+      },
+      {
+        title: "Main Contest",
+        value: "17th February,2024"
+      },
+      {
+        title: "Registration Fee",
+        value: "5000 tk per team"
+      },
+      {
+        title: "Payement Window",
+        value: "26 January - 31 January"
+      },
+    ],
     longDescription: [
       {
         title: "Resource Needed",
@@ -102,6 +173,7 @@ export const events = {
         value: "Do you love gaming? Do you also love coding?<br/><br/>We have news for you.<br/><br/>We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme."
       }
     ],
+
     sponsors: [
       {
         name: "Re:cruit",
@@ -150,6 +222,36 @@ export const events = {
       {
         title: "Prize",
         value: "TBA"
+      },
+    ],
+    frontDescription: [
+      {
+        title: "Pre-registration starts",
+        value: "8th January,2024"
+      },
+      {
+        title: "Pre-registration ends",
+        value: "15th January,2024"
+      },
+      {
+        title: "Slot Distribution",
+        value: "25th January,2024"
+      },
+      {
+        title: "Mock Contest",
+        value: "16th February,2024"
+      },
+      {
+        title: "Main Contest",
+        value: "17th February,2024"
+      },
+      {
+        title: "Registration Fee",
+        value: "5000 tk per team"
+      },
+      {
+        title: "Payement Window",
+        value: "26 January - 31 January"
       },
     ],
     longDescription: [
@@ -222,6 +324,36 @@ export const events = {
       {
         title: "Prize",
         value: "TBA"
+      },
+    ],
+    frontDescription: [
+      {
+        title: "Pre-registration starts",
+        value: "8th January,2024"
+      },
+      {
+        title: "Pre-registration ends",
+        value: "15th January,2024"
+      },
+      {
+        title: "Slot Distribution",
+        value: "25th January,2024"
+      },
+      {
+        title: "Mock Contest",
+        value: "16th February,2024"
+      },
+      {
+        title: "Main Contest",
+        value: "17th February,2024"
+      },
+      {
+        title: "Registration Fee",
+        value: "5000 tk per team"
+      },
+      {
+        title: "Payement Window",
+        value: "26 January - 31 January"
       },
     ],
     longDescription: [

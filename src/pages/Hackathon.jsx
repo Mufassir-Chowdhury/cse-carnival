@@ -31,7 +31,7 @@ const Hackathon = () => {
     </div>
   )
   return (
-    <EventPage title="Hackathon" id="hackathon" >
+    <EventPage id="hackathon" >
       <Tab child1={description} child2={announcment} child3={download} />
     </EventPage>
   );

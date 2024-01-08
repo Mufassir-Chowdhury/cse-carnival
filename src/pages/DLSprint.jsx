@@ -30,7 +30,7 @@ const DLSprint = () => {
     </div>
   )
   return (
-    <EventPage title="Deep Learning Enigma 1.0" id="dlsprint" >
+    <EventPage id="dlsprint" >
         <Tab child1={description} child2={announcment} child3={download} />
     </EventPage>
   );
