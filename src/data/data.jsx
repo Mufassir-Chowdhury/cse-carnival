@@ -210,9 +210,21 @@ export const poweredby = [
   }
 ]
 export const aboutus = [
-  {image: "/image/logo/sust_logo.png"},
-  {image: "/image/logo/CSE Society.png"},
-  {image: "/image/logo/CRTC.png"},
+  {
+    image: "/image/logo/sust_logo.png",
+    name: "Shahjalal University of Science and Technology",
+    description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    image: "/image/logo/CSE Society.png",
+    name: "CSE Society",
+    description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    image: "/image/logo/CRTC.png",
+    name: "CRTC",
+    description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
 ]
 
 export const organizers = [
