@@ -5,6 +5,7 @@ import { Details, QuickDetails } from '../components/Details';
 import { EventPage } from '../components/EventPage';
 
 const CodeBattle = () => {
+
   const description = (
     <div className='flex flex-col px-4 gap-10'>
       <div className='flex flex-col gap-2 '>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { t_shirt_size } from '../../data/data';
 import { FormField, SelectField } from '../../components/Form';
 import { EventRegistrationPage } from '../../components/EventPage';
-
+import { PrimaryButton } from '../../components/Button';
 
 const IUPCRegistraion = () => {
   const [formData, setFormData] = useState({
