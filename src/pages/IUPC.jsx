@@ -8,7 +8,23 @@ import { EventPage } from '../components/EventPage';
 const IUPC = () => {
   const description = (
     <div className='flex flex-col px-4 gap-6 '>
-      <div className='flex flex-col gap-2 '>
+      <div className='flex flex-col gap-2'>
+        {events['iupc'].shortDescription.map((description, index) => (
+          <QuickDetails
+            key={index}
+            className={
+              index % 3 === 0
+                ? "bg-amber-600 border-orange-600"
+                : index % 3 === 1
+                  ? "bg-slate-500 border-slate-500"
+                  : "bg-amber-100 border-amber-100"
+            }
+            description={description}
+          />
+        ))}
+      </div>
+
+      {/* <div className='flex flex-col gap-2 '>
         <QuickDetails className="bg-amber-600 border-orange-600" description={events['iupc'].shortDescription[0]} />
         <QuickDetails className="bg-slate-500 border-slate-500" description={events['iupc'].shortDescription[1]} />
         <QuickDetails className="bg-amber-100 border-amber-100" description={events['iupc'].shortDescription[2]} />
@@ -16,7 +32,7 @@ const IUPC = () => {
         <QuickDetails className="bg-slate-500 border-slate-500" description={events['iupc'].shortDescription[4]} />
         <QuickDetails className="bg-amber-100 border-amber-100" description={events['iupc'].shortDescription[5]} />
         <QuickDetails className="bg-amber-600 border-orange-600" description={events['iupc'].shortDescription[6]} />
-      </div>
+      </div> */}
       {events['iupc'].longDescription.map((item) => (
         <Details key={item.title} description={item} />
       ))}
@@ -32,7 +48,8 @@ const IUPC = () => {
       />
       <Details description={{
         title: "Total Prize Pool - 146K BDT",
-        value: ""}} />
+        value: ""
+      }} />
 
     </div>
   );
