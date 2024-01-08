@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import parse from 'html-react-parser';
 import { PrimaryButton, SecondaryButton } from "./Button";
 import PropTypes from 'prop-types';
 
@@ -10,10 +11,10 @@ const EventItems = ({ event }) => {
                 <img src={event.image} alt="Event 1" className="h-64 rounded-3xl" />
             </div>
             <div className="text-navbar">
-                <h3 className="text-2xl font-bold md:mb-2 ">{event.name}</h3>
-                <p className="md:mb-2">{event.description}</p>
+                <h3 className="text-3xl font-bold md:mb-3 ">{event.name}</h3>
+                {/* <p className="md:mb-2">{event.description}</p> */}
 
-                <p className="md:mb-2">{event.description}</p>
+                <p className="md:mb-2">{parse(event.description)}</p>
 
                 {event.frontDescription.map((item, index) => (
                     <p key={index} className="font-bold">
@@ -42,7 +43,7 @@ const ContactItems = ({ contact }) => {
     return (
         <div className={`flex flex-col lg:flex-row ${contact.bg} ${contact.border} lg:odd:justify-between lg:odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
             <div className="flex-shrink-0 ">
-                <img src={contact.image} alt={`contact ${contact.id}`} className="" />
+                <img src={contact.image} alt={`contact ${contact.id}`} className="h-64 rounded-3xl" />
             </div>
             <div className="text-navbar font-semibold">
                 <h3 className="text-2xl font-bold lg:mb-2">{contact.name}</h3>

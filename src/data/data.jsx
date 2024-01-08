@@ -38,24 +38,8 @@ export const events = {
     ],
     frontDescription: [
       {
-        title: "Pre-registration starts",
-        value: "8th January,2024"
-      },
-      {
-        title: "Pre-registration ends",
-        value: "15th January,2024"
-      },
-      {
-        title: "Slot Distribution",
-        value: "25th January,2024"
-      },
-      {
-        title: "Mock Contest",
-        value: "16th February,2024"
-      },
-      {
-        title: "Main Contest",
-        value: "17th February,2024"
+        title: "Pre-registration window",
+        value: "8th - 15th January, 2024"
       },
       {
         title: "Registration Fee",
@@ -63,8 +47,13 @@ export const events = {
       },
       {
         title: "Payement Window",
-        value: "26 January - 31 January"
+        value: "26th - 31st January, 2024"
       },
+      {
+        title: "Mock Contest",
+        value: "16th February, 2024"
+      },
+      
     ],
     longDescription: [
       {
@@ -104,7 +93,7 @@ export const events = {
   },
   "hackathon": {
     name: "Hackathon",
-    description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Ready,set,hack! Join the Hackathon and show your skills!",
     image: "/image/event/Event 2.jpg",
     registration: "/hackathon/registration",
     link: "/hackathon",
@@ -113,65 +102,33 @@ export const events = {
     border: "border-hackathon-border",
     shortDescription: [
       {
-        title: "Platform",
-        value: "CodingGame"
-      },
-      {
         title: "Registration Date",
-        value: "15 January - 1 February"
+        value: "TBA"
       },
       {
-        title: "Running Time",
-        value: "2 - 16 February"
+        title: "Hackathon Date",
+        value: ": 9:00 AM, 16 February - 9:00 AM, 17 February, 2024"
       },
       {
         title: "Registration Fee",
-        value: "Free"
-      },
-      {
-        title: "Prize",
         value: "TBA"
       },
     ],
     frontDescription: [
       {
-        title: "Pre-registration starts",
-        value: "8th January,2024"
+        title: "Registration Date",
+        value: "TBA"
       },
       {
-        title: "Pre-registration ends",
-        value: "15th January,2024"
-      },
-      {
-        title: "Slot Distribution",
-        value: "25th January,2024"
-      },
-      {
-        title: "Mock Contest",
-        value: "16th February,2024"
-      },
-      {
-        title: "Main Contest",
-        value: "17th February,2024"
+        title: "Hackathon Date",
+        value: ": 9:00 AM, 16 February,2024 - 9:00 AM, 17 February,2024"
       },
       {
         title: "Registration Fee",
-        value: "5000 tk per team"
-      },
-      {
-        title: "Payement Window",
-        value: "26 January - 31 January"
+        value: "TBA"
       },
     ],
     longDescription: [
-      {
-        title: "Resource Needed",
-        value: "1. Banner <br/> 2. Announcement Template"
-      },
-      {
-        title: "Details",
-        value: "Do you love gaming? Do you also love coding?<br/><br/>We have news for you.<br/><br/>We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme."
-      }
     ],
 
     sponsors: [
@@ -183,21 +140,16 @@ export const events = {
     ],
     contact: [
       {
-        name: "MD. Moksedur Rahman Sohan",
-        gmail: "moksedur.rahman.sohan@gmail.com",
-        phone: "01980582626"
+        name: "Muhit Mahmud",
+        gmail: "muhitmahmud64@gmail.com",
+        phone: "01870833645",
         
       },
-      {
-        name: "Kawchar Husain",
-        gmail: "kawsarhn1@gmail.com ",
-        phone: "+8801741874600",
-      }
     ]
   },
   "dlsprint": {
     name: "DL Enigma 1.0",
-    description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Calling all AI enthusiasts and deep learning wizards!",
     image: "/image/event/Event 3.jpg",
     registration: "/dlsprint/registration",
     link: "/dlsprint",
@@ -219,39 +171,19 @@ export const events = {
         title: "Phase 2",
         value: "16 February"
       },
-      {
-        title: "Prize",
-        value: "TBA"
-      },
     ],
     frontDescription: [
       {
-        title: "Pre-registration starts",
-        value: "8th January,2024"
-      },
-      {
-        title: "Pre-registration ends",
-        value: "15th January,2024"
-      },
-      {
-        title: "Slot Distribution",
-        value: "25th January,2024"
-      },
-      {
-        title: "Mock Contest",
-        value: "16th February,2024"
-      },
-      {
-        title: "Main Contest",
-        value: "17th February,2024"
-      },
-      {
         title: "Registration Fee",
-        value: "5000 tk per team"
+        value: "Free"
       },
       {
-        title: "Payement Window",
-        value: "26 January - 31 January"
+        title: "Phase 1",
+        value: "15 January - 15 February"
+      },
+      {
+        title: "Phase 2",
+        value: "16 February"
       },
     ],
     longDescription: [
@@ -265,7 +197,7 @@ export const events = {
       },
       {
         title: "🏆 Prizes:",
-        value: "Compete for incredible prizes, including cash rewards, Kaggle competition medals, and the chance to be recognized as a pioneer in the field of autonomous vehicle object detection.<br/><br/><br/>📅 Important Dates:"
+        value: "Compete for incredible prizes, including cash rewards, Kaggle competition medals, and the chance to be recognized as a pioneer in the field of autonomous vehicle object detection."
       }
     ],
     bg: "bg-dlsprint-body",
@@ -289,7 +221,7 @@ export const events = {
         phone: "01879093418",
       },
       {
-        name: "------------",
+        name: "Tariful Islam Fahim",
         gmail: "tarifulislamfahim12@gmail.com",
         phone: "01534577441",
       }
@@ -297,74 +229,48 @@ export const events = {
   },
   "codebattle": {
     name: "Code Battle",
-    description: "Where Gaming Meets Coding, and Victory is Written in Code!",
+    description: "Calling all CS undergrads! Join us for an adrenaline-pumping <b>Code Battle</b> where Gaming Meets Coding, and Victory is Written in Code!",
     image: "/image/event/Event 4.jpg",
     registration: "/codebattle/registration",
     link: "/codebattle",
-    details: "Do you love gaming? \n \n Do you also love coding? \n \n We have news for you. We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme.",
+    details: "",
     bg: "bg-codebattle-body",
     border: "border-codebattle-border",
     shortDescription: [
       {
         title: "Platform",
-        value: "CodingGame"
+        value: "<a href=\"https://codingame.com/ide/puzzle/onboarding\" target=\"_blank\" rel=\"noopener noreferrer\" classname=\"underline\">CodingGame</a>"
       },
       {
         title: "Registration Date",
-        value: "15 January - 1 February"
+        value: "15th January - 1st February, 2024"
       },
       {
         title: "Running Time",
-        value: "2 - 16 February"
+        value: "2nd - 16th February, 2024"
       },
       {
         title: "Registration Fee",
         value: "Free"
       },
-      {
-        title: "Prize",
-        value: "TBA"
-      },
     ],
     frontDescription: [
+      
       {
-        title: "Pre-registration starts",
-        value: "8th January,2024"
+        title: "Registration Date",
+        value: "15th January - 1st February, 2024"
       },
       {
-        title: "Pre-registration ends",
-        value: "15th January,2024"
-      },
-      {
-        title: "Slot Distribution",
-        value: "25th January,2024"
-      },
-      {
-        title: "Mock Contest",
-        value: "16th February,2024"
-      },
-      {
-        title: "Main Contest",
-        value: "17th February,2024"
+        title: "Running Time",
+        value: "2nd - 16th February, 2024"
       },
       {
         title: "Registration Fee",
-        value: "5000 tk per team"
-      },
-      {
-        title: "Payement Window",
-        value: "26 January - 31 January"
+        value: "Free"
       },
     ],
     longDescription: [
-      {
-        title: "Resource Needed",
-        value: "1. Banner <br/> 2. Announcement Template"
-      },
-      {
-        title: "Details",
-        value: "Do you love gaming? Do you also love coding?<br/><br/>We have news for you.<br/><br/>We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme."
-      }
+      
     ],
     sponsors: [
       {
@@ -375,7 +281,7 @@ export const events = {
     ],
     contact: [
       {
-        name: "-------------",
+        name: "Faridul Reza Sagor",
         gmail: "faridul.reza.sagor@gmail.com",
         phone: "01953737832"
         
