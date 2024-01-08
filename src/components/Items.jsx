@@ -7,7 +7,7 @@ const EventItems = ({ event }) => {
     return (
         <div className={`flex flex-col md:flex-row ${event.bg} ${event.border} md:odd:justify-between md:odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
             <div className="flex-shrink-0">
-                <img src={event.image} alt="Event 1" className="" />
+                <img src={event.image} alt="Event 1" className="h-64 rounded-3xl" />
             </div>
             <div className="text-navbar">
                 <h3 className="text-2xl font-bold md:mb-2 ">{event.name}</h3>
@@ -35,27 +35,24 @@ const EventItems = ({ event }) => {
 
 const ContactItems = ({ contact }) => {
     return (
-        <div className={`flex flex-col md:flex-row ${contact.bg} ${contact.border} md:odd:justify-between md:odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
-            <div className="flex-shrink-0">
+        <div className={`flex flex-col lg:flex-row ${contact.bg} ${contact.border} lg:odd:justify-between lg:odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
+            <div className="flex-shrink-0 ">
                 <img src={contact.image} alt={`contact ${contact.id}`} className="" />
             </div>
-            <div className="text-navbar">
-                <h3 className="text-2xl font-bold md:mb-2">{contact.name}</h3>
-                <div className='grid grid-cols-3 gap-4'>
+            <div className="text-navbar font-semibold">
+                <h3 className="text-2xl font-bold lg:mb-2">{contact.name}</h3>
+                <div className='flex flex-row space-x-4 justify-between'>
                     {contact.contact.map((item) => (
-                        <div className="flex flex-col items-start space-y-4">
-                            <div>
-                                {/* <p className="text-sm font-semibold">Name:</p> */}
-                                <p className="text-sm">{item.name}</p>
-                            </div>
-                            <div>
-                                {/* <p className="text-sm font-semibold">Gmail:</p> */}
-                                <p className="text-sm">{item.gmail}</p>
-                            </div>
-                            <div>
-                                {/* <p className="text-sm font-semibold">Contact Number:</p> */}
-                                <p className="text-sm">{item.phone}</p>
-                            </div>
+                        <div className="flex flex-col items-start space-y-3">
+
+                            {/* <p className="text-sm font-semibold">Name:</p> */}
+                            <p className="text-lg">{item.name}</p>
+                            <a className="text-sm hover:underline" href={`mailto:${item.gmail}`}>
+                                {item.gmail}
+                            </a>
+
+                            <p className="text-sm">{item.phone}</p>
+
                         </div>
                     ))}
                     {/* Display Name, Gmail, and Contact Number in a single column */}

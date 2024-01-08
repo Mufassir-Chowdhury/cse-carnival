@@ -2,7 +2,7 @@ export const events = {
   "iupc": {
     name: "IUPC",
     description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
-    image: "/image/event/Event 1.png",
+    image: "/image/event/Event 1.jpg",
     registration: "/iupc/registration",
     link: "/iupc",
     details: "",
@@ -64,7 +64,7 @@ export const events = {
   "hackathon": {
     name: "Hackathon",
     description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/image/event/Event 2.png",
+    image: "/image/event/Event 2.jpg",
     registration: "/hackathon/registration",
     link: "/hackathon",
     details: "",
@@ -126,7 +126,7 @@ export const events = {
   "dlsprint": {
     name: "DL Enigma 1.0",
     description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/image/event/Event 1.png",
+    image: "/image/event/Event 3.jpg",
     registration: "/dlsprint/registration",
     link: "/dlsprint",
     details: "",
@@ -196,7 +196,7 @@ export const events = {
   "codebattle": {
     name: "Code Battle",
     description: "Where Gaming Meets Coding, and Victory is Written in Code!",
-    image: "/image/event/Event 2.png",
+    image: "/image/event/Event 4.jpg",
     registration: "/codebattle/registration",
     link: "/codebattle",
     details: "Do you love gaming? \n \n Do you also love coding? \n \n We have news for you. We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme.",
