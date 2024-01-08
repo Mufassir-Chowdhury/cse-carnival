@@ -16,13 +16,13 @@ const VectorGraphics = () => {
     )
 };
 
-const EventPage = ({ title, id, children }) => {
+const EventPage = ({ id, children }) => {
     return (
         <div>
             <VectorGraphics />
             <div className='text-navbar z-10 relative px-4   py-10 pb-0 lg:px-28'>
                 <Banner />
-                <EventTitle title={title} />
+                <EventTitle title={events[id].name} />
                 {children}
                 <Link to={events[id].registration}>
                     <div className='py-10 w-full flex justify-center'>
@@ -53,7 +53,7 @@ const EventRegistrationPage = ({ title, id, children }) => {
 };
 
 EventPage.propTypes = {
-    title: PropTypes.string.isRequired,
+    // title: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
 };

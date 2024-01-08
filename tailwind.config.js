@@ -27,6 +27,8 @@ export default {
         'card-body' : '#DB7B1B12',
         'organizer-body' : '#280847CC',
         'sponsor-body' : '#2808470D ',
+        'title-body' : '#D35C180A',
+        'title-border' : '#D35C184D',
         'iupc-body' : '#F0E0C62B',
         'iupc-border' : '#F0E0C680',
         'hackathon-body' : '#3F7A7B0D',

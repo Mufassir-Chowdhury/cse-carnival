@@ -30,7 +30,7 @@ const CodeBattle = () => {
     </div>
   )
   return (
-    <EventPage title="Code Battle" id="codebattle" >
+    <EventPage id="codebattle" >
       <Tab child1={description} child2={announcment} child3={download} />
     </EventPage>
   );
