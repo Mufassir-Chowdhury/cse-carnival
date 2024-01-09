@@ -134,8 +134,10 @@ export const events = {
     sponsors: [
       {
         name: "Re:cruit",
-        description: ``,
+        description: `Building the engineers and leaders of tomorrow.
+    On a mission to build the silicon valley of Bangladesh - a city of hackers, builders and leaders.`,
         image: "/image/sponsor/Recruit.png",
+        linkedin: "https://www.linkedin.com/company/recruit-so/",
       },
     ],
     contact: [
