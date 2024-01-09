@@ -47,12 +47,12 @@ const Navbar = () => {
       <nav className="bg-navbar-texture bg-cover fixed w-screen top-0 z-40"  aria-label="Global">
         <div className="container mx-auto flex flex-row justify-between md:justify-around items-center px-4 gap-10 xl:px-10">
           {/* Logo */}
-          <div className="text-white font-bold text-lg w-fit ">
+          <div className="text-white font-bold text-lg w-fit aspect-video ">
             <Link to="/">
               <img
                 src={'/image/logo/Carnival logo.png'}
                 alt="Your Logo"
-                className="w-32 lg:w-40 h-24"
+                className="w-28 lg:w-40 h-24"
               />
             </Link>
           </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
                   <img
                     src={'/image/logo/Carnival logo.png'}
                     alt="Your Logo"
-                    className="w-32 h-24"
+                    className="w-28 h-24"
                   />
                 </Link>
               </div>
