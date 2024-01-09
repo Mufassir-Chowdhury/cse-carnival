@@ -444,8 +444,7 @@ export const quotesData = [
     
     Join us for an unforgettable journey of learning, networking, and pushing the boundaries of what's possible in the world of technology. Together, let's create a legacy that inspires and motivates the next generation of tech leaders.
     
-    See you at the Sust CSE Carnival 2024—where innovation meets inspiration!
-    Make it little short`,
+    See you at the Sust CSE Carnival 2024—where innovation meets inspiration!`,
     imageUrl: '/image/speech/Ashraful.jpg',
   },
 
