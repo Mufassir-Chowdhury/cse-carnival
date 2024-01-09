@@ -33,7 +33,8 @@ const Carousel = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    afterChange: (index) => setCurrentSlide(index),
+    beforeChange: (_current, next) => setCurrentSlide(next),
+    // afterChange: (index) => setCurrentSlide(index),
   };
 
   const handleNext = () => {
