@@ -45,14 +45,14 @@ const Navbar = () => {
   return (
     <header className="bg-white">
       <nav className="bg-navbar-texture bg-cover fixed w-screen top-0 z-40"  aria-label="Global">
-        <div className="container mx-auto flex flex-row justify-between items-center px-4 gap-10 xl:px-10">
+        <div className="container mx-auto flex flex-row justify-between md:justify-around items-center px-4 gap-10 xl:px-10">
           {/* Logo */}
-          <div className="text-white font-bold text-lg ">
+          <div className="text-white font-bold text-lg w-fit ">
             <Link to="/">
               <img
                 src={'/image/logo/Carnival logo.png'}
                 alt="Your Logo"
-                className="w-32"
+                className="w-32 lg:w-40 h-24"
               />
             </Link>
           </div>
@@ -87,32 +87,35 @@ const Navbar = () => {
       
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-screen h-fit overflow-y-auto bg-menu-body md:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="bg-navbar-texture bg-cover flex items-center justify-between px-4 ">
-            <div className="text-white font-bold text-lg ">
-              <Link to="/" onClick={() => setMobileMenuOpen(false)}>
-                <img
-                  src={'/image/logo/Carnival logo.png'}
-                  alt="Your Logo"
-                  className="w-32"
-                />
-              </Link>
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-screen h-fit overflow-y-auto  bg-menu-body md:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div className="bg-navbar-texture bg-cover">
+            <div className='container mx-auto flex items-center justify-between md:justify-around px-4 gap-10 xl:px-10'>
+
+              <div className="text-white font-bold text-lg ">
+                <Link to="/" onClick={() => setMobileMenuOpen(false)}>
+                  <img
+                    src={'/image/logo/Carnival logo.png'}
+                    alt="Your Logo"
+                    className="w-32 h-24"
+                  />
+                </Link>
+              </div>
+              <button
+                type="button"
+                className="-m-2.5 rounded-md p-2.5 text-white stroke-white"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <span className="sr-only">Close menu</span>
+                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              </button>
             </div>
-            <button
-              type="button"
-              className="-m-2.5 rounded-md p-2.5 text-white stroke-white"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-            </button>
           </div>
           <div className="my-6 flow-root px-6 py-2 ">
             <div className="-my-6 divide-y divide-gray-500/10 text-right">
-              <div className="space-y-2">
+              <div className="flex flex-col space-y-6">
                 {navigation.map((item) => (
                   <Link key={item.link} to={item.link} onClick={() => setMobileMenuOpen(false)}>
-                    <div className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-navbar">
+                    <div className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-navbar">
                       {item.name}
                     </div>
                   </Link>
