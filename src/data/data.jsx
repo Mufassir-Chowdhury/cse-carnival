@@ -8,49 +8,49 @@ export const events = {
     details: "",
     shortDescription: [
       {
-        title: "Pre-registration starts",
+        title: "📅 Pre-registration starts",
         value: "8th January"
       },
       {
-        title: "Pre-registration ends",
+        title: "📅 Pre-registration ends",
         value: "15th January"
       },
       {
-        title: "Slot Distribution",
+        title: "📅 Slot Distribution",
         value: "25th January"
       },
       {
-        title: "Mock Contest",
+        title: "📅 Mock Contest",
         value: "16th February"
       },
       {
-        title: "Main Contest",
+        title: "📅 Main Contest",
         value: "17th February"
       },
       {
-        title: "Payement Window",
+        title: "📅 Payement Window",
         value: "26 January - 31 January"
       },
       {
-        title: "Registration Fee",
+        title: "💵 Registration Fee",
         value: "5000 tk per team"
       },
     ],
     frontDescription: [
       {
-        title: "Pre-registration window",
+        title: "📅 Pre-registration window",
         value: "8th - 15th January"
       },
       {
-        title: "Payement Window",
+        title: "📅 Payement Window",
         value: "26th - 31st January"
       },
       {
-        title: "Mock Contest",
+        title: "📅 Mock Contest",
         value: "16th February"
       },
       {
-        title: "Registration Fee",
+        title: "💵 Registration Fee",
         value: "5000 tk per team"
       },
 
@@ -58,10 +58,10 @@ export const events = {
     longDescription: [
       {
         title: "",
-        value: "Welcome to a brand new episode of SUST CSE Carnival-2024 beginning with the Inter University Programming Contest (IUPC) - an epic clash of coding expertise where the bright minds from universities across the country converge to fight the final battle. Join us for a day filled with coding challenges, problem solving, and nail-biting competition!"
+        value: "🚀Welcome to a brand new episode of SUST CSE Carnival-2024 beginning with the Inter University Programming Contest (IUPC) - an epic clash of coding expertise where the bright minds from universities across the country converge to fight the final battle. Join us for a day filled with coding challenges, problem solving, and nail-biting competition!🚀"
       },
       {
-        title: "Contest Highlights and Details",
+        title: "🎯Contest Highlights and Details",
         value: "The contest will be conducted following the standard ICPC format. <ul style=\"list-style-type: disc; padding-left: 20px;\"> <li> Each team must have 3 members.</li> <li> Team members must be enrolled in the same institution.</li><li>Lucrative kits will be provided to all teams.</li><li>Certificates will be given to all the participants.</li></ul>",
       }
     ],
@@ -102,29 +102,29 @@ export const events = {
     border: "border-hackathon-border",
     shortDescription: [
       {
-        title: "Registration Date",
+        title: "📅 Registration Date",
         value: "TBA"
       },
       {
-        title: "Hackathon Date",
+        title: "📅 Hackathon Date",
         value: ": 9:00 AM, 16 February - 9:00 AM, 17 February"
       },
       {
-        title: "Registration Fee",
+        title: "💵 Registration Fee",
         value: "TBA"
       },
     ],
     frontDescription: [
       {
-        title: "Registration Date",
+        title: "📅 Registration Date",
         value: "TBA"
       },
       {
-        title: "Hackathon Date",
+        title: "📅 Hackathon Date",
         value: ": 9:00 AM, 16 February - 9:00 AM, 17 February"
       },
       {
-        title: "Registration Fee",
+        title: "💵 Registration Fee",
         value: "TBA"
       },
     ],
@@ -156,33 +156,33 @@ export const events = {
     details: "",
     shortDescription: [
       {
-        title: "Platform",
+        title: "👩‍💻 Platform",
         value: "Kaggle"
       },
       {
-        title: "Phase 1",
+        title: "📅 Phase 1",
         value: "15 January - 15 February"
       },
       {
-        title: "Phase 2",
+        title: "📅 Phase 2",
         value: "16 February"
       },
       {
-        title: "Registration Fee",
+        title: "💵 Registration Fee",
         value: "Free"
       },
     ],
     frontDescription: [
       {
-        title: "Phase 1",
+        title: "📅 Phase 1",
         value: "15 January - 15 February"
       },
       {
-        title: "Phase 2",
+        title: "📅 Phase 2",
         value: "16 February"
       },
       {
-        title: "Registration Fee",
+        title: "💵 Registration Fee",
         value: "Free"
       },
     ],
@@ -238,34 +238,34 @@ export const events = {
     border: "border-codebattle-border",
     shortDescription: [
       {
-        title: "Platform",
+        title: "👩‍💻 Platform",
         value: "<a href=\"https://codingame.com/ide/puzzle/onboarding\" target=\"_blank\" rel=\"noopener noreferrer\" classname=\"underline\">CodingGame</a>"
       },
       {
-        title: "Registration Date",
+        title: "📅 Registration Date",
         value: "15th January - 1st February"
       },
       {
-        title: "Running Time",
+        title: "📅 Running Time",
         value: "2nd - 16th February"
       },
       {
-        title: "Registration Fee",
+        title: "💵 Registration Fee",
         value: "Free"
       },
     ],
     frontDescription: [
 
       {
-        title: "Registration Date",
+        title: "📅 Registration Date",
         value: "15th January - 1st February"
       },
       {
-        title: "Running Time",
+        title: "📅 Running Time",
         value: "2nd - 16th February"
       },
       {
-        title: "Registration Fee",
+        title: "💵 Registration Fee",
         value: "Free"
       },
     ],
