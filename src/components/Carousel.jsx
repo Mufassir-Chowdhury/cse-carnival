@@ -8,20 +8,21 @@ import Banner from './Banner';
 
 const images = [
     {
-        link: '/image/banner/bannerHome.png',
+        link: '/image/banner/bannerHome.jpg',
+    },
+    {
+        link: '/image/banner/bannerIUPC.jpg',
     },
     {
         link: '/image/banner/bannerHackathon.jpg',
     },
     {
-        link: '/image/banner/bannerHackathon.jpg',
+      link: '/image/banner/bannerDLEnigma.jpg',
+    },  
+    {
+      link: '/image/banner/bannerCodeBattle.jpg',
     },
 ]
-const bgURL = {
-  "/image/banner/bannerCodeBattle.jpg": "bg-[url('/image/banner/bannerCodeBattle.jpg')]",
-  "/image/banner/bannerHackathon.jpg": "bg-[url('/image/banner/bannerHackathon.jpg')]",
-  "/image/banner/bannerHome.png": "bg-[url('/image/banner/bannerHome.png')]",
-}
 
 const Carousel = () => {
   const sliderRef = React.useRef(null);

@@ -6,7 +6,9 @@ const Banner = ({link}) => {
         const pathname = window.location.pathname;
         if (pathname.includes("codebattle")) link = "/image/banner/bannerCodeBattle.jpg";
         else if (pathname.includes("hackathon")) link = "/image/banner/bannerHackathon.jpg";
-        else link = "/image/banner/bannerHome.png";
+        else if (pathname.includes("iupc")) link = "/image/banner/bannerIUPC.jpg";
+        else if (pathname.includes("dlsprint")) link = "/image/banner/bannerDLEnigma.jpg";
+        else link = "/image/banner/bannerHome.jpg";
     }
     const bgURL = {
         "/image/banner/bannerCodeBattle.jpg": {
@@ -16,10 +18,17 @@ const Banner = ({link}) => {
         "/image/banner/bannerHackathon.jpg": {
             bg: "md:bg-[url('/image/banner/bannerHackathon.jpg')]",
             shadow: "border border-cyan-200 shadow-cyan-200",
-
         },
-        "/image/banner/bannerHome.png": {
-            bg: "md:bg-[url('/image/banner/bannerHome.png')]",
+        "/image/banner/bannerIUPC.jpg": {
+            bg: "md:bg-[url('/image/banner/bannerIUPC.jpg')]",
+            shadow: "border border-green-200 shadow-green-200",
+        },
+        "/image/banner/bannerDLEnigma.jpg": {
+            bg: "md:bg-[url('/image/banner/bannerDLEnigma.jpg')]",
+            shadow: "border border-pink-200 shadow-pink-200",
+        },
+        "/image/banner/bannerHome.jpg": {
+            bg: "md:bg-[url('/image/banner/bannerHome.jpg')]",
             shadow: "border border-amber-100 shadow-amber-100",
         }
     }
