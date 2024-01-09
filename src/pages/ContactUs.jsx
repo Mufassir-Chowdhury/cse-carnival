@@ -3,9 +3,10 @@
 import React from 'react';
 import { ContactItems } from '../components/Items';
 import { HomeLeft, HomeLeft2, HomeRight } from '../data/vector';
-import { events } from '../data/data';
+import { events, organizers, poweredby } from '../data/data';
 import MapSection from '../components/MapSection';
 import VpGs from '../components/VpGs';
+import SponsoredBy from '../components/SponsoredBy';
 
 
 const ContactUs = () => {
@@ -30,6 +31,10 @@ const ContactUs = () => {
 
                 </div>
                 <VpGs />
+                <div className="lg:mx-0 z-10 relative px-4  pb-0 lg:px-28">
+                    <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} />
+                    <SponsoredBy title={"Organized By"} list={"list"} sponsors={organizers} />
+                </div>
                 {/* <Events /> */}
                 {/* <AboutUs /> */}
                 {/* <Words /> */}

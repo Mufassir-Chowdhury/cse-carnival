@@ -1,14 +1,13 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { IUPCLeft, IUPCRight } from '../data/vector';
-import { events } from '../data/data';
+import { events, organizers, poweredby } from '../data/data';
 import { Link, useLocation } from 'react-router-dom';
 import EventTitle from '../components/EventTitle';
 import { PrimaryButton } from './Button';
 import Banner from './Banner';
 import SponsoredBy from './SponsoredBy';
 import { ToastContainer, toast } from 'react-toastify';
-
 import 'react-toastify/dist/ReactToastify.css';
 const VectorGraphics = () => {
     return (
@@ -45,6 +44,10 @@ const EventPage = ({ id, children }) => {
                     </div>
                 </Link>
                 <SponsoredBy title={"Sponsored By"} list={""} sponsors={events[id].sponsors} />
+                <div className="lg:mx-0 z-10 relative px-4  pb-0 lg:px-28">
+                    <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} />
+                    <SponsoredBy title={"Organized By"} list={"list"} sponsors={organizers} />
+                </div>
             </div>
         </div>
     );
@@ -97,6 +100,10 @@ const EventRegistrationPage = ({ title, id, children }) => {
                 </h2>
                 {children}
                 <SponsoredBy title={"Sponsored By"} list={""} sponsors={events[id].sponsors} />
+                <div className="lg:mx-0 z-10 relative px-4  pb-0 lg:px-28">
+                    <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} />
+                    <SponsoredBy title={"Organized By"} list={"list"} sponsors={organizers} />
+                </div>
             </div>
         </div>
     );
