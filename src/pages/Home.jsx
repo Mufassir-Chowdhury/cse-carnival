@@ -4,7 +4,7 @@ import React from 'react';
 import Events from '../components/Events';
 import AboutUs from '../components/AboutUs';
 import SponsoredBy from '../components/SponsoredBy';
-import { poweredby } from '../data/data';
+import { allsponsors, poweredby } from '../data/data';
 import { HomeLeft, HomeLeft2, HomeRight, HomeRight2 } from '../data/vector';
 import Words from '../components/Words';
 import Carousel from '../components/Carousel';
@@ -24,7 +24,7 @@ const Home = () => {
         <Events />
         <AboutUs />
         <Words />
-        {/* <SponsoredBy title={"Sponsored By"} sponsors={sponsors} /> */}
+        <SponsoredBy title={"Sponsored By"} list={""} sponsors={allsponsors} />
       </div>
     </div>
   );

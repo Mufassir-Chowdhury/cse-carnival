@@ -38,7 +38,7 @@ const App = () => {
         </Routes>
       </section>
       {/* <SponsoredBy/> */}
-      <div className="mx-10 lg:mx-0 relative z-10">
+      <div className="mx-10 lg:mx-0 z-10 relative px-4  pb-0 lg:px-28">
         <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} />
         <SponsoredBy title={"Organized By"} list={"list"} sponsors={organizers} />
         {/* <Organizer organizers={organizers} /> */}

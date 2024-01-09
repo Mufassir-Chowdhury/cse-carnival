@@ -9,6 +9,7 @@ const SponsoredBy = ({title, list, sponsors }) => {
 
   return (
     <div>
+      {Object.keys(sponsors).length > 0 && (
       <div className="container mx-auto pb-8 pt-8 font-semibold">
         <h2 className="text-3xl font-bold text-center mb-6 text-title">{title}</h2>
 
@@ -42,7 +43,7 @@ const SponsoredBy = ({title, list, sponsors }) => {
                     <p className='text-navbar'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim optio iure quas ullam recusandae ex cum, ipsa aperiam reprehenderit cumque, quae eum ipsum. Distinctio expedita quis quos provident cum ea!</p>
                 </div>
             </div> */}
-      </div>
+      </div>)}
 
     </div>
   );

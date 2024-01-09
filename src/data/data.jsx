@@ -9,51 +9,51 @@ export const events = {
     shortDescription: [
       {
         title: "Pre-registration starts",
-        value: "8th January,2024"
+        value: "8th January"
       },
       {
         title: "Pre-registration ends",
-        value: "15th January,2024"
+        value: "15th January"
       },
       {
         title: "Slot Distribution",
-        value: "25th January,2024"
+        value: "25th January"
       },
       {
         title: "Mock Contest",
-        value: "16th February,2024"
+        value: "16th February"
       },
       {
         title: "Main Contest",
-        value: "17th February,2024"
-      },
-      {
-        title: "Registration Fee",
-        value: "5000 tk per team"
+        value: "17th February"
       },
       {
         title: "Payement Window",
         value: "26 January - 31 January"
       },
+      {
+        title: "Registration Fee",
+        value: "5000 tk per team"
+      },
     ],
     frontDescription: [
       {
         title: "Pre-registration window",
-        value: "8th - 15th January, 2024"
+        value: "8th - 15th January"
+      },
+      {
+        title: "Payement Window",
+        value: "26th - 31st January"
+      },
+      {
+        title: "Mock Contest",
+        value: "16th February"
       },
       {
         title: "Registration Fee",
         value: "5000 tk per team"
       },
-      {
-        title: "Payement Window",
-        value: "26th - 31st January, 2024"
-      },
-      {
-        title: "Mock Contest",
-        value: "16th February, 2024"
-      },
-      
+
     ],
     longDescription: [
       {
@@ -66,23 +66,23 @@ export const events = {
       }
     ],
     prize: [
-      
+
     ],
     bg: "bg-iupc-body",
     border: "border-iupc-border",
     sponsors: [
-      {
-        name: "Re:cruit",
-        description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
-        image: "/image/sponsor/Recruit.png",
-      },
+      // {
+      //   name: "Re:cruit",
+      //   description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
+      //   image: "/image/sponsor/Recruit.png",
+      // }
     ],
     contact: [
       {
         name: "MD. Moksedur Rahman Sohan",
         gmail: "moksedur.rahman.sohan@gmail.com",
         phone: "01980582626"
-        
+
       },
       {
         name: "Kawchar Husain",
@@ -107,7 +107,7 @@ export const events = {
       },
       {
         title: "Hackathon Date",
-        value: ": 9:00 AM, 16 February - 9:00 AM, 17 February, 2024"
+        value: ": 9:00 AM, 16 February - 9:00 AM, 17 February"
       },
       {
         title: "Registration Fee",
@@ -121,7 +121,7 @@ export const events = {
       },
       {
         title: "Hackathon Date",
-        value: ": 9:00 AM, 16 February,2024 - 9:00 AM, 17 February,2024"
+        value: ": 9:00 AM, 16 February - 9:00 AM, 17 February"
       },
       {
         title: "Registration Fee",
@@ -134,7 +134,7 @@ export const events = {
     sponsors: [
       {
         name: "Re:cruit",
-        description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
+        description: ``,
         image: "/image/sponsor/Recruit.png",
       },
     ],
@@ -143,7 +143,7 @@ export const events = {
         name: "Muhit Mahmud",
         gmail: "muhitmahmud64@gmail.com",
         phone: "01870833645",
-        
+
       },
     ]
   },
@@ -160,30 +160,30 @@ export const events = {
         value: "Kaggle"
       },
       {
-        title: "Registration Fee",
-        value: "Free"
-      },
-      {
         title: "Phase 1",
         value: "15 January - 15 February"
       },
       {
         title: "Phase 2",
         value: "16 February"
+      },
+      {
+        title: "Registration Fee",
+        value: "Free"
       },
     ],
     frontDescription: [
       {
-        title: "Registration Fee",
-        value: "Free"
-      },
-      {
         title: "Phase 1",
         value: "15 January - 15 February"
       },
       {
         title: "Phase 2",
         value: "16 February"
+      },
+      {
+        title: "Registration Fee",
+        value: "Free"
       },
     ],
     longDescription: [
@@ -203,11 +203,11 @@ export const events = {
     bg: "bg-dlsprint-body",
     border: "border-dlsprint-border",
     sponsors: [
-      {
-        name: "Re:cruit",
-        description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
-        image: "/image/sponsor/Recruit.png",
-      }
+      // {
+      //   name: "Re:cruit",
+      //   description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
+      //   image: "/image/sponsor/Recruit.png",
+      // }
     ],
     contact: [
       {
@@ -243,11 +243,11 @@ export const events = {
       },
       {
         title: "Registration Date",
-        value: "15th January - 1st February, 2024"
+        value: "15th January - 1st February"
       },
       {
         title: "Running Time",
-        value: "2nd - 16th February, 2024"
+        value: "2nd - 16th February"
       },
       {
         title: "Registration Fee",
@@ -255,14 +255,14 @@ export const events = {
       },
     ],
     frontDescription: [
-      
+
       {
         title: "Registration Date",
-        value: "15th January - 1st February, 2024"
+        value: "15th January - 1st February"
       },
       {
         title: "Running Time",
-        value: "2nd - 16th February, 2024"
+        value: "2nd - 16th February"
       },
       {
         title: "Registration Fee",
@@ -270,21 +270,21 @@ export const events = {
       },
     ],
     longDescription: [
-      
+
     ],
     sponsors: [
-      {
-        name: "Re:cruit",
-        description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
-        image: "/image/sponsor/Recruit.png",
-      }
+      // {
+      //   name: "Re:cruit",
+      //   description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
+      //   image: "/image/sponsor/Recruit.png",
+      // }
     ],
     contact: [
       {
         name: "Faridul Reza Sagor",
         gmail: "faridul.reza.sagor@gmail.com",
         phone: "01953737832"
-        
+
       },
     ]
   }
@@ -294,25 +294,36 @@ export const events = {
 export const poweredby = [
   {
     name: "Dynamic Solution Innovators",
-    description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: `DSi, an international company established in 2001, specializes in web-enabled e-commerce, ERP systems, and wireless systems across various industries. Offering comprehensive software development services globally, they emphasize client-centric approaches, deploying skilled teams at corporate centers or client sites. Their commitment involves proficient project management, employing methodologies like advanced use-case and a Two-phase Quality Assurance process for innovative applications. DSi prioritizes deep-rooted problem-solving, aiming not just to fix issues but to anticipate opportunities by bridging the gap between business and IT. Their focus extends beyond mere solutions, seeking to empower clients for long-term independence and success.`,
     image: "/image/sponsor/DSI.png",
   }
 ]
+
+export const allsponsors = [
+  {
+    name: "Re:cruit",
+    description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
+    image: "/image/sponsor/Recruit.png",
+  },
+
+]
+
 export const aboutus = [
   {
     image: "/image/logo/sust_logo.png",
     name: "Shahjalal University of Science and Technology",
-    description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: `Shahjalal University of Science and Technology (SUST) was established in 1986. The only university of its kind at that time, it started it''s journey on the 13th of February 1991 with only three departments: Physics, Chemistry and Economics, 13 teachers and 205 students. It has now expanded to 7 schools, 27 departments , 2 institutes and and centers. The number of teachers has grown to 566 and the students to 8596. Besides, the University has 12 affiliated colleges under the School of Medical Sciences with 4000 students.`,
   },
   {
     image: "/image/logo/CSE Society.png",
     name: "CSE Society",
-    description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: `The CSE Society, comprising students and teachers in Computer Science and Engineering, is a non-political organization focused on departmental interests. It orchestrates workshops, seminars, technical events, and social gatherings for academic and professional growth. Emphasizing networking and collaboration, it cultivates a supportive environment without engaging in political activities, fostering learning, skill development, and community building within the department.`,
   },
   {
     image: "/image/logo/CRTC.png",
     name: "CRTC",
-    description: "Description for Event 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: `Established in 2007, the Center for Research, Testing, and Consultancy (CRTC) at the CSE department focuses on fostering research collaborations between the university and industries, addressing national issues. It offers industry-aligned training to students, equipping them with practical skills for real-world scenarios. Providing a platform for practical exposure akin to industry settings, it bridges the gap between academic learning and professional needs. Moreover, the center prioritizes enhancing teaching staff expertise, ensuring they stay updated with advancements to deliver engaging education. Overall, CRTC strives to integrate research, industry-focused training, and improved teaching standards within the CSE department for a more relevant educational experience.
+    `,
   },
 ]
 

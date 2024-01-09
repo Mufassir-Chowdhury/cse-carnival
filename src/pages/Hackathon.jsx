@@ -50,7 +50,7 @@ const Hackathon = () => {
         }}
       />
 
-<TitleWithList
+      <TitleWithList
         title="Prizes"
         items={[
           "Champion - 40K BDT",

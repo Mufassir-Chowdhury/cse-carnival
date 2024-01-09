@@ -11,7 +11,7 @@ const quotesData = [
     id: 1,
     name: 'Md Masum',
     designation: 'Professor & Head',
-    post: 'Convenor, CSE Carnival',
+    post: 'Convenor, CSE_Carnival',
     department: 'Department of CSE, SUST',
     quote: `I extend a warm welcome to each and every one of you to the CSE Carnival 2024! We are thrilled to witness the unfolding of this remarkable event, where creativity, innovation, and technological prowess come together to celebrate the spirit of computer science.
 
@@ -29,7 +29,7 @@ const quotesData = [
     id: 2,
     name: 'Dr. Md Forhad Rabbi, SMIEEE',
     designation: 'Professor',
-    post: 'Director, CSE Carnival',
+    post: 'Director, CSE_Carnival',
     department: 'Department of CSE, SUST',
     quote: `Hello tech enthusiasts, 
 
@@ -41,7 +41,7 @@ const quotesData = [
   {
     id: 3,
     name: 'M. Jahirul Islam, PhD. PEng.',
-    post: 'Joint Convenor, CSE Carnival',
+    post: 'Joint Convenor, CSE_Carnival',
     designation: 'Professor',
     department: 'Department of CSE, SUST',
     quote: `My best wishes for an enriching and vibrant CSE Carnival. Your dedication to innovation and Critical thinking is truly commendable. May this event be a platform for meaningful connections, learning, and the celebration of diverse talents. Your active participation ensures the success of this carnival, and I wish you all an inspiring and enjoyable carnival.`,
@@ -51,6 +51,7 @@ const quotesData = [
   {
     id: 4,
     name: 'Mohammad Shahidur Rahman, PhD',
+    post: 'Advisor, CSE_Carnival',
     designation: 'Professor',
     department: 'Department of CSE, SUST',
     quote: `Join us in celebrating creativity and teamwork at the 2024 SUST CSE CARNIVAL! Explore the marvels of technology on our campus on February 16 and 17.
@@ -60,6 +61,23 @@ const quotesData = [
     Cheers and best of luck!`,
     imageUrl: 'https://www.sust.edu/uploads/profile-images/1550508841.jpg',
   },
+
+  {
+    id: 5,
+    name: 'Md. Eamin Rahman',
+    // post: 'Advisor, CSE_Carnival',
+    designation: 'Assistant Professor',
+    department: 'Department of CSE, SUST',
+    quote: `The air crackles with anticipation, code humming like a digital symphony.
+    From dawn's first light to moonlit revelry, the SUST CSE CARNIVAL
+    transforms the campus into a kaleidoscope of innovation. This isn't just a carnival,
+    it's a celebration of minds that dare to dream and build the future –
+    one line of code, one soldered connection at a time. Join us. Convert your imaginations
+    to life and create history. Be a part of the magic. The SUST CSE CARNIVAL awaits.
+    Best of luck.`,
+    imageUrl: 'https://www.sust.edu/uploads/profile-images/1623897038.jpg',
+  },
+
   // Add more quotes as needed
 ];
 
@@ -95,6 +113,8 @@ const Words = () => {
     speed: 500,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
+    autoplay: true,         // Enable autoplay
+    autoplaySpeed: 5000,
   };
 
 
@@ -113,7 +133,7 @@ const Words = () => {
         {quotesData.map((quote) => (
           <div key={quote.id} className="flex-shrink-0 px-3 w-3/5">
             <div className="bg-card-body p-3 rounded-lg w-full">
-              <div className='flex flex-row mb-4 justify-evenly gap-2 items-center'>
+              <div className='flex flex-row mb-4 justify-evenly gap-2 items-center lg:h-40'>
                 <img src={quote.imageUrl} alt={quote.name} className="w-32 h-32 rounded-2xl" />
                 <div className='text-left'>
                   <h2 className="text-lg font-semibold mb-2 text-navbar-button">{quote.name}</h2>

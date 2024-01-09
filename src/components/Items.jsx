@@ -41,13 +41,13 @@ const EventItems = ({ event }) => {
 
 const ContactItems = ({ contact }) => {
     return (
-        <div className={`flex flex-col lg:flex-row ${contact.bg} ${contact.border} lg:odd:justify-between lg:odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
+        <div className={`flex flex-col lg:flex-row ${contact.bg} ${contact.border} lg:justify-evenly lg:odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
             <div className="flex-shrink-0 ">
                 <img src={contact.image} alt={`contact ${contact.id}`} className="h-64 rounded-3xl" />
             </div>
-            <div className="text-navbar font-semibold">
+            <div className="text-navbar font-semibold ">
                 <h3 className="text-2xl font-bold lg:mb-2">{contact.name}</h3>
-                <div className='flex flex-row space-x-4 justify-between'>
+                <div className='flex flex-row space-x-6 justify-evenly'>
                     {contact.contact.map((item) => (
                         <div className="flex flex-col items-start space-y-3">
 
