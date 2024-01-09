@@ -8,12 +8,8 @@ export const events = {
     details: "",
     shortDescription: [
       {
-        title: "📅 Pre-registration starts",
-        value: "8th Jan"
-      },
-      {
-        title: "📅 Pre-registration ends",
-        value: "15th Jan"
+        title: "📅 Pre-registration window",
+        value: "8th - 15th Jan"
       },
       {
         title: "📅 Slot Distribution",
