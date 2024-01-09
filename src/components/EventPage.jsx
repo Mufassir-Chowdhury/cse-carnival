@@ -36,7 +36,7 @@ const EventPage = ({ id, children }) => {
             <div className='text-navbar z-10 relative px-4   py-10 pb-0 lg:px-28'>
                 <Banner />
                 <EventTitle title={events[id].name} />
-                <ToastContainer className=" mt-10" />
+                <ToastContainer className=" mt-28 z-50" />
                 {children}
                 <Link to={events[id].registration}>
                     <div className='py-10 w-full flex justify-center font-lato'>

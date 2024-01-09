@@ -24,7 +24,7 @@ export const events = {
         value: "17th Feb"
       },
       {
-        title: "📅 Payement Window",
+        title: "📅 Payment Window",
         value: "26 Jan - 31 Jan"
       },
       {
