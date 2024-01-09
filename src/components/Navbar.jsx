@@ -61,7 +61,7 @@ const Navbar = () => {
               {navigation.map((item) => (
                 <Link key={item.link} to={item.link}>
                   <div className={`text-navbar-link font-lato hover:border-b pb-1 px-1 ${
-                              location.pathname === item.link ? 'border-b' : ''
+                              (location.pathname === item.link || location.pathname === `${item.link}/registration`) ? 'border-b' : ''
                             }`}>
                     {item.name}
                   </div>
