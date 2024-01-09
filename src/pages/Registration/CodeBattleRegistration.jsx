@@ -21,7 +21,7 @@ const CodeBattleRegistration = () => {
   const [errorMessage, setErrorMessage] = useState('');
   useEffect(() => {
     if (errorMessage) {
-      toast.success(errorMessage, {
+      toast.error(errorMessage, {
         position: toast.POSITION.TOP_CENTER
       });
     }

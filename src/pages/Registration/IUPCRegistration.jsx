@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { t_shirt_size } from '../../data/data';
 import { FormField, SelectField } from '../../components/Form';
 import { EventRegistrationPage } from '../../components/EventPage';
 import { PrimaryButton } from '../../components/Button';
 
+import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+
 const IUPCRegistraion = () => {
+  const navigate = useNavigate()
+
   const [formData, setFormData] = useState({
     teamname: '',
     universityname: '',
@@ -26,6 +31,16 @@ const IUPCRegistraion = () => {
     coachtshirtsize: '',
   });
 
+  const [errorMessage, setErrorMessage] = useState('');
+  useEffect(() => {
+    if (errorMessage) {
+      toast.error(errorMessage, {
+        position: toast.POSITION.TOP_CENTER
+      });
+    }
+    errorMessage && setErrorMessage('');
+  }, [errorMessage]);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -36,10 +51,70 @@ const IUPCRegistraion = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    // Here you can handle the form submission, e.g., send the data to a server
+
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    const raw = JSON.stringify({
+      "teamName": formData.teamname,
+      "university": formData.universityname,
+      "coach": {
+        "name": formData.coachname,
+        "email": formData.coachemail,
+        "contact": formData.coachphonenumber,
+        "tshirt": formData.coachtshirtsize
+      },
+      "participants": [
+        {
+          "name": formData.participant1name,
+          "email": formData.participant1email,
+          "contact": formData.participant1phonenumber,
+          "tshirt": formData.participant1tshirtsize
+        },
+        {
+          "name": formData.participant2name,
+          "email": formData.participant2email,
+          "contact": formData.participant2phonenumber,
+          "tshirt": formData.participant2tshirtsize
+        },
+        {
+          "name": formData.participant3name,
+          "email": formData.participant3email,
+          "contact": formData.participant3phonenumber,
+          "tshirt": formData.participant3tshirtsize
+        }
+      ]
+    });
+
+    const requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+
+    fetch("http://localhost:1205/api/v1/iupc", requestOptions)
+        .then(response => {
+          console.log(response.status);
+          if (response.status === 200 || response.status === 201) {
+            navigate('/iupc', { state: { successMessage: 'Registration successful!' } })
+
+          } else if( response.status === 400) {
+            throw new Error("Registration Failed. User already exists or bad request made.");
+          }
+        })
+        .then(result => {
+          console.log(result);
+        })
+        .catch(error => {
+          console.log('error it is', error);
+          setErrorMessage(error.message);
+        });
   };
   return (
     <EventRegistrationPage title="IUPC" id="iupc">
+      <ToastContainer className="mt-20"/>
+
       <form method='post' className='flex flex-col gap-3'  onSubmit={handleSubmit}>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
           <FormField label="Team Name" name="teamname" onChange={handleChange}/>

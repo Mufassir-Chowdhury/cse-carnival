@@ -1,10 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { t_shirt_size } from '../../data/data';
 import { FormField, SelectField } from '../../components/Form';
 import { EventRegistrationPage } from '../../components/EventPage';
 import { PrimaryButton } from '../../components/Button';
+import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
 
 const HackathonRegistration = () => {
+  const navigate = useNavigate();
+  const [errorMessage, setErrorMessage] = useState('');
+  useEffect(() => {
+    if (errorMessage) {
+      toast.error(errorMessage, {
+        position: toast.POSITION.TOP_CENTER
+      });
+    }
+    errorMessage && setErrorMessage('');
+  }, [errorMessage]);
+
   const [formData, setFormData] = useState({
     teamname: '',
     universityname: '',
@@ -34,10 +47,71 @@ const HackathonRegistration = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    // Here you can handle the form submission, e.g., send the data to a server
+
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("Access-Control-Allow-Origin", "*");
+
+    const raw = JSON.stringify({
+      "teamName": formData.teamname,
+      "university": formData.universityname,
+      "teamLeader": {
+        "name": formData.member1name,
+        "email": formData.member1email,
+        "contact": formData.member1phonenumber,
+        "tshirt": formData.member1tshirtsize,
+        "githubLink": formData.member1githublink,
+        "university": formData.universityname
+      },
+      "participants": [
+        {
+          "name": formData.member2name,
+          "email": formData.member2email,
+          "contact": formData.member2phonenumber,
+          "tshirt": formData.member2tshirtsize,
+          "githubLink": formData.member2githublink,
+          "university": formData.universityname
+        },
+        {
+          "name": formData.member3name,
+          "email": formData.member3email,
+          "contact": formData.member3phonenumber,
+          "tshirt": formData.member3tshirtsize,
+          "githubLink": formData.member3githublink,
+          "university": formData.universityname
+        }
+      ]
+    });
+    console.log(raw)
+
+    const requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+
+    fetch("http://localhost:1205/api/v1/hackathon", requestOptions)
+      .then(response => {
+        console.log(response.status);
+        if (response.status === 200 || response.status === 201) {
+          navigate('/hackathon', { state: { successMessage: 'Registration successful!' } })
+
+        } else if( response.status === 400) {
+          throw new Error("Registration Failed. User already exists or bad request made.");
+        }
+      })
+      .then(result => {
+        console.log(result);
+      })
+      .catch(error => {
+        console.log('error it is', error);
+        setErrorMessage(error.message);
+      });
   };
   return (
     <EventRegistrationPage title="Hackathon" id="hackathon">
+      <ToastContainer className="mt-20"/>
       <form method='post' className='flex flex-col gap-3' onSubmit={handleSubmit}>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
           <FormField label="Team Name" name="teamname" onChange={handleChange}/>
