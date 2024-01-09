@@ -18,7 +18,7 @@ const AboutUs = () => {
                 <img src={quote.image} alt={quote.name} className="h-full mx-auto mb-4 " />
 
               </div>
-              <div className=' px-2 overflow-y-auto text-navbar text-justify  whitespace-pre-line font-inter' style={{ height: '18rem' }}>
+              <div className=' px-2 overflow-y-auto text-navbar  whitespace-pre-line font-inter' style={{ height: '18rem' }}>
                 {quote.description}
               </div>
               {/* <h2 className="text-lg font-semibold mb-2 text-navbar-button">{quote.name}</h2>
