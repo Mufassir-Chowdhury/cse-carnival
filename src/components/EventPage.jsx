@@ -50,13 +50,48 @@ const EventPage = ({ id, children }) => {
     );
 };
 
+// const EventPage = ({ id, children }) => {
+//     const location = useLocation();
+//     const message = location.state?.successMessage;
+//     useEffect(() => {
+//         if (message) {
+//             toast.success(message, {
+//                 position: toast.POSITION.TOP_CENTER
+//             });
+//             console.log(message, "message")
+//         }
+//     }, [message]);
+
+//     return (
+//         <div>
+//             <VectorGraphics />
+//             <div className='text-navbar z-10 relative px-4 py-10 pb-0 lg:px-28'>
+//                 <Banner />
+//                 <div className="flex justify-between w-full items-center px-6">
+//                     {/* <div className='w-full flex justify-center'> */}
+//                         <h2 className="w-auto text-3xl sm:text-4xl font-bold my-6 py-2 sm:py-5   text-navbar">{events[id].name}</h2>
+//                     {/* </div> */}
+//                     {/* <EventTitle title={events[id].name} /> */}
+//                     <Link to={events[id].registration}>
+//                         <PrimaryButton text='Register' />
+//                     </Link>
+//                 </div>
+//                 <ToastContainer className="" />
+//                 {children}
+//                 <SponsoredBy title={"Sponsored By"} list={""} sponsors={events[id].sponsors} />
+//             </div>
+//         </div>
+//     );
+// };
+
+
 const EventRegistrationPage = ({ title, id, children }) => {
     return (
         <div>
             <VectorGraphics />
             <div className='text-navbar z-10 relative px-4   py-10 pb-0 lg:px-28'>
                 <Banner />
-                <EventTitle title={`${title} Registration Form`} />
+                <EventTitle title={`${title} -  Registration Form`} />
                 <h2 className=" text-4xl font-bold md:my-1 py-5 md:mx-20  text-navbar-button text-center ">
                     {/* {`${title} Registration Form`}   */}
                 </h2>
