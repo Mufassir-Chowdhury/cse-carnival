@@ -413,5 +413,22 @@ export const quotesData = [
     imageUrl: 'https://www.sust.edu/uploads/profile-images/1623897038.jpg',
   },
 
+  {
+    id: 6,
+    name: 'Dr Mohammad Reza Selim',
+    post: 'Advisor, CSE_Carnival',
+    designation: 'Professor',
+    department: 'Department of CSE, SUST',
+    quote: `It is with great pleasure and enthusiasm that I extend a warm welcome to all local and national participants, faculties, industry professionals and sponsors as we embark on an exciting journey into the world of technology and innovation. As the Dean of the School of Engineering, it is my honor to announce the upcoming extravaganza – the CSE Carnival!
+    Our Department of Computer Science and Engineering has meticulously curated a spectacular event filled with thrilling programming competitions, cutting-edge software challenges, exhilarating hackathons, etc. The Carnival is not just an event; it is a celebration of creativity, intellect, and the spirit of innovation that defines our exceptional community of students, faculty, and industry professionals.
+    In the ever-evolving landscape of technology, it is essential for us to come together and showcase our prowess, share our knowledge, and foster a collaborative spirit that propels us towards greater heights. The Carnival serves as the perfect platform for this, providing a melting pot of talent, ideas, and a vibrant exchange of skills.
+    As we witness the brilliance of our participants from various universities in various competitions, let us also recognize the dedication and hard work of our faculty and organizers who have worked tirelessly to make this event a reality. Their commitment reflects the core values of our School – excellence, integrity, and a relentless pursuit of knowledge.
+    Let the Carnival be a source of inspiration, collaboration, and a showcase of incredible talent. Together, let us make this event a resounding success and a memorable milestone in our journey of academic and technological excellence.
+    Thank you for your unwavering support, and I look forward to witnessing the brilliance and ingenuity that will unfold at the CSE Carnival.
+    `,
+    imageUrl: 'https://www.sust.edu/uploads/profile-images/1464452799.jpg',
+  },
+
+
   // Add more quotes as needed
 ];

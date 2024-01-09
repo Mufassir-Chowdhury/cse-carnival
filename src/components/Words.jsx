@@ -64,6 +64,7 @@ const Words = () => {
                   <h2 className="text-lg font-semibold mb-2 text-navbar-button">{quote.name}</h2>
                   <div className='font-semibold text-navbar'>
                     <p className="">{quote.post}</p>
+                    <p className="">{quote.spcial}</p>
                     <p className="">{quote.designation}</p>
                     <p className="">{quote.department}</p>
                   </div>
