@@ -182,7 +182,7 @@ const HackathonRegistration = () => {
             <SelectField label="T-Shirt size" name="member3tshirtsize" options={t_shirt_size} onChange={handleChange} />
           </div>
         </div>
-        <div className='w-full flex justify-center'>
+        <div className='w-full flex justify-center my-10'>
           <PrimaryButton type="submit" text="Submit" />
         </div>
 

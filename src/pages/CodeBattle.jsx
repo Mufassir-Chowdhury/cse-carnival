@@ -1,7 +1,7 @@
 import React from 'react';
 import Tab from '../components/Tab';
 import { events } from '../data/data';
-import { Details, DetailsWithoutTitle, QuickDetails, TitleWithList } from '../components/Details';
+import { DetailsWithoutTitle } from '../components/Details';
 import { EventPage } from '../components/EventPage';
 import { renderLongDescriptions, renderShortDescriptions, renderTitleWithList } from '../components/Render';
 

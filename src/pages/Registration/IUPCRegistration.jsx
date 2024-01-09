@@ -211,7 +211,7 @@ const IUPCRegistraion = () => {
             <SelectField label="T-Shirt size" name="coachtshirtsize" options={t_shirt_size} onChange={handleChange} />
           </div>
         </div>
-        <div className='w-full flex justify-center'>
+        <div className='w-full flex justify-center my-10'>
           <PrimaryButton type="submit" text="Submit" />
         </div>
       </form>

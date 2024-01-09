@@ -2,9 +2,8 @@
 
 import React from 'react';
 import { ContactItems } from '../components/Items';
-import { HomeLeft, HomeLeft2, HomeRight, HomeRight2 } from '../data/vector';
+import { HomeLeft, HomeLeft2, HomeRight } from '../data/vector';
 import { events } from '../data/data';
-import Carousel from '../components/Carousel';
 import MapSection from '../components/MapSection';
 import VpGs from '../components/VpGs';
 

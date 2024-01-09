@@ -239,7 +239,7 @@ const DLSprintRegistration = () => {
 
             </div>
           </div>
-          <div className='w-full flex justify-center'>
+          <div className='w-full flex justify-center my-10'>
             <PrimaryButton type="submit" text="Submit" />
           </div>
         </form>
