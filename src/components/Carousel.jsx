@@ -54,13 +54,13 @@ const Carousel = () => {
       }, []);
   
     return (
-      <div>
+      <div className='relative'>
         <Slider {...settings} className="py-2" ref={sliderRef}>
           {images.map((image) => (
             <Banner key={image.link} link={image.link} />
           ))}
         </Slider>
-        <div className="flex justify-center">
+        <div className="flex justify-center absolute bottom-4 left-1/2 transform -translate-x-1/2">
           <div className="arrow-row flex gap-4">
             <NextArrow onClick={handlePrev} />
             <PrevArrow onClick={handleNext} />
