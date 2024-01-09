@@ -59,6 +59,7 @@ export default {
       fontFamily: {
         merriweather: ['Merriweather', 'serif'],
         lato: ['Lato', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
     },
   },

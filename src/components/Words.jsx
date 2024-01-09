@@ -53,14 +53,14 @@ const Words = () => {
 
   return (
     <div className="text-center mt-10">
-      <h1 className="text-3xl font-bold mb-6 text-navbar-button-hover">Few Words From...</h1>
+      <h1 className="text-3xl font-bold mb-6 text-navbar-button-hover font-merriweather">Few Words From...</h1>
       <Slider {...settings} className="py-6" ref={sliderRef}>
         {quotesData.map((quote) => (
           <div key={quote.id} className="flex-shrink-0 px-3 w-3/5">
             <div className="bg-card-body p-3 rounded-lg w-full">
               <div className='flex flex-row mb-4 justify-evenly gap-2 items-center lg:h-40'>
                 <img src={quote.imageUrl} alt={quote.name} className="w-32 h-32 rounded-2xl" />
-                <div className='text-left'>
+                <div className='text-left '>
                   <h2 className="text-lg font-semibold mb-2 text-navbar-button">{quote.name}</h2>
                   <div className='font-semibold text-navbar'>
                     <p className="">{quote.post}</p>
@@ -69,7 +69,7 @@ const Words = () => {
                   </div>
                 </div>
               </div>
-              <div className=' px-6 overflow-y-auto text-navbar text-justify  whitespace-pre-line' style={{ height: '18rem' }}>
+              <div className=' px-6 overflow-y-auto text-navbar text-justify  whitespace-pre-line font-inter' style={{ height: '18rem' }}>
                 {quote.quote}
               </div>
 

@@ -17,11 +17,23 @@ const SecondaryButton = ({ text }) => {
     );
 };
 
-export { PrimaryButton, SecondaryButton };
+const BigButton = ({ text }) => {
+    return (
+        <button className="bg-navbar-button-hover shadow-md shadow-navbar-button text-3xl text-navbar-link px-10 py-3 rounded-xl">
+            {text}
+        </button>
+    );
+};
+
+export { PrimaryButton, SecondaryButton, BigButton };
 
 PrimaryButton.propTypes = {
     text: PropTypes.string.isRequired,
 };
 SecondaryButton.propTypes = {
+    text: PropTypes.string.isRequired,
+};
+
+BigButton.propTypes = {
     text: PropTypes.string.isRequired,
 };

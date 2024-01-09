@@ -7,7 +7,7 @@ import { aboutus } from '../data/data';
 const AboutUs = () => {
   return (
     <div className="container mx-auto px-10 lg:px-20 pb-8 pt-8 bg-aboutus-body rounded-2xl">
-      <h2 className="text-3xl font-bold text-center mb-6 text-title">ABOUT US</h2>
+      <h2 className="text-3xl font-bold text-center mb-6 text-title font-merriweather">ABOUT US</h2>
 
       <div className='w-full flex justify-evenly flex-col md:flex-row gap-4'>
         {/* <SponsoredBy title={""} list={""} sponsors={aboutus} /> */}
@@ -18,7 +18,7 @@ const AboutUs = () => {
                 <img src={quote.image} alt={quote.name} className="h-full mx-auto mb-4 " />
 
               </div>
-              <div className=' px-2 overflow-y-auto text-navbar text-justify  whitespace-pre-line' style={{ height: '18rem' }}>
+              <div className=' px-2 overflow-y-auto text-navbar text-justify  whitespace-pre-line font-inter' style={{ height: '18rem' }}>
                 {quote.description}
               </div>
               {/* <h2 className="text-lg font-semibold mb-2 text-navbar-button">{quote.name}</h2>

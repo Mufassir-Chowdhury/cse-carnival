@@ -14,18 +14,18 @@ const EventItems = ({ event }) => {
                 <img src={event.image} alt="Event 1" className="h-64 rounded-3xl" />
             </div>
             <div className="text-navbar">
-                <h3 className="text-3xl font-bold md:mb-3 ">{event.name}</h3>
+                <h3 className="text-3xl font-bold md:mb-3 font-merriweather">{event.name}</h3>
                 {/* <p className="md:mb-2">{event.description}</p> */}
 
-                <p className="md:mb-2">{parse(event.description)}</p>
+                <p className="md:mb-2 font-lato">{parse(event.description)}</p>
 
                 {event.frontDescription.map((item, index) => (
-                    <p key={index} className="font-bold">
+                    <p key={index} className="font-bold font-merriweather">
                         {item.title} : <span className="">{item.value}</span>
                     </p>
                 ))}
 
-                <div className="flex mt-4 space-x-6 w-full justify-center md:justify-start">
+                <div className="flex mt-4 space-x-6 w-full justify-center md:justify-start font-lato">
                     {event.registration && (
                         <Link to={event.registration}>
                             <PrimaryButton text="Register" />
@@ -48,11 +48,11 @@ const ContactItems = ({ contact }) => {
             <div className="flex-shrink-0 flex-1">
                 <img src={contact.image} alt={`contact ${contact.id}`} className="h-64 rounded-3xl" />
             </div>
-            <div className="text-navbar font-semibold flex-1">
+            <div className="text-navbar font-merriweather font-semibold flex-1">
                 <h3 className="text-3xl font-bold mb-4">{contact.name}</h3>
-                <div className='flex flex-col lg:flex-row space-y-6 md:space-y-0 md:space-x-6 '>
+                <div className='font-lato flex flex-col lg:flex-row space-y-6 md:space-y-0 md:space-x-6 '>
                     {contact.contact.map((item) => (
-                        <div className="flex flex-col items-start space-y-3">
+                        <div className="flex flex-col font-normal items-start space-y-3 font-lato">
 
                             {/* <p className="text-sm font-semibold">Name:</p> */}
                             <p className="text-lg">{item.name}</p>
@@ -80,8 +80,8 @@ const SponsorItem = ({ sponsor }) => {
                 <img src={sponsor.image} alt="sponsor 1" className="h-40" />
             </div>
             <div className="text-navbar flex flex-col">
-                <h3 className="text-2xl font-bold md:mb-2 ">{sponsor.name}</h3>
-                <p className="md:mb-2 whitespace-pre-line">{sponsor.description}</p>
+                <h3 className="text-2xl font-bold mb-4 lg:mb-2 font-merriweather">{sponsor.name}</h3>
+                <p className="md:mb-2 font-normal whitespace-pre-line font-lato text-justify">{sponsor.description}</p>
                 {/* Display LinkedIn and Facebook icons if available */}
                 <div className="flex gap-4">
                     {sponsor.linkedin && (

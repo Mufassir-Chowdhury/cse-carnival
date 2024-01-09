@@ -7,7 +7,7 @@ const VpGs = () => {
         <div className="container mx-auto  pt-8 mb-6 text-center">
             {/* Title */}
             {/* <h2 className="text-3xl font-bold text-center mb-6 text-title">For More Enquiry</h2> */}
-            <h1 className="text-3xl font-bold mb-6 text-navbar-button-hover">For More Enquiry</h1>
+            <h1 className="text-3xl font-bold mb-6 text-navbar-button-hover font-merriweather">For More Enquiry</h1>
 
             {/* Two Columns */}
             <div className="flex w-full justify-between font-semibold text-navbar">

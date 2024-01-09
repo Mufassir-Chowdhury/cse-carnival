@@ -8,7 +8,7 @@ const FormField = ({ label, type="text", name, classValue="", onChange, required
 
     return (
         <label className={`flex flex-col gap-2 label ${classValue}`}>
-            <span className="text-lg font-serif font-bold text-field-title leading-6 pl-3">{label}</span>
+            <span className="text-lg font-merriweather font-bold text-field-title leading-6 pl-3">{label}</span>
             <div className="flex  w-full rounded-full shadow-sm border border-field-border bg-field-body">
                 <input
                     required={required}
@@ -31,7 +31,7 @@ const SelectField = ({ label, name, classValue="", options, onChange }) => {
     const id = name.replaceAll(' ', '-').toLowerCase();
     
     return (
-        <label className={`flex flex-col gap-2 label ${classValue}`}>
+        <label className={`flex flex-col gap-2 label font-merriweather ${classValue}`}>
             <span className="text-lg font-serif font-bold text-field-title leading-6 pl-3">{label}</span>
 
             <div className="flex rounded-full shadow-sm border border-selectfield-border bg-selectfield-body">

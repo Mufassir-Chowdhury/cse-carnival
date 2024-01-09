@@ -11,7 +11,7 @@ const SponsoredBy = ({title, list, sponsors }) => {
     <div>
       {Object.keys(sponsors).length > 0 && (
       <div className="container mx-auto pb-8 pt-8 font-semibold">
-        <h2 className="text-3xl font-bold text-center mb-6 text-title">{title}</h2>
+        <h2 className="text-3xl font-bold text-center mb-6 text-title font-merriweather">{title}</h2>
 
         {list === 'list' ? (
           <div className="flex justify-center items-center space-x-8  mb-8">

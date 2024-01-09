@@ -10,10 +10,10 @@ const CodeBattle = () => {
 
   const mainDescription = (
     <div className='flex flex-col px-4 gap-6'>
-    
+
       {renderShortDescriptions(shortDescription)}
       {renderLongDescriptions(longDescription)}
-      <DetailsWithoutTitle description={{ value: "Calling all CS undergrads! Join us for an adrenaline-pumping <b>Code Battle</b> where Gaming Meets Coding, and Victory is Written in Code!<br/><br/><b>Do you love gaming?</b><br/><b> Do you also love coding?</b><br/> <br/>We have news for you. We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme.🎮💻🚀"}} />
+      <DetailsWithoutTitle description={{ value: "Calling all CS undergrads! Join us for an adrenaline-pumping <b>Code Battle</b> where Gaming Meets Coding, and Victory is Written in Code!<br/><br/><b>Do you love gaming?</b><br/><b> Do you also love coding?</b><br/> <br/>We have news for you. We will present to you a gaming environment where the power to control lies not in a mere controller but in the elegance of your code. Your digital warriors, crafted with the brilliance of your programming finesse in your favourite programming language, will engage in a fierce showdown against the bots of your adversaries. It's not just a game; it's an epic battle of tactics, a symphony of skill where your code reigns supreme.🎮💻🚀" }} />
       {renderTitleWithList('What to expect', [
         "Intense battle of the programmable bots.",
         "Strategy game that will push your limits and expand your skills.",
@@ -26,12 +26,12 @@ const CodeBattle = () => {
   );
   const announcment = (
     <div>
-      Announcements
+      No Announcements Yet
     </div>
   );
   const download = (
     <div>
-      Download Link
+      Not Uploaded Yet
     </div>
   )
   return (

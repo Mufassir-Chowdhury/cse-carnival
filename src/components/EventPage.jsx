@@ -4,7 +4,7 @@ import { IUPCLeft, IUPCRight } from '../data/vector';
 import { events } from '../data/data';
 import { Link, useLocation } from 'react-router-dom';
 import EventTitle from '../components/EventTitle';
-import { PrimaryButton } from './Button';
+import { BigButton, PrimaryButton } from './Button';
 import Banner from './Banner';
 import SponsoredBy from './SponsoredBy';
 import { ToastContainer, toast } from 'react-toastify';
@@ -40,8 +40,8 @@ const EventPage = ({ id, children }) => {
                 <ToastContainer className="" />
                 {children}
                 <Link to={events[id].registration}>
-                    <div className='py-10 w-full flex justify-center'>
-                        <PrimaryButton text='Register' />
+                    <div className='py-10 w-full flex justify-center font-lato'>
+                        <BigButton text='Register Now' />
                     </div>
                 </Link>
                 <SponsoredBy title={"Sponsored By"} list={""} sponsors={events[id].sponsors} />

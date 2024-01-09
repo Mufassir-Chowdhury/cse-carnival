@@ -292,6 +292,12 @@ export const events = {
   }
 }
 
+export const allsponsors = Object.values(events).reduce((allSponsors, event) => {
+  if (event.sponsors && event.sponsors.length > 0) {
+    return [...allSponsors, ...event.sponsors];
+  }
+  return allSponsors;
+}, []);
 
 export const poweredby = [
   {
@@ -301,12 +307,6 @@ export const poweredby = [
   }
 ]
 
-export const allsponsors = Object.values(events).reduce((allSponsors, event) => {
-  if (event.sponsors && event.sponsors.length > 0) {
-    return [...allSponsors, ...event.sponsors];
-  }
-  return allSponsors;
-}, []);
 
 export const aboutus = [
   {

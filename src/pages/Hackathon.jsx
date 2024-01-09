@@ -37,13 +37,13 @@ const Hackathon = () => {
 
   const announcment = (
     <div>
-      Announcements
+      No Announcements Yet
     </div>
   );
 
   const download = (
     <div>
-      Download Link
+      Not Uploaded Yet
     </div>
   );
 

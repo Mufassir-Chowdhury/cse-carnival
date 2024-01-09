@@ -60,7 +60,7 @@ const Navbar = () => {
           <div className='md:flex md:flex-row md:w-screen justify-between items-center hidden md:visible'>
               {navigation.map((item) => (
                 <Link key={item.link} to={item.link}>
-                  <div className={`text-navbar-link hover:border-b pb-1 px-1 ${
+                  <div className={`text-navbar-link font-lato hover:border-b pb-1 px-1 ${
                               location.pathname === item.link ? 'border-b' : ''
                             }`}>
                     {item.name}
@@ -70,7 +70,7 @@ const Navbar = () => {
               ))}
               
             {/* Register Button */}
-            <PrimaryButton text="Register" />
+            {/* <PrimaryButton text="Register" /> */}
           </div>
           <div className="flex md:hidden">
             <button
@@ -94,7 +94,7 @@ const Navbar = () => {
                 <img
                   src={'/image/logo/Carnival logo.png'}
                   alt="Your Logo"
-                  className="h-20"
+                  className="w-32"
                 />
               </Link>
             </div>
@@ -119,10 +119,10 @@ const Navbar = () => {
 
                 ))}
               </div>
-              <div className="py-6">
+              {/* <div className="py-6">
                 <PrimaryButton text="Register" />
 
-              </div>
+              </div> */}
             </div>
           </div>
         </Dialog.Panel>

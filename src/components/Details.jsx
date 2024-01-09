@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 const QuickDetails = ({ className, description }) => {
     return (
-        <div className={`px-3 md:px-5 py-2.5 bg-opacity-10 rounded-3xl border border-orange-600 border-opacity-50 backdrop-blur justify-start items-center gap-3 md:gap-5 inline-flex ${className} `}>
-            <div className="text-indigo-950 font-bold font-['Merriweather']">{description.title}:</div>
+        <div className={`font-merriweather px-3 md:px-5 py-2.5 bg-opacity-10 rounded-3xl border border-orange-600 border-opacity-50 backdrop-blur justify-start items-center gap-3 md:gap-5 inline-flex ${className} `}>
+            <div className="text-indigo-950 font-bold">{description.title}:</div>
             <div className="text-indigo-950 font-semibold">{parse(description.value)}</div>
         </div>
     );
@@ -18,7 +18,7 @@ QuickDetails.propTypes = {
 
 const Details = ({ description }) => {
     return (
-        <div className="px-5 py-2.5 bg-amber-100 bg-opacity-10 rounded-3xl border border-amber-100 border-opacity-50 backdrop-blur-xl flex-col justify-center items-start gap-[15px] inline-flex">
+        <div className="px-5 py-2.5 font-lato bg-amber-100 bg-opacity-10 rounded-3xl border border-amber-100 border-opacity-50 backdrop-blur-xl flex-col justify-center items-start gap-[15px] inline-flex">
             <div className="text-indigo-950 text-3xl font-semibold">{description.title}</div>
             <div className="text-indigo-950 text-[17px] text-justify font-medium">{parse(description.value)}</div>
         </div>
@@ -27,7 +27,7 @@ const Details = ({ description }) => {
 
 const DetailsWithoutTitle = ({ description }) => {
     return (
-        <div className="px-5 py-2.5 bg-amber-100 bg-opacity-10 rounded-3xl border border-amber-100 border-opacity-50 backdrop-blur-xl flex-col justify-center items-start gap-[15px] inline-flex">
+        <div className="px-5 py-2.5 font-lato bg-amber-100 bg-opacity-10 rounded-3xl border border-amber-100 border-opacity-50 backdrop-blur-xl flex-col justify-center items-start gap-[15px] inline-flex">
             {/* <div className="text-indigo-950 text-3xl font-semibold">{description.title}</div> */}
             <div className="text-indigo-950 text-[17px] text-justify font-medium">{parse(description.value)}</div>
         </div>
@@ -44,7 +44,7 @@ Details.propTypes = {
 
 const TitleWithList = ({ title, items }) => {
     return (
-        <div className="px-5 py-2.5 bg-amber-100 bg-opacity-10 rounded-3xl border border-amber-100 border-opacity-50 backdrop-blur-xl flex-col justify-center items-start gap-[15px] inline-flex">
+        <div className="px-5 py-2.5 font-lato bg-amber-100 bg-opacity-10 rounded-3xl border border-amber-100 border-opacity-50 backdrop-blur-xl flex-col justify-center items-start gap-[15px] inline-flex">
             <div className="text-indigo-950 text-3xl font-semibold">{title}</div>
             <ul className="text-indigo-950 text-[17px] font-medium list-disc pl-5">
                 {items.map((item, index) => (
