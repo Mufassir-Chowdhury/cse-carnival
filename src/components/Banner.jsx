@@ -21,11 +21,11 @@ const Banner = ({link}) => {
         },
         "/image/banner/bannerIUPC.jpg": {
             bg: "md:bg-[url('/image/banner/bannerIUPC.jpg')]",
-            shadow: "border border-green-200 shadow-green-200",
+            shadow: "border border-cyan-600 shadow-cyan-600",
         },
         "/image/banner/bannerDLEnigma.jpg": {
             bg: "md:bg-[url('/image/banner/bannerDLEnigma.jpg')]",
-            shadow: "border border-pink-200 shadow-pink-200",
+            shadow: "border border-pink-500 shadow-pink-500",
         },
         "/image/banner/bannerHome.jpg": {
             bg: "md:bg-[url('/image/banner/bannerHome.jpg')]",
