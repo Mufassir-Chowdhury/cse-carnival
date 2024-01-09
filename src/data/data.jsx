@@ -301,16 +301,12 @@ export const poweredby = [
   }
 ]
 
-export const allsponsors = [
-  {
-    name: "Re:cruit",
-    description: `Building the engineers and leaders of tomorrow.
-    On a mission to build the silicon valley of Bangladesh - a city of hackers, builders and leaders.`,
-    image: "/image/sponsor/Recruit.png",
-    linkedin: "https://www.linkedin.com/company/recruit-so/",
-  },
-
-]
+export const allsponsors = Object.values(events).reduce((allSponsors, event) => {
+  if (event.sponsors && event.sponsors.length > 0) {
+    return [...allSponsors, ...event.sponsors];
+  }
+  return allSponsors;
+}, []);
 
 export const aboutus = [
   {
