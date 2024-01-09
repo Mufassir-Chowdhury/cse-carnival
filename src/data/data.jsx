@@ -46,6 +46,10 @@ export const events = {
         value: "16th Feb"
       },
       {
+        title: "📅 Main Contest",
+        value: "17th Feb"
+      },
+      {
         title: "💵 Registration Fee",
         value: "5000 BDT per team"
       },
@@ -149,8 +153,8 @@ export const events = {
     name: "DL Enigma 1.0",
     description: "Calling all AI enthusiasts and deep learning wizards!",
     image: "/image/event/Event 3.jpg",
-    registration: "/dlsprint/registration",
-    link: "/dlsprint",
+    registration: "/dlenigma/registration",
+    link: "/dlenigma",
     details: "",
     shortDescription: [
       {
@@ -300,6 +304,7 @@ export const poweredby = [
     name: "Dynamic Solution Innovators",
     description: `DSi, an international company established in 2001, specializes in web-enabled e-commerce, ERP systems, and wireless systems across various industries. Offering comprehensive software development services globally, they emphasize client-centric approaches, deploying skilled teams at corporate centers or client sites. Their commitment involves proficient project management, employing methodologies like advanced use-case and a Two-phase Quality Assurance process for innovative applications. DSi prioritizes deep-rooted problem-solving, aiming not just to fix issues but to anticipate opportunities by bridging the gap between business and IT. Their focus extends beyond mere solutions, seeking to empower clients for long-term independence and success.`,
     image: "/image/sponsor/DSI.png",
+    linkedin : "https://www.linkedin.com/company/dsinnovators/",
   }
 ]
 
