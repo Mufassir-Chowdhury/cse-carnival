@@ -19,7 +19,7 @@ const ContactUs = () => {
                 {/* <HomeRight2 /> */}
 
             </div>
-            <div className='z-10 relative px-4   py-10 pb-0 lg:px-28'>
+            <div className='z-10 relative px-4   py-10 pb-0 xl:px-28'>
                 {/* <Carousel /> */}
                 <MapSection />
                 <div className="container mx-auto pb-8 pt-4">
