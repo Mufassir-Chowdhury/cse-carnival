@@ -52,7 +52,7 @@ const Navbar = () => {
               <img
                 src={'/image/logo/Carnival logo.png'}
                 alt="Your Logo"
-                className="h-20"
+                className="w-32"
               />
             </Link>
           </div>

@@ -111,7 +111,7 @@ export const events = {
       },
       {
         title: "💵 Registration Fee",
-        value: "TBA"
+        value: "2000 tk per team"
       },
     ],
     frontDescription: [
@@ -125,7 +125,7 @@ export const events = {
       },
       {
         title: "💵 Registration Fee",
-        value: "TBA"
+        value: "2000 tk per tam"
       },
     ],
     longDescription: [
@@ -189,7 +189,7 @@ export const events = {
     longDescription: [
       {
         title: "🚀 Exciting News! 🚀",
-        value: "🌐 Calling all AI enthusiasts and deep learning wizards! 🤖✨<br/>We are thrilled to announce the launch of a groundbreaking Deep Learning Competition: **\"Bangladesh Road Object Detection for Autonomous Vehicles Challenge\"** on Kaggle! 🇧🇩🚗"
+        value: "🌐 Calling all AI enthusiasts and deep learning wizards! 🤖✨<br/>We are thrilled to announce the launch of a groundbreaking Deep Learning Competition: <b>Bangladesh Road Object Detection for Autonomous Vehicles Challenge</b> on Kaggle! 🇧🇩🚗"
       },
       {
         title: "🔍 Challenge Overview:",
@@ -211,12 +211,12 @@ export const events = {
     ],
     contact: [
       {
-        name: "---------------",
+        name: "Mirza Nihal Baig",
         gmail: "nihalmd1@gmail.com",
         phone: "01854794578"
       },
       {
-        name: "---------------",
+        name: "Md Ataullah Saim",
         gmail: "ataullha00@gmail.com",
         phone: "01879093418",
       },
@@ -302,8 +302,10 @@ export const poweredby = [
 export const allsponsors = [
   {
     name: "Re:cruit",
-    description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
+    description: `Building the engineers and leaders of tomorrow.
+    On a mission to build the silicon valley of Bangladesh - a city of hackers, builders and leaders.`,
     image: "/image/sponsor/Recruit.png",
+    linkedin: "https://www.linkedin.com/company/recruit-so/",
   },
 
 ]

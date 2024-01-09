@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import parse from 'html-react-parser';
 import { PrimaryButton, SecondaryButton } from "./Button";
 import PropTypes from 'prop-types';
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const EventItems = ({ event }) => {
     return (
@@ -41,13 +44,13 @@ const EventItems = ({ event }) => {
 
 const ContactItems = ({ contact }) => {
     return (
-        <div className={`flex flex-col lg:flex-row ${contact.bg} ${contact.border} lg:justify-evenly lg:odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
-            <div className="flex-shrink-0 ">
+        <div className={`flex flex-col lg:flex-row ${contact.bg} ${contact.border} lg:odd:flex-row-reverse items-center mb-8 gap-10 border p-5 px-10 rounded-2xl`}>
+            <div className="flex-shrink-0 flex-1">
                 <img src={contact.image} alt={`contact ${contact.id}`} className="h-64 rounded-3xl" />
             </div>
-            <div className="text-navbar font-semibold ">
-                <h3 className="text-2xl font-bold lg:mb-2">{contact.name}</h3>
-                <div className='flex flex-row space-x-6 justify-evenly'>
+            <div className="text-navbar font-semibold flex-1">
+                <h3 className="text-2xl font-bold mb-4">{contact.name}</h3>
+                <div className='flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 '>
                     {contact.contact.map((item) => (
                         <div className="flex flex-col items-start space-y-3">
 
@@ -78,7 +81,26 @@ const SponsorItem = ({ sponsor }) => {
             </div>
             <div className="text-navbar">
                 <h3 className="text-2xl font-bold md:mb-2 ">{sponsor.name}</h3>
-                <p className="md:mb-2">{sponsor.description}</p>
+                <p className="md:mb-2 whitespace-pre-line">{sponsor.description}</p>
+                {/* Display LinkedIn ID if available */}
+                {sponsor.linkedin && (
+                    <a
+                        href={sponsor.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faLinkedin} className="text-2xl hover:text-blue-500" />
+                    </a>
+
+                )}
+                {sponsor.facebook && (
+                    <a
+                        href={sponsor.facebook}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FontAwesomeIcon icon={faFacebook} className="text-2xl hover:text-blue-500" />
+                    </a>
+                )}
             </div>
         </div>
     );
