@@ -10,7 +10,7 @@ const DLSprint = () => {
   const { shortDescription, longDescription } = events['dlsprint'];
 
   const mainDescription = (
-    <div className='flex flex-col px-4 gap-10'>
+    <div className='flex flex-col px-4 gap-6'>
       {renderShortDescriptions(shortDescription)}
       {renderLongDescriptions(longDescription)}
       {renderTitleWithList('📅 Important Dates', [

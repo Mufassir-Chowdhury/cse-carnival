@@ -10,11 +10,14 @@ const Hackathon = () => {
   const { shortDescription, longDescription } = events['hackathon'];
 
   const mainDescription = (
-    <div className='flex flex-col px-4 gap-10'>
+    <div className='flex flex-col px-4 gap-6'>
       {renderShortDescriptions(shortDescription)}
       {renderLongDescriptions(longDescription)}
       {renderDetailsWithoutTitle({
         value: "Are you prepared to let your imagination and coding abilities run wild? Do you want to apply creative thinking and development skills to tackle problems in the real world? Would you like to connect with like-minded peers and professionals in the field? If so, welcome to the <b>Hackathon</b>, one of the signature events of <b>SUST CSE Carnival-2024</b>.🚀💥",
+      })}
+      {renderDetailsWithoutTitle({
+        value: "<b>This event invites innovative minds to develop solutions that push technological boundaries. Participants will create a functional product, considering the entire process from ideation to execution. They should demonstrate process understanding, optimize for efficiency, ensure scalability, and are expected to integrate frontier technologies.</b>",
       })}
       {renderDetailsWithoutTitle({
         value: "The hackathon will be based on <b> TBA </b>.",
