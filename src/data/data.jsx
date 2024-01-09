@@ -29,7 +29,7 @@ export const events = {
       },
       {
         title: "💵 Registration Fee",
-        value: "5000 tk per team"
+        value: "5000 BDT per team"
       },
     ],
     frontDescription: [
@@ -47,7 +47,7 @@ export const events = {
       },
       {
         title: "💵 Registration Fee",
-        value: "5000 tk per team"
+        value: "5000 BDT per team"
       },
 
     ],
@@ -103,11 +103,11 @@ export const events = {
       },
       {
         title: "📅 Hackathon",
-        value: ": 9 AM, 16 Feb - 9 AM, 17 Feb"
+        value: "9 AM, 16 Feb - 9 AM, 17 Feb"
       },
       {
         title: "💵 Registration Fee",
-        value: "2000 tk per team"
+        value: "2000 BDT per team"
       },
     ],
     frontDescription: [
@@ -117,11 +117,11 @@ export const events = {
       },
       {
         title: "📅 Hackathon",
-        value: ": 9 AM, 16 Feb - 9 AM, 17 Feb"
+        value: "9 AM, 16 Feb - 9 AM, 17 Feb"
       },
       {
         title: "💵 Registration Fee",
-        value: "2000 tk per tam"
+        value: "2000 BDT per team"
       },
     ],
     longDescription: [
@@ -155,7 +155,7 @@ export const events = {
     shortDescription: [
       {
         title: "👩‍💻 Platform",
-        value: "Kaggle"
+        value: "<a href=\"https://kaggle.com\" target=\"_blank\" rel=\"noopener noreferrer\" classname=\"underline\">Kaggle</a>"
       },
       {
         title: "📅 Phase 1",

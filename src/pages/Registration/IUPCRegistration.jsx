@@ -151,7 +151,7 @@ const IUPCRegistraion = () => {
       redirect: 'follow'
     };
 
-    fetch(`${process.env.REACT_APP_API_URL}/api/v1/iupc`, requestOptions)
+    fetch(`${import.meta.env.VITE_API_URL}/api/v1/iupc`, requestOptions)
       .then(response => {
         console.log(response.status);
         if (response.status === 200 || response.status === 201) {

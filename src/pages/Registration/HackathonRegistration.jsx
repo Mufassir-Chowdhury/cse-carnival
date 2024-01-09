@@ -5,6 +5,7 @@ import { EventRegistrationPage } from '../../components/EventPage';
 import { PrimaryButton } from '../../components/Button';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
+import { validateEmail, validatePhoneNumber, validateTshirtSize, validateGithubLink } from '../../data/validate';
 
 const HackathonRegistration = () => {
   const navigate = useNavigate();
@@ -129,7 +130,7 @@ const HackathonRegistration = () => {
       redirect: 'follow'
     };
 
-    fetch(`${process.env.REACT_APP_API_URL}/api/v1/hackathon`, requestOptions)
+    fetch(`${import.meta.env.VITE_API_URL}/api/v1/hackathon`, requestOptions)
       .then(response => {
         if (response.status === 200 || response.status === 201) {
           navigate('/hackathon', { state: { successMessage: 'Registration successful!' } })

@@ -33,7 +33,7 @@ const App = () => {
 
           <Route path="/iupc/registration" element={<IUPCRegistraion />}></Route>
           <Route path="/hackathon/registration" element={<HackathonRegistration />}></Route>
-          <Route path="/dlsprint/registration" element={<DLSprintRegistration />}></Route>
+          {/* <Route path="/dlsprint/registration" element={<DLSprintRegistration />}></Route> */}
           <Route path="/codebattle/registration" element={<CodeBattleRegistration />}></Route>
         </Routes>
       </section>

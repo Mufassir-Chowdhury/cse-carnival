@@ -144,7 +144,7 @@ const DLSprintRegistration = () => {
       redirect: 'follow'
     };
 
-    fetch(`${process.env.REACT_APP_API_URL}/api/v1/dl-sprint`, requestOptions)
+    fetch(`${import.meta.env.VITE_API_URL}/api/v1/dl-sprint`, requestOptions)
       .then(response => {
         if (response.status === 200 || response.status === 201) {
           navigate('/hackathon', { state: { successMessage: 'Registration successful!' } })
