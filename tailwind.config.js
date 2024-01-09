@@ -56,7 +56,10 @@ export default {
         'banner-hackathon': "url('/image/banner/bannerHackathon.jpg')",
         'banner-code-battle': "url('/image/banner/bannerCodebattle.jpg')",
       },
-      
+      fontFamily: {
+        merriweather: ['Merriweather', 'serif'],
+        lato: ['Lato', 'sans-serif'],
+      },
     },
   },
   plugins: [],
