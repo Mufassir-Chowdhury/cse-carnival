@@ -14,8 +14,8 @@ const AboutUs = () => {
         {aboutus.map((quote) => (
           <div key={quote.image} className="flex-shrink-0 px-3 w-full md:w-1/3" >
             <div className="bg-card-body p-4 rounded-lg w-full ">
-              <div className='w-full h-40 flex flex-col justify-center'>
-                <img src={quote.image} alt={quote.name} className="w-24 mx-auto mb-4 " />
+              <div className='w-full h-40 flex flex-col justify-center py-2'>
+                <img src={quote.image} alt={quote.name} className="h-full mx-auto mb-4 " />
 
               </div>
               <div className=' px-2 overflow-y-auto text-navbar text-justify  whitespace-pre-line' style={{ height: '18rem' }}>

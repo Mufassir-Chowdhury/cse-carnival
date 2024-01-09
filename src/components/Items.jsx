@@ -79,32 +79,35 @@ const SponsorItem = ({ sponsor }) => {
             <div className="flex-shrink-0">
                 <img src={sponsor.image} alt="sponsor 1" className="h-40" />
             </div>
-            <div className="text-navbar">
+            <div className="text-navbar flex flex-col">
                 <h3 className="text-2xl font-bold md:mb-2 ">{sponsor.name}</h3>
                 <p className="md:mb-2 whitespace-pre-line">{sponsor.description}</p>
-                {/* Display LinkedIn ID if available */}
-                {sponsor.linkedin && (
-                    <a
-                        href={sponsor.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faLinkedin} className="text-2xl hover:text-blue-500" />
-                    </a>
-
-                )}
-                {sponsor.facebook && (
-                    <a
-                        href={sponsor.facebook}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <FontAwesomeIcon icon={faFacebook} className="text-2xl hover:text-blue-500" />
-                    </a>
-                )}
+                {/* Display LinkedIn and Facebook icons if available */}
+                <div className="flex gap-4">
+                    {sponsor.linkedin && (
+                        <a
+                            href={sponsor.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FontAwesomeIcon icon={faLinkedin} className="text-2xl hover:text-blue-500" />
+                        </a>
+                    )}
+                    {sponsor.facebook && (
+                        <a
+                            href={sponsor.facebook}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FontAwesomeIcon icon={faFacebook} className="text-2xl hover:text-blue-500" />
+                        </a>
+                    )}
+                </div>
             </div>
         </div>
     );
 }
+
 
 
 const SponsorList = ({ sponsor }) => {
