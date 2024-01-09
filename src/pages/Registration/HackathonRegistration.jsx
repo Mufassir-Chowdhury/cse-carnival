@@ -46,7 +46,6 @@ const HackathonRegistration = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
 
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -61,7 +60,6 @@ const HackathonRegistration = () => {
         "contact": formData.member1phonenumber,
         "tshirt": formData.member1tshirtsize,
         "githubLink": formData.member1githublink,
-        "university": formData.universityname
       },
       "participants": [
         {
@@ -70,7 +68,6 @@ const HackathonRegistration = () => {
           "contact": formData.member2phonenumber,
           "tshirt": formData.member2tshirtsize,
           "githubLink": formData.member2githublink,
-          "university": formData.universityname
         },
         {
           "name": formData.member3name,
@@ -78,11 +75,9 @@ const HackathonRegistration = () => {
           "contact": formData.member3phonenumber,
           "tshirt": formData.member3tshirtsize,
           "githubLink": formData.member3githublink,
-          "university": formData.universityname
         }
       ]
     });
-    console.log(raw)
 
     const requestOptions = {
       method: 'POST',
@@ -93,7 +88,6 @@ const HackathonRegistration = () => {
 
     fetch("http://localhost:1205/api/v1/hackathon", requestOptions)
       .then(response => {
-        console.log(response.status);
         if (response.status === 200 || response.status === 201) {
           navigate('/hackathon', { state: { successMessage: 'Registration successful!' } })
 
@@ -102,7 +96,6 @@ const HackathonRegistration = () => {
         }
       })
       .then(result => {
-        console.log(result);
       })
       .catch(error => {
         console.log('error it is', error);
@@ -120,7 +113,7 @@ const HackathonRegistration = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
 
           <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4 rounded-2xl'>
-            <span className="text-2xl text-center sm:text-left font-serif font-bold text-field-title leading-6 pl-3 mb-2">Participant 1</span>
+            <span className="text-2xl text-center sm:text-left font-serif font-bold text-field-title leading-6 pl-3 mb-2">Participant 1 (team leader)</span>
             <FormField label="Participant's name" name="member1name" onChange={handleChange}/>
             <FormField label="Email" type="email" name="member1email" onChange={handleChange}/>
             <FormField label="Phone number" type="tel" name="member1phonenumber" onChange={handleChange}/>
