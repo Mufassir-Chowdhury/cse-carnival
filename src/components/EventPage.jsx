@@ -1,12 +1,15 @@
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { IUPCLeft, IUPCRight } from '../data/vector';
 import { events } from '../data/data';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import EventTitle from '../components/EventTitle';
 import { PrimaryButton } from './Button';
 import Banner from './Banner';
 import SponsoredBy from './SponsoredBy';
+import { ToastContainer, toast } from 'react-toastify';
 
+import 'react-toastify/dist/ReactToastify.css';
 const VectorGraphics = () => {
     return (
         <div className='z-0 relative'>
@@ -17,12 +20,24 @@ const VectorGraphics = () => {
 };
 
 const EventPage = ({ id, children }) => {
+    const location = useLocation();
+    const message = location.state?.successMessage;
+    useEffect(() => {
+        if (message) {
+          toast.success(message, {
+            position: toast.POSITION.TOP_CENTER
+          });
+        }
+      }, [message]);
+    console.log(message, "message")
     return (
         <div>
+
             <VectorGraphics />
             <div className='text-navbar z-10 relative px-4   py-10 pb-0 lg:px-28'>
                 <Banner />
                 <EventTitle title={events[id].name} />
+                <ToastContainer className="mt-20"/>
                 {children}
                 <Link to={events[id].registration}>
                     <div className='py-10 w-full flex justify-center'>

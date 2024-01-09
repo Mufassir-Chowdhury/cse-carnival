@@ -5,6 +5,7 @@ import { Details, DetailsWithoutTitle, QuickDetails, TitleWithList } from '../co
 import { EventPage } from '../components/EventPage';
 
 const CodeBattle = () => {
+
   const description = (
     <div className='flex flex-col px-4 gap-6'>
       <div className='flex flex-col gap-2'>
