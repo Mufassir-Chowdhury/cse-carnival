@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { t_shirt_size } from '../../data/data';
 import { FormField, SelectField } from '../../components/Form';
 import { EventRegistrationPage } from '../../components/EventPage';
 import { PrimaryButton } from '../../components/Button';
 
+import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+
 const DLSprintRegistration = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     teamname: '',
-    teamleadername: '',
+    teamleaderemail: '',
     member1name: '',
     member1email: '',
     member1phonenumber: '',
@@ -54,6 +58,15 @@ const DLSprintRegistration = () => {
     member4tshirtsize: '',
   });
 
+  const [errorMessage, setErrorMessage] = useState('');
+  useEffect(() => {
+    if (errorMessage) {
+      toast.error(errorMessage, {
+        position: toast.POSITION.TOP_CENTER
+      });
+    }
+    errorMessage && setErrorMessage('');
+  }, [errorMessage]);
 
   const handleChange = (e) => {
     setFormData({
@@ -65,16 +78,97 @@ const DLSprintRegistration = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
-    // Here you can handle the form submission, e.g., send the data to a server
+
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    const raw = JSON.stringify({
+      "teamName": formData.teamname,
+      "teamLeaderEmail": formData.teamleaderemail,
+      "participants": [
+        {
+          "name": formData.member1name,
+          "email": formData.member1email,
+          "contact": formData.member1phonenumber,
+          "tshirt": formData.member1tshirtsize,
+          "githubLink": formData.member1githublink,
+          "linkedinLink": formData.member1linkedinid,
+          "university": formData.member1university,
+          "jobTitle": formData.member1jobtitle,
+          "studentId": formData.member1studentid,
+          "country": formData.member1country
+        },
+        {
+          "name": formData.member2name,
+          "email": formData.member2email,
+          "contact": formData.member2phonenumber,
+          "tshirt": formData.member2tshirtsize,
+          "githubLink": formData.member2githublink,
+          "linkedinLink": formData.member2linkedinid,
+          "university": formData.member2university,
+          "jobTitle": formData.member2jobtitle,
+          "studentId": formData.member2studentid,
+          "country": formData.member2country
+        },
+        {
+          "name": formData.member3name,
+          "email": formData.member3email,
+          "contact": formData.member3phonenumber,
+          "tshirt": formData.member3tshirtsize,
+          "githubLink": formData.member3githublink,
+          "linkedinLink": formData.member3linkedinid,
+          "university": formData.member3university,
+          "jobTitle": formData.member3jobtitle,
+          "studentId": formData.member3studentid,
+          "country": formData.member3country,
+        },
+        // {
+        //   "name": formData.member4name,
+        //   "email": formData.member4email,
+        //   "contact": formData.member4phonenumber,
+        //   "tshirt": formData.member4tshirtsize,
+        //   "githubLink": formData.member4githublink,
+        //   "linkedinLink": formData.member4linkedinid,
+        //   "university": formData.member4university,
+        //   "jobTitle": formData.member4jobtitle,
+        //   "studentId": formData.member4studentid,
+        //   "country": formData.member4country,
+        // }
+      ]
+    });
+
+    const requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+
+    fetch("http://localhost:1205/api/v1/dl-sprint", requestOptions)
+      .then(response => {
+        if (response.status === 200 || response.status === 201) {
+          navigate('/hackathon', { state: { successMessage: 'Registration successful!' } })
+
+        } else if( response.status === 400) {
+          throw new Error("Registration Failed. User already exists or bad request made.");
+        }
+      })
+      .then(result => {
+      })
+      .catch(error => {
+        console.log('error it is', error);
+        setErrorMessage(error.message);
+      });
   };
 
   return (
     <EventRegistrationPage title="DL Sprint" id="dlsprint">
+            <ToastContainer className="mt-20"/>
+
         <form method='post' className='flex flex-col gap-3' onSubmit={handleSubmit}>
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
             <FormField label="Team Name" name="teamname" onChange={handleChange} />
-            <FormField label="Team Leader's Name" name="teamleadername" onChange={handleChange} />
+            <FormField label="Team Leader's Email" type='email' name="teamleaderemail" onChange={handleChange} />
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
 

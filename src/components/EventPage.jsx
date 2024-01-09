@@ -27,9 +27,9 @@ const EventPage = ({ id, children }) => {
           toast.success(message, {
             position: toast.POSITION.TOP_CENTER
           });
+          console.log(message, "message")
         }
       }, [message]);
-    console.log(message, "message")
     return (
         <div>
 
@@ -37,7 +37,7 @@ const EventPage = ({ id, children }) => {
             <div className='text-navbar z-10 relative px-4   py-10 pb-0 lg:px-28'>
                 <Banner />
                 <EventTitle title={events[id].name} />
-                <ToastContainer className="mt-20"/>
+                <ToastContainer className=""/>
                 {children}
                 <Link to={events[id].registration}>
                     <div className='py-10 w-full flex justify-center'>
