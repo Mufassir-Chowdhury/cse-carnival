@@ -1,4 +1,4 @@
-import { Details, QuickDetails, TitleWithList } from "./Details";
+import { Details, DetailsWithoutTitle, QuickDetails, TitleWithList } from "./Details";
 
 
 export const renderShortDescriptions = (shortDescription) => (
@@ -23,6 +23,14 @@ export const renderLongDescriptions = (longDescription) => (
 
 export const renderTitleWithList = (title, items) => (
     <TitleWithList title={title} items={items} />
+);
+
+export const renderDetails = ({ title, value }) => (
+    <Details key={title} description={{ title, value }} />
+);
+
+export const renderDetailsWithoutTitle = ({ value }) => (
+    <DetailsWithoutTitle key={value} description={{ value }} />
 );
 
 export const getShortDescriptionClass = (index) => {

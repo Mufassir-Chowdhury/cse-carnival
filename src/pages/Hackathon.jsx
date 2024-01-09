@@ -4,7 +4,7 @@ import React from 'react';
 import Tab from '../components/Tab';
 import { events } from '../data/data';
 import { EventPage } from '../components/EventPage';
-import { renderLongDescriptions, renderShortDescriptions, renderDetailsWithoutTitle, renderTitleWithList } from '../components/Render';
+import { renderLongDescriptions, renderShortDescriptions, renderDetailsWithoutTitle, renderTitleWithList, renderDetails } from '../components/Render';
 
 const Hackathon = () => {
   const { shortDescription, longDescription } = events['hackathon'];
