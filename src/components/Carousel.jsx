@@ -30,7 +30,7 @@ const Carousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     beforeChange: (_current, next) => setCurrentSlide(next),
@@ -52,7 +52,7 @@ const Carousel = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       handleNext();
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(timer);
   }, []);

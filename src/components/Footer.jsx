@@ -21,7 +21,7 @@ const Footer = () => {
                         <p className="text-lg font-bold mb-4 hidden lg:block">Social Media Links</p>
                         <div className="flex space-x-4">
                             {/* Facebook */}
-                            <a href="https://www.facebook.com/sustcsecarnival2024?mibextid=zLoPMf" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/sustcsecarnival2024" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faFacebook} className="text-2xl hover:text-blue-500" />
                             </a>
                             
