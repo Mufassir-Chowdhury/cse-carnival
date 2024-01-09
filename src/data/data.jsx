@@ -345,9 +345,9 @@ export const quotesData = [
   {
     id: 1,
     name: 'Md Masum',
-    designation: 'Professor & Head',
+    special: '',
     post: 'Convenor, CSE_Carnival',
-    department: 'Department of CSE, SUST',
+    designation: 'Professor & Head, Department of CSE, SUST',
     quote: `I extend a warm welcome to each and every one of you to the CSE Carnival 2024! We are thrilled to witness the unfolding of this remarkable event, where creativity, innovation, and technological prowess come together to celebrate the spirit of computer science.
 
     This year's carnival promises to be an exciting blend of insightful sessions, engaging competitions, innovative application development, and a melting pot of ideas.
@@ -363,9 +363,9 @@ export const quotesData = [
   {
     id: 2,
     name: 'Dr. Md Forhad Rabbi, SMIEEE',
-    designation: 'Professor',
     post: 'Director, CSE_Carnival',
-    department: 'Department of CSE, SUST',
+    special: '',
+    designation: 'Professor, Department of CSE, SUST',
     quote: `Hello tech enthusiasts, 
 
     Prepare to ignite your circuits and unleash your creativity! CSE Society, SUST proudly presents the 2024 SUST CSE CARNIVAL – a gala celebration of innovative minds and collaborative spirit. Mark your calendars for February 16 and 17 as we transform our campus into a vibrant hub of technological wonders. The carnival promises an unparalleled journey into the heart of a digital revolution. 
@@ -377,8 +377,8 @@ export const quotesData = [
     id: 3,
     name: 'M. Jahirul Islam, PhD. PEng.',
     post: 'Joint Convenor, CSE_Carnival',
-    designation: 'Professor',
-    department: 'Department of CSE, SUST',
+    special: '',
+    designation: 'Professor, Department of CSE, SUST',
     quote: `My best wishes for an enriching and vibrant CSE Carnival. Your dedication to innovation and Critical thinking is truly commendable. May this event be a platform for meaningful connections, learning, and the celebration of diverse talents. Your active participation ensures the success of this carnival, and I wish you all an inspiring and enjoyable carnival.`,
     imageUrl: 'https://www.sust.edu/uploads/profile-images/1464455450.jpg',
   },
@@ -387,8 +387,8 @@ export const quotesData = [
     id: 4,
     name: 'Mohammad Shahidur Rahman, PhD',
     post: 'Advisor, CSE_Carnival',
-    designation: 'Professor',
-    department: 'Department of CSE, SUST',
+    special: '',
+    designation: 'Professor, Department of CSE, SUST',
     quote: `Join us in celebrating creativity and teamwork at the 2024 SUST CSE CARNIVAL! Explore the marvels of technology on our campus on February 16 and 17.
   
     I appreciate your enthusiasm for critical thinking and creativity. May this event serve as a platform for learning, networking, and showcasing your talents. Your participation is the key to the success of this carnival, and I wish you a thrilling and enjoyable experience.
@@ -401,14 +401,12 @@ export const quotesData = [
     id: 5,
     name: 'Md. Eamin Rahman',
     post: 'Advisor, CSE_Carnival',
-    designation: 'Assistant Professor',
-    department: 'Department of CSE, SUST',
+    special: '',
+    designation: 'Assistant Professor, Department of CSE, SUST',
     quote: `The air crackles with anticipation, code humming like a digital symphony.
-    From dawn's first light to moonlit revelry, the SUST CSE CARNIVAL
-    transforms the campus into a kaleidoscope of innovation. This isn't just a carnival,
-    it's a celebration of minds that dare to dream and build the future –
-    one line of code, one soldered connection at a time. Join us. Convert your imaginations
-    to life and create history. Be a part of the magic. The SUST CSE CARNIVAL awaits.
+
+    From dawn's first light to moonlit revelry, the SUST CSE CARNIVAL transforms the campus into a kaleidoscope of innovation. This isn't just a carnival,it's a celebration of minds that dare to dream and build the future – one line of code, one soldered connection at a time. Join us. Convert your imaginations to life and create history. Be a part of the magic. The SUST CSE CARNIVAL awaits.
+    
     Best of luck.`,
     imageUrl: 'https://www.sust.edu/uploads/profile-images/1623897038.jpg',
   },
@@ -417,8 +415,8 @@ export const quotesData = [
     id: 6,
     name: 'Dr Mohammad Reza Selim',
     post: 'Advisor, CSE_Carnival',
-    designation: 'Professor',
-    department: 'Department of CSE, SUST',
+    special: 'Dean, School of Applied Sciences and Technology',
+    designation: 'Professor, Department of CSE, SUST',
     quote: `It is with great pleasure and enthusiasm that I extend a warm welcome to all local and national participants, faculties, industry professionals and sponsors as we embark on an exciting journey into the world of technology and innovation. As the Dean of the School of Engineering, it is my honor to announce the upcoming extravaganza – the CSE Carnival!
     Our Department of Computer Science and Engineering has meticulously curated a spectacular event filled with thrilling programming competitions, cutting-edge software challenges, exhilarating hackathons, etc. The Carnival is not just an event; it is a celebration of creativity, intellect, and the spirit of innovation that defines our exceptional community of students, faculty, and industry professionals.
     In the ever-evolving landscape of technology, it is essential for us to come together and showcase our prowess, share our knowledge, and foster a collaborative spirit that propels us towards greater heights. The Carnival serves as the perfect platform for this, providing a melting pot of talent, ideas, and a vibrant exchange of skills.

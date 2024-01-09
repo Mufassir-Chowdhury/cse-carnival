@@ -18,9 +18,9 @@ const Words = () => {
       if (window.innerWidth <= 768) {
         setSlidesToShow(1);
       } else if (window.innerWidth <= 1120) {
-        setSlidesToShow(2);
+        setSlidesToShow(1);
       } else {
-        setSlidesToShow(3);
+        setSlidesToShow(2);
       }
     };
 
@@ -58,15 +58,14 @@ const Words = () => {
         {quotesData.map((quote) => (
           <div key={quote.id} className="flex-shrink-0 px-3 w-3/5">
             <div className="bg-card-body p-3 rounded-lg w-full">
-              <div className='flex flex-row mb-4 justify-evenly gap-2 items-center lg:h-40'>
+              <div className='flex flex-row mb-4 justify-evenly gap-2 items-center lg:h-32'>
                 <img src={quote.imageUrl} alt={quote.name} className="w-32 h-32 rounded-2xl" />
                 <div className='text-left '>
                   <h2 className="text-lg font-semibold mb-2 text-navbar-button">{quote.name}</h2>
                   <div className='font-semibold text-navbar'>
                     <p className="">{quote.post}</p>
-                    <p className="">{quote.spcial}</p>
+                    <p className="">{quote.special}</p>
                     <p className="">{quote.designation}</p>
-                    <p className="">{quote.department}</p>
                   </div>
                 </div>
               </div>
