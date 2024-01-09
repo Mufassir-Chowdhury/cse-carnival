@@ -26,14 +26,14 @@ const Footer = () => {
                             </a>
                             
                             {/* Instagram */}
-                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            {/* <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faInstagram} className="text-2xl hover:text-pink-500" />
-                            </a>
+                            </a> */}
                             
                             {/* LinkedIn */}
-                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                            {/* <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin} className="text-2xl hover:text-blue-500" />
-                            </a>
+                            </a> */}
                         </div>
                     </div>
 
