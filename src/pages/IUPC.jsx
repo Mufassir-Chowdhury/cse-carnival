@@ -25,12 +25,12 @@ const IUPC = () => {
     </div>
   );
   const announcment = (
-    <div>
+    <div className='py-20'>
       No Announcements Yet
     </div>
   );
   const download = (
-    <div>
+    <div className='py-20'>
       Not Uploaded Yet
     </div>
   );
