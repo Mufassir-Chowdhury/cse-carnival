@@ -103,7 +103,7 @@ export const events = {
       },
       {
         title: "📅 Hackathon Date",
-        value: ": 9:00 AM, 16 Feb - 9:00 AM, 17 Feb"
+        value: ": 9 AM, 16 Feb - 9 AM, 17 Feb"
       },
       {
         title: "💵 Registration Fee",
@@ -117,7 +117,7 @@ export const events = {
       },
       {
         title: "📅 Hackathon Date",
-        value: ": 9:00 AM, 16 Feb - 9:00 AM, 17 Feb"
+        value: ": 9 AM, 16 Feb - 9 AM, 17 Feb"
       },
       {
         title: "💵 Registration Fee",
