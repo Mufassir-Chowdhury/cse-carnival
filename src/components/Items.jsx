@@ -49,8 +49,8 @@ const ContactItems = ({ contact }) => {
                 <img src={contact.image} alt={`contact ${contact.id}`} className="h-64 rounded-3xl" />
             </div>
             <div className="text-navbar font-semibold flex-1">
-                <h3 className="text-2xl font-bold mb-4">{contact.name}</h3>
-                <div className='flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 '>
+                <h3 className="text-3xl font-bold mb-4">{contact.name}</h3>
+                <div className='flex flex-col lg:flex-row space-y-6 md:space-y-0 md:space-x-6 '>
                     {contact.contact.map((item) => (
                         <div className="flex flex-col items-start space-y-3">
 
