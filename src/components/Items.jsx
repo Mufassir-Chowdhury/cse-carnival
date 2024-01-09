@@ -50,7 +50,7 @@ const ContactItems = ({ contact }) => {
             </div>
             <div className="text-navbar font-merriweather font-semibold flex-1">
                 <h3 className="text-3xl font-bold mb-4">{contact.name}</h3>
-                <div className='font-lato flex flex-col lg:flex-row space-y-6 md:space-y-0 md:space-x-6 '>
+                <div className='font-lato flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6 '>
                     {contact.contact.map((item) => (
                         <div className="flex flex-col font-normal items-start space-y-3 font-lato">
 

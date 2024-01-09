@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { t_shirt_size } from '../../data/data';
 import { FormField, SelectField } from '../../components/Form';
 import { EventRegistrationPage } from '../../components/EventPage';
-import { BigButton, PrimaryButton } from '../../components/Button';
+import { PrimaryButton } from '../../components/Button';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import { validateEmail, validatePhoneNumber, validateTshirtSize } from '../../data/validate';
@@ -121,7 +121,7 @@ const CodeBattleRegistration = () => {
           </div>
         </div>
         <div className='w-full flex justify-center'>
-          <BigButton type="submit" text="Submit" />
+          <PrimaryButton type="submit" text="Submit" />
         </div>
       </form>
     </EventRegistrationPage>
