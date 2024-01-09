@@ -93,7 +93,7 @@ export const events = {
   },
   "hackathon": {
     name: "Hackathon",
-    description: "Ready,set,hack! Join the Hackathon and show your skills!",
+    description: "Ready, set, hack! Join the Hackathon and show your skills!",
     image: "/image/event/Event 2.jpg",
     registration: "/hackathon/registration",
     link: "/hackathon",
