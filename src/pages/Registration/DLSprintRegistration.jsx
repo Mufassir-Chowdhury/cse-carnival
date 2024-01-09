@@ -162,7 +162,7 @@ const DLSprintRegistration = () => {
   };
 
   return (
-    <EventRegistrationPage title="DL Sprint" id="dlsprint">
+    <EventRegistrationPage title="DL Engima 1.0 " id="dlsprint">
             <ToastContainer className="mt-20"/>
 
         <form method='post' className='flex flex-col gap-3' onSubmit={handleSubmit}>

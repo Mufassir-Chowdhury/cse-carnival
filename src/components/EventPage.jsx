@@ -24,12 +24,12 @@ const EventPage = ({ id, children }) => {
     const message = location.state?.successMessage;
     useEffect(() => {
         if (message) {
-          toast.success(message, {
-            position: toast.POSITION.TOP_CENTER
-          });
-          console.log(message, "message")
+            toast.success(message, {
+                position: toast.POSITION.TOP_CENTER
+            });
+            console.log(message, "message")
         }
-      }, [message]);
+    }, [message]);
     return (
         <div>
 
@@ -37,7 +37,7 @@ const EventPage = ({ id, children }) => {
             <div className='text-navbar z-10 relative px-4   py-10 pb-0 lg:px-28'>
                 <Banner />
                 <EventTitle title={events[id].name} />
-                <ToastContainer className=""/>
+                <ToastContainer className="" />
                 {children}
                 <Link to={events[id].registration}>
                     <div className='py-10 w-full flex justify-center'>
@@ -56,14 +56,14 @@ const EventRegistrationPage = ({ title, id, children }) => {
             <VectorGraphics />
             <div className='text-navbar z-10 relative px-4   py-10 pb-0 lg:px-28'>
                 <Banner />
-                <EventTitle title={title} />
-                <h2 className=" text-4xl font-bold md:my-6 py-5 md:mx-20  text-navbar-button text-center ">
-                    Register
+                <EventTitle title={`${title} Registration Form`} />
+                <h2 className=" text-4xl font-bold md:my-1 py-5 md:mx-20  text-navbar-button text-center ">
+                    {/* {`${title} Registration Form`}   */}
                 </h2>
                 {children}
                 <SponsoredBy title={"Sponsored By"} list={""} sponsors={events[id].sponsors} />
             </div>
-            </div>
+        </div>
     );
 };
 

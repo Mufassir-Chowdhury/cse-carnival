@@ -36,36 +36,46 @@ const CodeBattleRegistration = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
+  const validateForm = () => {
     const isEmailValid = validateEmail(formData.email);
     const isPhoneNumberValid = validatePhoneNumber(formData.phonenumber);
     const isTshirtSizeValid = validateTshirtSize(formData.tshirtsize);
 
-  
     if (!isEmailValid) {
-      setErrorMessage('Invalid email');
+      return 'Invalid email';
     } else if (!isPhoneNumberValid) {
-      setErrorMessage('Invalid phone number');
+      return 'Invalid phone number';
     } else if (!isTshirtSizeValid) {
-      setErrorMessage('Invalid T-shirt size');
-    } else {
-      console.log(formData);
+      return 'Invalid T-shirt size';
+    }
 
-      const myHeaders = new Headers();
-      myHeaders.append("Content-Type", "application/json");
-      myHeaders.append("Access-Control-Allow-Origin", "*");
+    return '';
+  };
 
-      const raw = JSON.stringify({
-        "name": formData.participantname,
-        "email": formData.email,
-        "university": formData.universityname,
-        "contact": formData.phonenumber,
-        "username": formData.codebattleusername,
-        "tshirt": formData.tshirtsize
-      })
-    };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const validationError = validateForm();
+    if (validationError) {
+      setErrorMessage(validationError);
+      return;
+    }
+
+
+    console.log(formData);
+
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("Access-Control-Allow-Origin", "*");
+
+    const raw = JSON.stringify({
+      "name": formData.participantname,
+      "email": formData.email,
+      "university": formData.universityname,
+      "contact": formData.phonenumber,
+      "username": formData.codebattleusername,
+      "tshirt": formData.tshirtsize
+    })
+
 
     const requestOptions = {
       method: 'POST',

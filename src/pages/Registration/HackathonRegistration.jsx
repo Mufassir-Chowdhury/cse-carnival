@@ -44,8 +44,51 @@ const HackathonRegistration = () => {
     });
   };
 
+  const validateForm = () => {
+    const validateParticipant = (participantNumber) => {
+      const name = formData[`member${participantNumber}name`];
+      const email = formData[`member${participantNumber}email`];
+      const phone = formData[`member${participantNumber}phonenumber`];
+      const githubLink = formData[`member${participantNumber}githublink`];
+      const tshirt = formData[`member${participantNumber}tshirtsize`];
+
+      const isEmailValid = validateEmail(email);
+      const isPhoneNumberValid = validatePhoneNumber(phone);
+      const isGithubLinkValid = validateGithubLink(githubLink);
+      const isTshirtSizeValid = validateTshirtSize(tshirt);
+
+      if (!isEmailValid) {
+        return `Invalid email for Member ${participantNumber}`;
+      } else if (!isPhoneNumberValid) {
+        return `Invalid phone number for Member ${participantNumber}`;
+      } else if (!isGithubLinkValid) {
+        return `Invalid GitHub link for Member ${participantNumber}`;
+      } else if (!isTshirtSizeValid) {
+        return `Invalid T-shirt size for Member ${participantNumber}`;
+      }
+
+      return '';
+    };
+
+    // Validate all participants
+    for (let i = 1; i <= 3; i++) {
+      const participantValidationResult = validateParticipant(i);
+      if (participantValidationResult) {
+        return participantValidationResult;
+      }
+    }
+
+    return ''; // Return empty string if all validations pass
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const validationError = validateForm();
+    if (validationError) {
+      setErrorMessage(validationError);
+      return;
+    }
 
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -91,7 +134,7 @@ const HackathonRegistration = () => {
         if (response.status === 200 || response.status === 201) {
           navigate('/hackathon', { state: { successMessage: 'Registration successful!' } })
 
-        } else if( response.status === 400) {
+        } else if (response.status === 400) {
           throw new Error("Registration Failed. User already exists or bad request made.");
         }
       })
@@ -104,44 +147,44 @@ const HackathonRegistration = () => {
   };
   return (
     <EventRegistrationPage title="Hackathon" id="hackathon">
-      <ToastContainer className="mt-20"/>
+      <ToastContainer className="mt-20" />
       <form method='post' className='flex flex-col gap-3' onSubmit={handleSubmit}>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-          <FormField label="Team Name" name="teamname" onChange={handleChange}/>
-          <FormField label="University Name" name="universityname" onChange={handleChange}/>
+          <FormField label="Team Name" name="teamname" onChange={handleChange} />
+          <FormField label="University Name" name="universityname" onChange={handleChange} />
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
 
           <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4 rounded-2xl'>
             <span className="text-2xl text-center sm:text-left font-serif font-bold text-field-title leading-6 pl-3 mb-2">Participant 1 (team leader)</span>
-            <FormField label="Participant's name" name="member1name" onChange={handleChange}/>
-            <FormField label="Email" type="email" name="member1email" onChange={handleChange}/>
-            <FormField label="Phone number" type="tel" name="member1phonenumber" onChange={handleChange}/>
-            <FormField label="Github link" name="member1githublink" onChange={handleChange}/>
+            <FormField label="Participant's name" name="member1name" onChange={handleChange} />
+            <FormField label="Email" type="email" name="member1email" onChange={handleChange} />
+            <FormField label="Phone number" type="tel" name="member1phonenumber" onChange={handleChange} />
+            <FormField label="Github link" name="member1githublink" onChange={handleChange} />
             <SelectField label="T-Shirt size" name="member1tshirtsize" options={t_shirt_size} onChange={handleChange} />
 
           </div>
           <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4 rounded-2xl'>
             <span className="text-2xl text-center sm:text-left font-serif font-bold text-field-title leading-6 pl-3 mb-2">Participant 2</span>
-            <FormField label="Participant's name" name="member2name" onChange={handleChange}/>
-            <FormField label="Email" type="email" name="member2email" onChange={handleChange}/>
-            <FormField label="Phone number" type="tel" name="member2phonenumber" onChange={handleChange}/>
-            <FormField label="Github link" name="member2githublink" onChange={handleChange}/>
-            <SelectField label="T-Shirt size" name="member2tshirtsize" options={t_shirt_size} onChange={handleChange}/>
+            <FormField label="Participant's name" name="member2name" onChange={handleChange} />
+            <FormField label="Email" type="email" name="member2email" onChange={handleChange} />
+            <FormField label="Phone number" type="tel" name="member2phonenumber" onChange={handleChange} />
+            <FormField label="Github link" name="member2githublink" onChange={handleChange} />
+            <SelectField label="T-Shirt size" name="member2tshirtsize" options={t_shirt_size} onChange={handleChange} />
           </div>
 
           <div className='flex flex-col my-4 gap-y-2 sm:shadow-xl sm:p-4 rounded-2xl sm:col-span-2 container mx-auto'>
             <span className="text-2xl text-center sm:text-left font-serif font-bold text-field-title leading-6 pl-3 mb-2">Participant 3</span>
-            <FormField label="Participant's name" name="member3name" onChange={handleChange}/>
-            <FormField label="Email" type="email" name="member3email" onChange={handleChange}/>
-            <FormField label="Phone number" type="tel" name="member3phonenumber" onChange={handleChange}/>
-            <FormField label="Github link" name="member3githublink" onChange={handleChange}/>
-            <SelectField label="T-Shirt size" name="member3tshirtsize" options={t_shirt_size} onChange={handleChange}/>
+            <FormField label="Participant's name" name="member3name" onChange={handleChange} />
+            <FormField label="Email" type="email" name="member3email" onChange={handleChange} />
+            <FormField label="Phone number" type="tel" name="member3phonenumber" onChange={handleChange} />
+            <FormField label="Github link" name="member3githublink" onChange={handleChange} />
+            <SelectField label="T-Shirt size" name="member3tshirtsize" options={t_shirt_size} onChange={handleChange} />
           </div>
         </div>
         <div className='w-full flex justify-center'>
-            <PrimaryButton type="submit" text="Submit" />
-          </div>
+          <PrimaryButton type="submit" text="Submit" />
+        </div>
 
 
       </form>
