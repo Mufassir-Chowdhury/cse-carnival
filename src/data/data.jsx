@@ -9,27 +9,27 @@ export const events = {
     shortDescription: [
       {
         title: "📅 Pre-registration starts",
-        value: "8th January"
+        value: "8th Jan"
       },
       {
         title: "📅 Pre-registration ends",
-        value: "15th January"
+        value: "15th Jan"
       },
       {
         title: "📅 Slot Distribution",
-        value: "25th January"
+        value: "25th Jan"
       },
       {
         title: "📅 Mock Contest",
-        value: "16th February"
+        value: "16th Feb"
       },
       {
         title: "📅 Main Contest",
-        value: "17th February"
+        value: "17th Feb"
       },
       {
         title: "📅 Payement Window",
-        value: "26 January - 31 January"
+        value: "26 Jan - 31 Jan"
       },
       {
         title: "💵 Registration Fee",
@@ -39,15 +39,15 @@ export const events = {
     frontDescription: [
       {
         title: "📅 Pre-registration window",
-        value: "8th - 15th January"
+        value: "8th - 15th Jan"
       },
       {
         title: "📅 Payement Window",
-        value: "26th - 31st January"
+        value: "26th - 31st Jan"
       },
       {
         title: "📅 Mock Contest",
-        value: "16th February"
+        value: "16th Feb"
       },
       {
         title: "💵 Registration Fee",
@@ -103,11 +103,11 @@ export const events = {
     shortDescription: [
       {
         title: "📅 Registration Date",
-        value: "8th - 18th January"  //change below too
+        value: "8th - 18th Jan"  //change below too
       },
       {
         title: "📅 Hackathon Date",
-        value: ": 9:00 AM, 16 February - 9:00 AM, 17 February"
+        value: ": 9:00 AM, 16 Feb - 9:00 AM, 17 Feb"
       },
       {
         title: "💵 Registration Fee",
@@ -117,11 +117,11 @@ export const events = {
     frontDescription: [
       {
         title: "📅 Registration Date",
-        value: "8th - 18th January"
+        value: "8th - 18th Jan"
       },
       {
         title: "📅 Hackathon Date",
-        value: ": 9:00 AM, 16 February - 9:00 AM, 17 February"
+        value: ": 9:00 AM, 16 Feb - 9:00 AM, 17 Feb"
       },
       {
         title: "💵 Registration Fee",
@@ -163,11 +163,11 @@ export const events = {
       },
       {
         title: "📅 Phase 1",
-        value: "15 January - 15 February"
+        value: "15 Jan - 15 Feb"
       },
       {
         title: "📅 Phase 2",
-        value: "16 February"
+        value: "16 Feb"
       },
       {
         title: "💵 Registration Fee",
@@ -177,11 +177,11 @@ export const events = {
     frontDescription: [
       {
         title: "📅 Phase 1",
-        value: "15 January - 15 February"
+        value: "15 Jan - 15 Feb"
       },
       {
         title: "📅 Phase 2",
-        value: "16 February"
+        value: "16 Feb"
       },
       {
         title: "💵 Registration Fee",
@@ -245,11 +245,11 @@ export const events = {
       },
       {
         title: "📅 Registration Date",
-        value: "15th January - 1st February"
+        value: "15th Jan - 1st Feb"
       },
       {
         title: "📅 Running Time",
-        value: "2nd - 16th February"
+        value: "2nd - 16th Feb"
       },
       {
         title: "💵 Registration Fee",
@@ -260,11 +260,11 @@ export const events = {
 
       {
         title: "📅 Registration Date",
-        value: "15th January - 1st February"
+        value: "15th Jan - 1st Feb"
       },
       {
         title: "📅 Running Time",
-        value: "2nd - 16th February"
+        value: "2nd - 16th Feb"
       },
       {
         title: "💵 Registration Fee",
@@ -312,7 +312,7 @@ export const aboutus = [
   {
     image: "/image/logo/sust_logo.png",
     name: "Shahjalal University of Science and Technology",
-    description: `Shahjalal University of Science and Technology (SUST) was established in 1986. The only university of its kind at that time, it started it''s journey on the 13th of February 1991 with only three departments: Physics, Chemistry and Economics, 13 teachers and 205 students. It has now expanded to 7 schools, 27 departments , 2 institutes and and centers. The number of teachers has grown to 566 and the students to 8596. Besides, the University has 12 affiliated colleges under the School of Medical Sciences with 4000 students.`,
+    description: `Shahjalal University of Science and Technology (SUST) was established in 1986. The only university of its kind at that time, it started it''s journey on the 13th of Feb 1991 with only three departments: Physics, Chemistry and Economics, 13 teachers and 205 students. It has now expanded to 7 schools, 27 departments , 2 institutes and and centers. The number of teachers has grown to 566 and the students to 8596. Besides, the University has 12 affiliated colleges under the School of Medical Sciences with 4000 students.`,
   },
   {
     image: "/image/logo/CSE Society.png",
@@ -368,7 +368,7 @@ export const quotesData = [
     designation: 'Professor, Department of CSE, SUST',
     quote: `Hello tech enthusiasts, 
 
-    Prepare to ignite your circuits and unleash your creativity! CSE Society, SUST proudly presents the 2024 SUST CSE CARNIVAL – a gala celebration of innovative minds and collaborative spirit. Mark your calendars for February 16 and 17 as we transform our campus into a vibrant hub of technological wonders. The carnival promises an unparalleled journey into the heart of a digital revolution. 
+    Prepare to ignite your circuits and unleash your creativity! CSE Society, SUST proudly presents the 2024 SUST CSE CARNIVAL – a gala celebration of innovative minds and collaborative spirit. Mark your calendars for Feb 16 and 17 as we transform our campus into a vibrant hub of technological wonders. The carnival promises an unparalleled journey into the heart of a digital revolution. 
 
     Best wishes and cheers.`,
     imageUrl: 'https://www.sust.edu/uploads/profile-images/1677521468.png',
@@ -389,7 +389,7 @@ export const quotesData = [
     post: 'Advisor, CSE_Carnival',
     special: '',
     designation: 'Professor, Department of CSE, SUST',
-    quote: `Join us in celebrating creativity and teamwork at the 2024 SUST CSE CARNIVAL! Explore the marvels of technology on our campus on February 16 and 17.
+    quote: `Join us in celebrating creativity and teamwork at the 2024 SUST CSE CARNIVAL! Explore the marvels of technology on our campus on Feb 16 and 17.
   
     I appreciate your enthusiasm for critical thinking and creativity. May this event serve as a platform for learning, networking, and showcasing your talents. Your participation is the key to the success of this carnival, and I wish you a thrilling and enjoyable experience.
   

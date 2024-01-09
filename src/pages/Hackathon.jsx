@@ -24,7 +24,7 @@ const Hackathon = () => {
       })}
       {renderDetails({
         title: "Participation Details",
-        value: "The hackathon will be a <b>24 hours </b> long event. It will be an onsite event held on the premises of Institute of Information and Communication Technology, SUST from <b>16 February to 17 February</b>. It will be heavily focused on development and technology, so participants brush up your coding skills.👊🔥",
+        value: "The hackathon will be a <b>24 hours </b> long event. It will be an onsite event held on the premises of Institute of Information and Communication Technology, SUST from <b>16 Feb to 17 Feb</b>. It will be heavily focused on development and technology, so participants brush up your coding skills.👊🔥",
       })}
       {renderTitleWithList('🏆 Prizes', [
         "🏆 Champion - 40K BDT",
