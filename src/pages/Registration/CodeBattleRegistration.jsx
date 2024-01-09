@@ -65,7 +65,6 @@ const CodeBattleRegistration = () => {
 
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-    myHeaders.append("Access-Control-Allow-Origin", "*");
 
     const raw = JSON.stringify({
       "name": formData.participantname,
@@ -84,7 +83,7 @@ const CodeBattleRegistration = () => {
       redirect: 'follow'
     };
 
-    fetch("http://localhost:1205/api/v1/coding-game", requestOptions)
+    fetch(`${process.env.REACT_APP_API_URL}/api/v1/coding-game`, requestOptions)
       .then(response => {
         console.log(response.status);
         if (response.status === 200 || response.status === 201) {

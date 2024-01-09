@@ -129,7 +129,7 @@ const HackathonRegistration = () => {
       redirect: 'follow'
     };
 
-    fetch("http://localhost:1205/api/v1/hackathon", requestOptions)
+    fetch(`${process.env.REACT_APP_API_URL}/api/v1/hackathon`, requestOptions)
       .then(response => {
         if (response.status === 200 || response.status === 201) {
           navigate('/hackathon', { state: { successMessage: 'Registration successful!' } })

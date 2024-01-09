@@ -122,18 +122,18 @@ const DLSprintRegistration = () => {
           "studentId": formData.member3studentid,
           "country": formData.member3country,
         },
-        // {
-        //   "name": formData.member4name,
-        //   "email": formData.member4email,
-        //   "contact": formData.member4phonenumber,
-        //   "tshirt": formData.member4tshirtsize,
-        //   "githubLink": formData.member4githublink,
-        //   "linkedinLink": formData.member4linkedinid,
-        //   "university": formData.member4university,
-        //   "jobTitle": formData.member4jobtitle,
-        //   "studentId": formData.member4studentid,
-        //   "country": formData.member4country,
-        // }
+        {
+          "name": formData.member4name,
+          "email": formData.member4email,
+          "contact": formData.member4phonenumber,
+          "tshirt": formData.member4tshirtsize,
+          "githubLink": formData.member4githublink,
+          "linkedinLink": formData.member4linkedinid,
+          "university": formData.member4university,
+          "jobTitle": formData.member4jobtitle,
+          "studentId": formData.member4studentid,
+          "country": formData.member4country,
+        }
       ]
     });
 
@@ -144,7 +144,7 @@ const DLSprintRegistration = () => {
       redirect: 'follow'
     };
 
-    fetch("http://localhost:1205/api/v1/dl-sprint", requestOptions)
+    fetch(`${process.env.REACT_APP_API_URL}/api/v1/dl-sprint`, requestOptions)
       .then(response => {
         if (response.status === 200 || response.status === 201) {
           navigate('/hackathon', { state: { successMessage: 'Registration successful!' } })
@@ -179,10 +179,10 @@ const DLSprintRegistration = () => {
               <FormField label="Phone number" type="tel" name="member1phonenumber" onChange={handleChange}/>
               <FormField label="University/Organization" name="member1university" onChange={handleChange}/>
               <FormField label="Job Title/Position" name="member1jobtitle" onChange={handleChange}/>
-              <FormField label="Student Id (optional)" required={false} name="member1studentid" onChange={handleChange}/>
+              <FormField label="Student Id"  name="member1studentid" onChange={handleChange}/>
               <FormField label="Country" name="member1country" onChange={handleChange}/>
-              <FormField label="Github link (optional)" required={false} name="member1githublink" onChange={handleChange}/>
-              <FormField label="LinkedIn Id (optional)" required={false} name="member1linkedinid" onChange={handleChange}/>
+              <FormField label="Github link"  name="member1githublink" onChange={handleChange}/>
+              <FormField label="LinkedIn Id"  name="member1linkedinid" onChange={handleChange}/>
               <FormField label="Kaggle link" name="member1kagglelink" onChange={handleChange}/>
 
               <SelectField label="T-Shirt size" name="member1tshirtsize" options={t_shirt_size} onChange={handleChange}/>
@@ -196,10 +196,10 @@ const DLSprintRegistration = () => {
               <FormField label="Phone number" type="tel" name="member2phonenumber" onChange={handleChange}/>
               <FormField label="University/Organization" name="member2university" onChange={handleChange}/>
               <FormField label="Job Title/Position" name="member2jobtitle" onChange={handleChange}/>
-              <FormField label="Student Id (optional)" required={false} name="member2studentid" onChange={handleChange}/>
+              <FormField label="Student Id"  name="member2studentid" onChange={handleChange}/>
               <FormField label="Country" name="member2country" onChange={handleChange}/>
-              <FormField label="Github link (optional)" required={false} name="member2githublink" onChange={handleChange}/>
-              <FormField label="LinkedIn Id (optional)" required={false} name="member2linkedinid" onChange={handleChange}/>
+              <FormField label="Github link"  name="member2githublink" onChange={handleChange}/>
+              <FormField label="LinkedIn Id"  name="member2linkedinid" onChange={handleChange}/>
               <FormField label="Kaggle link" name="member2kagglelink" onChange={handleChange}/>
 
               <SelectField label="T-Shirt size" name="member2tshirtsize" options={t_shirt_size} onChange={handleChange}/>
@@ -212,10 +212,10 @@ const DLSprintRegistration = () => {
               <FormField label="Phone number" type="tel" name="member3phonenumber" onChange={handleChange}/>
               <FormField label="University/Organization" name="member3university" onChange={handleChange}/>
               <FormField label="Job Title/Position" name="member3jobtitle" onChange={handleChange}/>
-              <FormField label="Student Id (optional)" required={false} name="member3studentid" onChange={handleChange}/>
+              <FormField label="Student Id"  name="member3studentid" onChange={handleChange}/>
               <FormField label="Country" name="member3country" onChange={handleChange}/>
-              <FormField label="Github link (optional)" required={false} name="member3githublink" onChange={handleChange}/>
-              <FormField label="LinkedIn Id (optional)" required={false} name="member3linkedinid" onChange={handleChange}/>
+              <FormField label="Github link"  name="member3githublink" onChange={handleChange}/>
+              <FormField label="LinkedIn Id"  name="member3linkedinid" onChange={handleChange}/>
               <FormField label="Kaggle link" name="member3kagglelink" onChange={handleChange}/>
 
               <SelectField label="T-Shirt size" name="member3tshirtsize" options={t_shirt_size} onChange={handleChange}/>
@@ -229,10 +229,10 @@ const DLSprintRegistration = () => {
               <FormField label="Phone number" type="tel" name="member4phonenumber" onChange={handleChange}/>
               <FormField label="University/Organization" name="member4university" onChange={handleChange}/>
               <FormField label="Job Title/Position" name="member4jobtitle" onChange={handleChange}/>
-              <FormField label="Student Id (optional)" required={false} name="member4studentid" onChange={handleChange}/>
+              <FormField label="Student Id"  name="member4studentid" onChange={handleChange}/>
               <FormField label="Country" name="member4country" onChange={handleChange}/>
-              <FormField label="Github link (optional)" required={false} name="member4githublink" onChange={handleChange}/>
-              <FormField label="LinkedIn Id (optional)" required={false} name="member4linkedinid" onChange={handleChange}/>
+              <FormField label="Github link"  name="member4githublink" onChange={handleChange}/>
+              <FormField label="LinkedIn Id"  name="member4linkedinid" onChange={handleChange}/>
               <FormField label="Kaggle link" name="member4kagglelink" onChange={handleChange}/>
 
               <SelectField label="T-Shirt size" name="member4tshirtsize" options={t_shirt_size} onChange={handleChange}/>
