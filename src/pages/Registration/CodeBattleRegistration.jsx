@@ -5,10 +5,11 @@ import { EventRegistrationPage } from '../../components/EventPage';
 import { PrimaryButton } from '../../components/Button';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
+import { validateEmail, validatePhoneNumber, validateTshirtSize } from '../../data/validate';
 
 const CodeBattleRegistration = () => {
   const navigate = useNavigate()
-  
+
   const [formData, setFormData] = useState({
     participantname: '',
     universityname: '',
@@ -27,6 +28,7 @@ const CodeBattleRegistration = () => {
     }
     errorMessage && setErrorMessage('');
   }, [errorMessage]);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -36,20 +38,34 @@ const CodeBattleRegistration = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
 
-    const myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-    myHeaders.append("Access-Control-Allow-Origin", "*");
+    const isEmailValid = validateEmail(formData.email);
+    const isPhoneNumberValid = validatePhoneNumber(formData.phonenumber);
+    const isTshirtSizeValid = validateTshirtSize(formData.tshirtsize);
 
-    const raw = JSON.stringify({
-      "name": formData.participantname,
-      "email": formData.email,
-      "university": formData.universityname,
-      "contact": formData.phonenumber,
-      "username": formData.codebattleusername,
-      "tshirt": formData.tshirtsize
-    });
+  
+    if (!isEmailValid) {
+      setErrorMessage('Invalid email');
+    } else if (!isPhoneNumberValid) {
+      setErrorMessage('Invalid phone number');
+    } else if (!isTshirtSizeValid) {
+      setErrorMessage('Invalid T-shirt size');
+    } else {
+      console.log(formData);
+
+      const myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      myHeaders.append("Access-Control-Allow-Origin", "*");
+
+      const raw = JSON.stringify({
+        "name": formData.participantname,
+        "email": formData.email,
+        "university": formData.universityname,
+        "contact": formData.phonenumber,
+        "username": formData.codebattleusername,
+        "tshirt": formData.tshirtsize
+      })
+    };
 
     const requestOptions = {
       method: 'POST',
@@ -64,7 +80,7 @@ const CodeBattleRegistration = () => {
         if (response.status === 200 || response.status === 201) {
           navigate('/codebattle', { state: { successMessage: 'Registration successful!' } })
 
-        } else if( response.status === 400) {
+        } else if (response.status === 400) {
           throw new Error("Registration Failed. User already exists or bad request made.");
         }
       })
@@ -80,7 +96,7 @@ const CodeBattleRegistration = () => {
 
   return (
     <EventRegistrationPage title="Code Battle" id="codebattle">
-      <ToastContainer className="mt-20"/>
+      <ToastContainer className="mt-20" />
       <form method='post' className='flex flex-col gap-3' onSubmit={handleSubmit}>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-4'>
           <FormField label="Participant's Name" name="participantname" onChange={handleChange} />
