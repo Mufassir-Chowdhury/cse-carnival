@@ -20,7 +20,11 @@ const CodeBattle = () => {
         "Networking opportunities with fellow CS enthusiasts.",
         "Prizes and recognition for top performers.",
       ])}
-      {renderTitleWithList('Prizes : TBA', [])}
+      {renderTitleWithList('🏆 Prizes', [
+        "🏆 Champion - 25K BDT",
+        "🥈 1st Runners up - 15K BDT",
+        "🥉 2nd Runners up - 10K BDT",
+      ])}
       <DetailsWithoutTitle description={{ value: "This is your chance to shine and demonstrate your coding finesse. Are you up for the challenge? Mark your calendars and join us for an unforgettable <b>Code Battle</b>!" }} />
     </div>
   );
