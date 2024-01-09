@@ -428,6 +428,26 @@ export const quotesData = [
     imageUrl: 'https://www.sust.edu/uploads/profile-images/1464452799.jpg',
   },
 
+  {
+    id: 7,
+    name: 'Ashraful Islam Shanto',
+    post: 'Organizer, CSE Carnival',
+    special: '',
+    designation: 'Vice President CSE Society',
+    quote: `Dear Tech Enthusiasts,
+
+    I am thrilled to announce the grandest gathering of minds at the Sust CSE Carnival 2024! As the Chief Organizer, I extend a warm welcome to students from universities across Bangladesh to join us in celebrating innovation, creativity, and technological prowess.
+    
+    This carnival isn't just an event; it's a platform where budding talents converge, showcasing their skills, competing in various challenging events, and igniting a spirit of collaboration and excellence. From coding competitions ,problem-solving hackathons to deep learning competition, we have it all.
+    
+    The Sust CSE Carnival isn't solely about competition; it's a celebration of innovation, a canvas where dreams are woven into reality, and where friendships are forged in the fires of shared passions and ambitions.
+    
+    Join us for an unforgettable journey of learning, networking, and pushing the boundaries of what's possible in the world of technology. Together, let's create a legacy that inspires and motivates the next generation of tech leaders.
+    
+    See you at the Sust CSE Carnival 2024—where innovation meets inspiration!
+    Make it little short`,
+    imageUrl: '/image/speech/Ashraful.jpg',
+  },
 
   // Add more quotes as needed
 ];
