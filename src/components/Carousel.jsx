@@ -64,7 +64,7 @@ const Carousel = () => {
           <Banner key={image.link} link={image.link} />
         ))}
       </Slider>
-      <div className='flex justify-center absolute bottom-4 left-1/2 transform -translate-x-1/2'>
+      <div className='flex justify-center absolute bottom-14 md:bottom-4 left-1/2 transform -translate-x-1/2'>
         <div className='dots-row flex gap-2'>
           {images.map((_, index) => (
             <button

@@ -33,7 +33,7 @@ const Banner = ({link}) => {
         }
     }
     return (
-        <div className={` mt-20 sm:mx-20 md:bg-cover md:bg-center z-10 ${bgURL[link].bg} rounded-lg border border-sky-900 `}>
+        <div className={` mt-20 sm:mx-20 md:bg-cover md:bg-center z-10 ${bgURL[link].bg} rounded-lg md:border border-sky-900 `}>
             <div className="w-full h-full md:backdrop-blur-sm rounded-lg py-8 flex justify-center">
                 <div className={`flex justify-center sm:h-80 aspect-video ${bgURL[link].shadow} rounded-lg border-opacity-70  shadow-md`}>
                     <img src={link} alt="banner" className="w-full h-full rounded-lg" />
