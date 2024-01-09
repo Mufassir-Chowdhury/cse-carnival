@@ -17,6 +17,7 @@ import CodeBattleRegistration from "./pages/Registration/CodeBattleRegistration"
 import { organizers, poweredby } from "./data/data";
 import ContactUs from "./pages/ContactUs";
 import DLSprintRegistration from "./pages/Registration/DLSprintAnnouncement";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   return (
@@ -36,14 +37,19 @@ const App = () => {
           <Route path="/hackathon/registration" element={<HackathonRegistration />}></Route>
           <Route path="/dlenigma/registration" element={<DLSprintRegistration />}></Route>
           <Route path="/codebattle/registration" element={<CodeBattleRegistration />}></Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </section>
       {/* <SponsoredBy/> */}
-      <div className="lg:mx-0 z-10 relative px-4  pb-0 lg:px-28">
-        <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} />
-        <SponsoredBy title={"Organized By"} list={"list"} sponsors={organizers} />
-        {/* <Organizer organizers={organizers} /> */}
-      </div>
+      {window.location.pathname !== '*' && (
+        <div className="lg:mx-0 z-10 relative px-4  pb-0 lg:px-28">
+          <>
+            <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} />
+            <SponsoredBy title={"Organized By"} list={"list"} sponsors={organizers} />
+          </>
+        </div>
+      )}
+      
       <Footer />
 
     </main>
