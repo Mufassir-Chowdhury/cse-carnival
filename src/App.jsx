@@ -12,10 +12,11 @@ import DLSprint from "./pages/DLSprint";
 import CodeBattle from "./pages/CodeBattle";
 import IUPCRegistraion from "./pages/Registration/IUPCRegistration";
 import HackathonRegistration from "./pages/Registration/HackathonRegistration";
-import DLSprintRegistration from "./pages/Registration/DLSprintRegistration";
+// import DLSprintRegistration from "./pages/Registration/DLSprintRegistration";
 import CodeBattleRegistration from "./pages/Registration/CodeBattleRegistration";
 import { organizers, poweredby } from "./data/data";
 import ContactUs from "./pages/ContactUs";
+import DLSprintRegistration from "./pages/Registration/DLSprintAnnouncement";
 
 const App = () => {
   return (
@@ -27,13 +28,13 @@ const App = () => {
           <Route path="/" element={<Home />}></Route>
           <Route path="/iupc" element={<IUPC />}></Route>
           <Route path="/hackathon" element={<Hackathon />}></Route>
-          <Route path="/dlsprint" element={<DLSprint />}></Route>
+          <Route path="/dlenigma" element={<DLSprint />}></Route>
           <Route path="/codebattle" element={<CodeBattle />}></Route>
           <Route path="/contactus" element={<ContactUs />}></Route>
 
           <Route path="/iupc/registration" element={<IUPCRegistraion />}></Route>
           <Route path="/hackathon/registration" element={<HackathonRegistration />}></Route>
-          {/* <Route path="/dlsprint/registration" element={<DLSprintRegistration />}></Route> */}
+          <Route path="/dlenigma/registration" element={<DLSprintRegistration />}></Route>
           <Route path="/codebattle/registration" element={<CodeBattleRegistration />}></Route>
         </Routes>
       </section>

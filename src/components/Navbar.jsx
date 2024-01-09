@@ -31,7 +31,7 @@ const Navbar = () => {
     },
     {
       name: 'DL Enigma 1.0',
-      link: '/dlsprint',
+      link: '/dlenigma',
     },
     {
       name: 'Code Battle',

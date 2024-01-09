@@ -7,7 +7,7 @@ const Banner = ({link}) => {
         if (pathname.includes("codebattle")) link = "/image/banner/bannerCodeBattle.jpg";
         else if (pathname.includes("hackathon")) link = "/image/banner/bannerHackathon.jpg";
         else if (pathname.includes("iupc")) link = "/image/banner/bannerIUPC.jpg";
-        else if (pathname.includes("dlsprint")) link = "/image/banner/bannerDLEnigma.jpg";
+        else if (pathname.includes("dlenigma")) link = "/image/banner/bannerDLEnigma.jpg";
         else link = "/image/banner/bannerHome.jpg";
     }
     const bgURL = {
