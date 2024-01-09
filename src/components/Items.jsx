@@ -14,10 +14,10 @@ const EventItems = ({ event }) => {
                 <img src={event.image} alt="Event 1" className="h-64 rounded-3xl" />
             </div>
             <div className="text-navbar">
-                <h3 className="text-3xl font-bold md:mb-3 font-merriweather">{event.name}</h3>
+                <h3 className="text-3xl font-bold mb-2 font-merriweather">{event.name}</h3>
                 {/* <p className="md:mb-2">{event.description}</p> */}
 
-                <p className="md:mb-2 font-lato">{parse(event.description)}</p>
+                <p className="mb-2 font-lato">{parse(event.description)}</p>
 
                 {event.frontDescription.map((item, index) => (
                     <p key={index} className="font-bold font-merriweather">
