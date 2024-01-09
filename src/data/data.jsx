@@ -347,7 +347,7 @@ export const quotesData = [
     id: 1,
     name: 'Md Masum',
     special: '',
-    post: 'Convenor, CSE_Carnival',
+    post: 'Convenor, CSE Carnival',
     designation: 'Professor & Head, Department of CSE, SUST',
     quote: `I extend a warm welcome to each and every one of you to the CSE Carnival 2024! We are thrilled to witness the unfolding of this remarkable event, where creativity, innovation, and technological prowess come together to celebrate the spirit of computer science.
 
@@ -364,7 +364,7 @@ export const quotesData = [
   {
     id: 2,
     name: 'Dr. Md Forhad Rabbi, SMIEEE',
-    post: 'Director, CSE_Carnival',
+    post: 'Director, CSE Carnival',
     special: '',
     designation: 'Professor, Department of CSE, SUST',
     quote: `Hello tech enthusiasts, 
@@ -377,7 +377,7 @@ export const quotesData = [
   {
     id: 3,
     name: 'M. Jahirul Islam, PhD. PEng.',
-    post: 'Joint Convenor, CSE_Carnival',
+    post: 'Joint Convenor, CSE Carnival',
     special: '',
     designation: 'Professor, Department of CSE, SUST',
     quote: `My best wishes for an enriching and vibrant CSE Carnival. Your dedication to innovation and Critical thinking is truly commendable. May this event be a platform for meaningful connections, learning, and the celebration of diverse talents. Your active participation ensures the success of this carnival, and I wish you all an inspiring and enjoyable carnival.`,
@@ -387,7 +387,7 @@ export const quotesData = [
   {
     id: 4,
     name: 'Mohammad Shahidur Rahman, PhD',
-    post: 'Advisor, CSE_Carnival',
+    post: 'Advisor, CSE Carnival',
     special: '',
     designation: 'Professor, Department of CSE, SUST',
     quote: `Join us in celebrating creativity and teamwork at the 2024 SUST CSE CARNIVAL! Explore the marvels of technology on our campus on Feb 16 and 17.
@@ -401,7 +401,7 @@ export const quotesData = [
   {
     id: 5,
     name: 'Md. Eamin Rahman',
-    post: 'Advisor, CSE_Carnival',
+    post: 'Advisor, CSE Carnival',
     special: '',
     designation: 'Assistant Professor, Department of CSE, SUST',
     quote: `The air crackles with anticipation, code humming like a digital symphony.
@@ -415,7 +415,7 @@ export const quotesData = [
   {
     id: 6,
     name: 'Dr Mohammad Reza Selim',
-    post: 'Advisor, CSE_Carnival',
+    post: 'Advisor, CSE Carnival',
     special: 'Dean, School of Applied Sciences and Technology',
     designation: 'Professor, Department of CSE, SUST',
     quote: `It is with great pleasure and enthusiasm that I extend a warm welcome to all local and national participants, faculties, industry professionals and sponsors as we embark on an exciting journey into the world of technology and innovation. As the Dean of the School of Engineering, it is my honor to announce the upcoming extravaganza – the CSE Carnival!

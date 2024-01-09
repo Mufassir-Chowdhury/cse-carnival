@@ -115,7 +115,7 @@ const CodeBattleRegistration = () => {
             <FormField label="Phone number" type="tel" name="phonenumber" onChange={handleChange} />
           </div>
           <div className='flex flex-col gap-y-2'>
-            <FormField label="Code Battle Username (optional)" name="codebattleusername" onChange={handleChange} />
+            <FormField label="Code Battle Username" name="codebattleusername" onChange={handleChange} />
             <SelectField label="T-Shirt size" name="tshirtsize" options={t_shirt_size} onChange={handleChange} />
           </div>
         </div>
