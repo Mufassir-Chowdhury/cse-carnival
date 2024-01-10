@@ -112,7 +112,7 @@ const CodeBattleRegistration = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-4'>
           <FormField label="Participant's Name" name="participantname" onChange={handleChange} />
           <div>
-            <SelectField label="University Name" note="(Select other if the university is not in list)" name="universityname" options={universities} onChange={handleChange} />
+            <SelectField label="University Name" note="(Select 'other' if the university is not in list)" name="universityname" options={universities} onChange={handleChange} />
             {formData.universityname === 'Other' && <FormField label="University Name" classValue='mt-4' name="university" onChange={handleChange} />}
           </div>
           <div className='flex flex-col  gap-y-2'>
