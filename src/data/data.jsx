@@ -9,7 +9,7 @@ export const events = {
     shortDescription: [
       {
         title: "📅 Pre-registration window",
-        value: "8th - 15th Jan"
+        value: "10th - 17th Jan"
       },
       {
         title: "📅 Slot Distribution",
@@ -35,7 +35,7 @@ export const events = {
     frontDescription: [
       {
         title: "📅 Pre-registration window",
-        value: "8th - 15th Jan"
+        value: "10th - 17th Jan"
       },
       {
         title: "📅 Payment Window",
