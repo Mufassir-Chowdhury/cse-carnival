@@ -48,11 +48,11 @@ const ContactItems = ({ contact }) => {
             <div className="flex-shrink-0 flex-1">
                 <img src={contact.image} alt={`contact ${contact.id}`} className="h-64 rounded-3xl" />
             </div>
-            <div className="text-navbar font-merriweather font-semibold flex-1">
-                <h3 className="text-3xl font-bold mb-4">{contact.name}</h3>
+            <div className="text-navbar  text-center lg:text-left  font-merriweather font-semibold flex-1">
+                <h3 className="text-3xl  font-bold mb-4">{contact.name}</h3>
                 <div className='font-lato flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6 '>
                     {contact.contact.map((item) => (
-                        <div className="flex flex-col font-normal items-start space-y-3 font-lato">
+                        <div className="flex flex-col font-normal items-center lg:items-start space-y-3 font-lato">
 
                             {/* <p className="text-sm font-semibold">Name:</p> */}
                             <p className="text-lg">{item.name}</p>

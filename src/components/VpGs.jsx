@@ -10,9 +10,9 @@ const VpGs = () => {
             <h1 className="text-3xl font-bold mb-6 text-navbar-button-hover font-merriweather">For More Enquiry</h1>
 
             {/* Two Columns */}
-            <div className="flex w-full justify-between font-semibold text-navbar">
+            <div className="flex flex-col md:flex-row w-full justify-between font-semibold text-navbar">
                 {/* First Column (Right Aligned) */}
-                <div className="flex flex-col w-full text-right">
+                <div className="flex flex-col w-full text-center md:text-right">
                     <div className="mb-4">
                         <p className='font-bold text-lg'>Ashraful Islam Shanto</p>
                         <a className="text-sm hover:underline" href="mailto:ashraful1185058@gmail.com">ashraful1185058@gmail.com</a>
@@ -22,10 +22,10 @@ const VpGs = () => {
                 </div>
 
                 {/* Vertical Line */}
-                <div className="border-l border-gray-300 h-auto mx-8"></div>
+                <div className="border-l border-t border-gray-300 h-auto w-auto mx-8"></div>
 
                 {/* Second Column (Left Aligned) */}
-                <div className="flex flex-col w-full items-start text-left">
+                <div className="flex flex-col w-full items-center md:items-start text-center md:text-left">
                     <div className="mb-4">
                         <p className='font-bold text-lg'>Tufail Ahmed</p>
                         <a className="text-sm hover:underline" href="mailto:tufailahmed2018331010@gmail.com">tufailahmed2018331010@gmail.com</a>

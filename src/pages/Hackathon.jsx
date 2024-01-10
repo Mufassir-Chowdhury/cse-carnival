@@ -17,21 +17,27 @@ const Hackathon = () => {
         value: "Are you prepared to let your imagination and coding abilities run wild? Do you want to apply creative thinking and development skills to tackle problems in the real world? Would you like to connect with like-minded peers and professionals in the field? If so, welcome to the <b>Hackathon</b>, one of the signature events of <b>SUST CSE Carnival-2024</b>.🚀💥",
       })}
       {renderDetailsWithoutTitle({
-        value: "<b>This event invites innovative minds to develop solutions that push technological boundaries. Participants will create a functional product, considering the entire process from ideation to execution. They should demonstrate process understanding, optimize for efficiency, ensure scalability, and are expected to integrate frontier technologies.</b>",
+        value: "<b>This event invites innovative minds to develop solutions that push technological boundaries. Participants will create a functional product, considering the entire process from ideation to execution. They should demonstrate process understanding, optimize for efficiency, ensure scalability, and are expected to integrate frontier technologies.</b>",
       })}
       {renderDetailsWithoutTitle({
         value: "The hackathon will be based on <b> TBA </b>.",
       })}
       {renderDetails({
         title: "Participation Details",
-        value: "The hackathon will be a <b>24 hours </b> long event. It will be an onsite event held on the premises of Institute of Information and Communication Technology, SUST from <b>16 Feb to 17 Feb</b>. It will be heavily focused on development and technology, so participants brush up your coding skills.👊🔥",
+        value: "The hackathon will be a <b>24 hour</b> long event. A preliminary round may be taken if required, to select 35 teams for the onsite event. The hackathon will be an onsite event held on the premises of Institute of Information and Technology, SUST from <b>16 February to 17 February.</b> It will be heavily focused on development and technology, so participants brush up your coding skills. 👊🔥",
       })}
-      {renderTitleWithList('🏆 Prizes', [
-        "🏆 Champion - 40K BDT",
-        "🥈 1st Runners up - 20K BDT",
-        "🥉 2nd Runners up - 15K BDT",
-        "🏅 SUST Rising Team - 8K BDT",
+      {renderTitleWithList('Team Requirements', [
+        "Each team can contain at most 3 members. ",
+        "All the participants must be currently pursuing undergraduate degrees. ",
+        "Teams have to be formed by students of the same university.",
       ])}
+      {renderTitleWithList('🏆 Prizes', [
+        "🏆 Champion - 40,000 BDT",
+        "🥈 1st Runners up - 20,000 BDT",
+        "🥉 2nd Runners up - 15,000 BDT",
+        "🏅 SUST Rising Team - 8,000 BDT",
+      ])}
+
     </div>
   );
 

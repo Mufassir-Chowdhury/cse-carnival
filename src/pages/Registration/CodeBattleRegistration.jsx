@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { t_shirt_size } from '../../data/data';
+import { t_shirt_size, universities } from '../../data/data';
 import { FormField, SelectField } from '../../components/Form';
 import { EventRegistrationPage } from '../../components/EventPage';
 import { PrimaryButton } from '../../components/Button';
@@ -69,11 +69,13 @@ const CodeBattleRegistration = () => {
     const raw = JSON.stringify({
       "name": formData.participantname,
       "email": formData.email,
-      "university": formData.universityname,
+      "university": formData.universityname === 'Other' ? formData.university : formData.universityname,
       "contact": formData.phonenumber,
       "username": formData.codebattleusername,
       "tshirt": formData.tshirtsize
     })
+    console.log(raw);
+
 
 
     const requestOptions = {
@@ -109,13 +111,16 @@ const CodeBattleRegistration = () => {
       <form method='post' className='flex flex-col gap-3' onSubmit={handleSubmit}>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-4'>
           <FormField label="Participant's Name" name="participantname" onChange={handleChange} />
-          <FormField label="University Name" name="universityname" onChange={handleChange} />
+          <div>
+            <SelectField label="University Name" note="(Select other if the university is not in list)" name="universityname" options={universities} onChange={handleChange} />
+            {formData.universityname === 'Other' && <FormField label="University Name" classValue='mt-4' name="university" onChange={handleChange} />}
+          </div>
           <div className='flex flex-col  gap-y-2'>
             <FormField label="Email" type="email" name="email" onChange={handleChange} />
             <FormField label="Phone number" type="tel" name="phonenumber" onChange={handleChange} />
           </div>
           <div className='flex flex-col gap-y-2'>
-            <FormField label="Code Battle Username" name="codebattleusername" onChange={handleChange} />
+            <FormField label="CodingGame Username" note="Username in: www.codingame.com" name="codebattleusername" onChange={handleChange} />
             <SelectField label="T-Shirt size" name="tshirtsize" options={t_shirt_size} onChange={handleChange} />
           </div>
         </div>

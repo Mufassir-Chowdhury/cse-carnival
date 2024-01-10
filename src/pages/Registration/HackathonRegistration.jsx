@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { t_shirt_size } from '../../data/data';
+import { t_shirt_size, universities } from '../../data/data';
 import { FormField, SelectField } from '../../components/Form';
 import { EventRegistrationPage } from '../../components/EventPage';
 import { PrimaryButton } from '../../components/Button';
@@ -97,7 +97,7 @@ const HackathonRegistration = () => {
 
     const raw = JSON.stringify({
       "teamName": formData.teamname,
-      "university": formData.universityname,
+      "university": formData.universityname === 'Other' ? formData.university : formData.universityname,
       "teamLeader": {
         "name": formData.member1name,
         "email": formData.member1email,
@@ -122,6 +122,9 @@ const HackathonRegistration = () => {
         }
       ]
     });
+    console.log(raw);
+
+
 
     const requestOptions = {
       method: 'POST',
@@ -152,7 +155,10 @@ const HackathonRegistration = () => {
       <form method='post' className='flex flex-col gap-3' onSubmit={handleSubmit}>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
           <FormField label="Team Name" name="teamname" onChange={handleChange} />
-          <FormField label="University Name" name="universityname" onChange={handleChange} />
+          <div>
+            <SelectField label="University Name" note="(Select other if the university is not in list)" name="universityname" options={universities} onChange={handleChange} />
+            {formData.universityname === 'Other' && <FormField label="University Name" classValue='mt-4' name="university" onChange={handleChange} />}
+          </div>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
 
@@ -161,7 +167,7 @@ const HackathonRegistration = () => {
             <FormField label="Participant's name" name="member1name" onChange={handleChange} />
             <FormField label="Email" type="email" name="member1email" onChange={handleChange} />
             <FormField label="Phone number" type="tel" name="member1phonenumber" onChange={handleChange} />
-            <FormField label="Github link" name="member1githublink" onChange={handleChange} />
+            <FormField label="Github link" note="Format: https://github.com/username" name="member1githublink" onChange={handleChange} />
             <SelectField label="T-Shirt size" name="member1tshirtsize" options={t_shirt_size} onChange={handleChange} />
 
           </div>
@@ -170,7 +176,7 @@ const HackathonRegistration = () => {
             <FormField label="Participant's name" name="member2name" onChange={handleChange} />
             <FormField label="Email" type="email" name="member2email" onChange={handleChange} />
             <FormField label="Phone number" type="tel" name="member2phonenumber" onChange={handleChange} />
-            <FormField label="Github link" name="member2githublink" onChange={handleChange} />
+            <FormField label="Github link" note="Format: https://github.com/username" name="member2githublink" onChange={handleChange} />
             <SelectField label="T-Shirt size" name="member2tshirtsize" options={t_shirt_size} onChange={handleChange} />
           </div>
 
@@ -179,7 +185,7 @@ const HackathonRegistration = () => {
             <FormField label="Participant's name" name="member3name" onChange={handleChange} />
             <FormField label="Email" type="email" name="member3email" onChange={handleChange} />
             <FormField label="Phone number" type="tel" name="member3phonenumber" onChange={handleChange} />
-            <FormField label="Github link" name="member3githublink" onChange={handleChange} />
+            <FormField label="Github link" note="Format: https://github.com/username" name="member3githublink" onChange={handleChange} />
             <SelectField label="T-Shirt size" name="member3tshirtsize" options={t_shirt_size} onChange={handleChange} />
           </div>
         </div>
