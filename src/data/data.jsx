@@ -8,15 +8,15 @@ export const events = {
     details: "",
     shortDescription: [
       {
-        title: "📅 Pre-registration window",
+        title: "📅  Pre-registration window",
         value: "8th - 15th Jan"
       },
       {
-        title: "📅 Slot Distribution",
+        title: "📅  Slot Distribution",
         value: "25th Jan"
       },
       {
-        title: "📅 Mock Contest",
+        title: "📅  Mock Contest",
         value: "16th Feb"
       },
       {
@@ -231,7 +231,7 @@ export const events = {
   },
   "codebattle": {
     name: "Code Battle",
-    description: "Calling all CS undergrads! Join us for an adrenaline-pumping <b>Code Battle</b> where Gaming Meets Coding, and Victory is Written in Code!",
+    description: "Calling all CS undergrads! <br/> Join us for an  adrenaline-pumping <b>Code Battle</b> <br/> where Gaming Meets Coding,  and Victory is Written in Code!",
     image: "/image/event/Event 4.jpg",
     registration: "/codebattle/registration",
     link: "/codebattle",
