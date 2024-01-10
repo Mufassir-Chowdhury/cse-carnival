@@ -55,15 +55,12 @@ const HackathonRegistration = () => {
 
       const isEmailValid = validateEmail(email);
       const isPhoneNumberValid = validatePhoneNumber(phone);
-      const isGithubLinkValid = validateGithubLink(githubLink);
       const isTshirtSizeValid = validateTshirtSize(tshirt);
 
       if (!isEmailValid) {
         return `Invalid email for Member ${participantNumber}`;
       } else if (!isPhoneNumberValid) {
         return `Invalid phone number for Member ${participantNumber}`;
-      } else if (!isGithubLinkValid) {
-        return `Invalid GitHub link for Member ${participantNumber}`;
       } else if (!isTshirtSizeValid) {
         return `Invalid T-shirt size for Member ${participantNumber}`;
       }
