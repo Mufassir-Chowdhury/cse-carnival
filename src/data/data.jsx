@@ -362,7 +362,7 @@ export const quotesData = [
     imageUrl: 'https://www.sust.edu/uploads/profile-images/1481514029.jpg',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Dr. Md Forhad Rabbi, SMIEEE',
     post: 'Director, CSE Carnival',
     special: '',
@@ -375,7 +375,7 @@ export const quotesData = [
     imageUrl: 'https://www.sust.edu/uploads/profile-images/1677521468.png',
   },
   {
-    id: 3,
+    id: 2,
     name: 'M. Jahirul Islam, PhD. PEng.',
     post: 'Joint Convenor, CSE Carnival',
     special: '',
@@ -385,7 +385,7 @@ export const quotesData = [
   },
 
   {
-    id: 4,
+    id: 5,
     name: 'Mohammad Shahidur Rahman, PhD',
     post: 'Advisor, CSE Carnival',
     special: '',
@@ -399,7 +399,7 @@ export const quotesData = [
   },
 
   {
-    id: 5,
+    id: 6,
     name: 'Md. Eamin Rahman',
     post: 'Advisor, CSE Carnival',
     special: '',
@@ -413,7 +413,7 @@ export const quotesData = [
   },
 
   {
-    id: 6,
+    id: 4,
     name: 'Dr Mohammad Reza Selim',
     post: 'Advisor, CSE Carnival',
     special: 'Dean, School of Applied Sciences and Technology',
