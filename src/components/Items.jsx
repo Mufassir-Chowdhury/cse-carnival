@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 import parse from 'html-react-parser';
 import { PrimaryButton, SecondaryButton } from "./Button";
 import PropTypes from 'prop-types';
-import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook,faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const EventItems = ({ event }) => {
     return (
-        <div className={`flex flex-col md:flex-row ${event.bg} ${event.border} md:odd:justify-between md:odd:flex-row-reverse items-center mb-8 gap-10 border p-5 rounded-2xl`}>
-            <div className="flex-shrink-0">
-                <img src={event.image} alt="Event 1" className="h-64 rounded-3xl" />
+        <div className={`flex flex-col md:flex-row ${event.bg} ${event.border} md:odd:justify-around md:justify-around md:odd:flex-row-reverse items-center mb-12 gap-10 border md:p-12 p-6 rounded-2xl odd`}>
+            <div className="flex-shrink-0  ">
+                <img src={event.image} alt="Event 1" className={`md:h-[380px] h-64 rounded-3xl `} />
             </div>
-            <div className="text-navbar">
+            <div className="text-navbar ">
                 <h3 className="text-3xl font-bold mb-2 font-merriweather">{event.name}</h3>
                 {/* <p className="md:mb-2">{event.description}</p> */}
 
@@ -51,16 +51,16 @@ const ContactItems = ({ contact }) => {
             <div className="text-navbar  text-center lg:text-left  font-merriweather font-semibold flex-1">
                 <h3 className="text-3xl  font-bold mb-4">{contact.name}</h3>
                 <div className='font-lato flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6 '>
-                    {contact.contact.map((item) => (
-                        <div className="flex flex-col font-normal items-center lg:items-start space-y-3 font-lato">
+                    {contact.contact.map((item,i) => (
+                        <div key={i} className="flex flex-col font-normal items-center lg:items-start space-y-3 font-lato">
 
                             {/* <p className="text-sm font-semibold">Name:</p> */}
                             <p className="text-lg">{item.name}</p>
                             <a className="text-sm hover:underline" href={`mailto:${item.gmail}`}>
-                                {item.gmail}
+                            <p className="flex"><FontAwesomeIcon icon={faEnvelope}  className="mr-[6px] my-auto" /> {item.gmail}</p> 
                             </a>
 
-                            <p className="text-sm">{item.phone}</p>
+                            <p className="text-sm"><FontAwesomeIcon icon={faPhone} className="mr-[6px] "/>{item.phone}</p>
 
                         </div>
                     ))}
@@ -75,9 +75,9 @@ const ContactItems = ({ contact }) => {
 
 const SponsorItem = ({ sponsor }) => {
     return (
-        <div className={`flex flex-col md:flex-row md:odd:justify-between md:odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-4 rounded-2xl`}>
+        <div className={`flex flex-col md:flex-row md:odd:justify-between md:odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-10 rounded-2xl`}>
             <div className="flex-shrink-0">
-                <img src={sponsor.image} alt="sponsor 1" className="h-40" />
+                <img src={sponsor.image} alt="sponsor 1" className="h-[250]" />
             </div>
             <div className="text-navbar flex flex-col">
                 <h3 className="text-2xl font-bold mb-4 lg:mb-2 font-merriweather">{sponsor.name}</h3>
