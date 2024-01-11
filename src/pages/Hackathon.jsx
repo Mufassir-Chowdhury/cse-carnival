@@ -29,7 +29,7 @@ const Hackathon = () => {
       ])}
       {renderTitleWithList('🏆 Prizes', [
         "🏆 Champion - 40,000 BDT",
-        "🥈 1st Runners up - 20,000 BDT",
+        "🥈 1st Runners up - 25,000 BDT",
         "🥉 2nd Runners up - 15,000 BDT",
         "🏅 SUST Rising Team - 8,000 BDT",
       ])}
