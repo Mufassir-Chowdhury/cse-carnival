@@ -39,7 +39,7 @@ const Words = () => {
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,         // Enable autoplay
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
   };
 
 
