@@ -57,19 +57,19 @@ const Words = () => {
       <Slider {...settings} className="py-6" ref={sliderRef}>
         {quotesData.map((quote) => (
           <div key={quote.id} className="flex-shrink-0 px-3 w-3/5">
-            <div className="bg-card-body p-3 rounded-lg w-full">
-              <div className='flex flex-row mb-4 justify-evenly gap-2 items-center lg:h-32'>
-                <img src={quote.imageUrl} alt={quote.name} className="w-32 h-32 rounded-2xl" />
-                <div className='text-left '>
+            <div className="bg-card-body p-8 rounded-lg w-full">
+              <div className='flex flex-row mb-8 justify-left gap-2 items-center lg:h-32'>
+                <img src={quote.imageUrl} alt={quote.name} className="w-32 h-32 rounded-xl" />
+                <div className='text-left ml-4'>
                   <h2 className="text-lg font-semibold mb-2 text-navbar-button">{quote.name}</h2>
-                  <div className='font-semibold text-navbar'>
-                    <p className="">{quote.post}</p>
+                  <div className=' text-navbar '>
+                    <p className="font-semibold">{quote.post}</p>
                     <p className="">{quote.special}</p>
-                    <p className="">{quote.designation}</p>
+                    <p className="text-[13px]">{quote.designation}</p>
                   </div>
                 </div>
               </div>
-              <div className=' px-6 overflow-y-auto text-navbar text-justify  whitespace-pre-line font-inter' style={{ height: '18rem' }}>
+              <div className='overflow-y-auto text-navbar text-justify  whitespace-pre-line font-inter' style={{ height: '18rem' }}>
                 {quote.quote}
               </div>
 

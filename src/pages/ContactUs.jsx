@@ -9,6 +9,7 @@ import VpGs from '../components/VpGs';
 import SponsoredBy from '../components/SponsoredBy';
 
 
+
 const ContactUs = () => {
     return (
         <div className=''>
@@ -23,7 +24,7 @@ const ContactUs = () => {
                 {/* <Carousel /> */}
                 <MapSection />
                 <div className="container mx-auto pb-8 pt-4">
-                    <h2 className="text-3xl font-bold text-center mb-6 text-title">For Contact</h2>
+                    <h2 className="text-3xl font-bold text-center my-10 text-title">For Contact</h2>
 
                     {Object.entries(events).map(([key, value]) => (
                         <ContactItems key={key} contact={value} />
