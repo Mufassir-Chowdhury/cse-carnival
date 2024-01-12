@@ -54,17 +54,17 @@ const SelectField = ({ label, name, classValue="", options, onChange, note }) =>
                     {/* <span className="text-sm font-merriweather text-field-title leading-6 pl-3">{note}</span> */}
                  </span>}            </span>
             <div className="flex rounded-full shadow-sm border  border-selectfield-border bg-selectfield-body">
-
+                
                 <select
                     required
                     name={name}
                     id={id}
-                    className="block  focus:outline-none font-medium flex-1 border-0 bg-transparent py-1.5 mx-4 text-field-title placeholder:text-field-placeholder  sm:text-sm sm:leading-6"
+                    className="block overflow-ellipsis overflow-hidden whitespace-nowrap focus:outline-none font-medium flex-1 border-0 bg-transparent py-1.5 mx-4 text-field-title placeholder:text-field-placeholder  sm:text-sm sm:leading-6"
                     onChange={(e) => onChange(e)}
                 >
-                    <option value="" selected disabled hidden>Select an option</option>
+                    <option value="" selected disabled hidden className='w-2/3 overflow-hidden whitespace-nowrap overflow-ellipsis'>Select an option</option>
                     {options.map((option) => (
-                        <option key={option.value} value={option.value}>{option.name}</option>
+                        <option key={option.value} value={option.value} className='w-2/3 overflow-hidden whitespace-nowrap overflow-ellipsis'>{option.name}</option>
                     ))}
                 </select>
             </div>
