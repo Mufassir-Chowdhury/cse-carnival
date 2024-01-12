@@ -153,7 +153,7 @@ const HackathonRegistration = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 overflow-ellipsis overflow-clip'>
           <FormField label="Team Name" name="teamname" onChange={handleChange} />
           <div>
-            <SelectField label="University Name" note="(Select 'other' if the university is not in list)" name="universityname" options={universities} onChange={handleChange} classValue='overflow-ellipsis overflow-clip' />
+            <SelectField label="University Name" note="(Select 'other' if the university is not in list)" name="universityname" options={universities} onChange={handleChange} />
             {formData.universityname === 'Other' && <FormField label="University Name" classValue='mt-4' name="university" onChange={handleChange} />}
           </div>
         </div>

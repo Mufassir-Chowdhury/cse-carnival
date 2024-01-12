@@ -42,7 +42,7 @@ const SelectField = ({ label, name, classValue="", options, onChange, note }) =>
     const id = name.replaceAll(' ', '-').toLowerCase();
     
     return (
-        <label className={`flex flex-col gap-2 label font-merriweather ${classValue}`}>
+        <label className={`flex flex-col gap-2 label font-merriweather overflow-ellipsis overflow-clip ${classValue}`}>
             <span className="text-lg flex  items-baseline font-serif font-bold text-field-title leading-6 pl-3">
                 {label}
                 {note && <span>
