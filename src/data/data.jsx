@@ -148,6 +148,11 @@ export const events = {
         phone: "01870833645",
 
       },
+      {
+        name: "Mustaq Mujahid Mim",
+        gmail: "mustaqmujahidmim@gmail.com",
+        phone: "01755945867",
+      }
     ]
   },
   "dlsprint": {

@@ -3,7 +3,7 @@ import Tab from '../components/Tab';
 import { events } from '../data/data';
 import { DetailsWithoutTitle } from '../components/Details';
 import { EventPage } from '../components/EventPage';
-import { renderLongDescriptions, renderShortDescriptions, renderTitleWithList } from '../components/Render';
+import { renderLongDescriptions, renderShortDescriptions, renderTitleWithList, renderDetails } from '../components/Render';
 
 const CodeBattle = () => {
   const { shortDescription, longDescription } = events['codebattle'];
@@ -26,6 +26,13 @@ const CodeBattle = () => {
         "🥉 2nd Runners up - 10K BDT",
       ])}
       <DetailsWithoutTitle description={{ value: "This is your chance to shine and demonstrate your coding finesse. Are you up for the challenge? Mark your calendars and join us for an unforgettable <b>Code Battle</b>!" }} />
+      {renderDetails({
+        title: "For queries, Contact:",
+        value: `Faridul Reza(Sagor)<br/>
+        Email: faridul.reza.sagor@gmail.com<br/>
+        Contact No: 01953737832<br/><br/>
+        Remember, the battle awaits—brace yourself for an electrifying coding experience! Don't miss out—Register now and secure your spot in this thrilling event! 💥✨`,
+      })}
     </div>
   );
   const announcment = (

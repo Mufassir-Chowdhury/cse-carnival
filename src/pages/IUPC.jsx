@@ -4,7 +4,7 @@ import React from 'react';
 import Tab from '../components/Tab';
 import { events } from '../data/data';
 import { EventPage } from '../components/EventPage';
-import { renderLongDescriptions, renderShortDescriptions, renderTitleWithList } from '../components/Render';
+import { renderLongDescriptions, renderShortDescriptions, renderTitleWithList, renderDetailsWithoutTitle, renderDetails } from '../components/Render';
 import { Details } from '../components/Details';
 
 const IUPC = () => {
@@ -22,6 +22,20 @@ const IUPC = () => {
         "6-10th position - 6K BDT",
       ])}
       <Details description={{ title: "Total Prize Pool - 146K BDT", value: "" }} />
+      {renderDetailsWithoutTitle({
+        value: "Don’t miss out on this incredible opportunity to test your problem solving prowess. Like and follow our page for event updates and announcements."
+      })}
+      {renderDetails({
+        title: "For queries, Contact:",
+        value: `1. MD. Moksedur Rahman Sohan <br/>
+        moksedur.rahman.sohan@gmail.com <br/>
+        Phone no: 01980582626<br/>
+        <br/>
+        2. Kawchar Husain<br/>
+        kawsarhn1@gmail.com<br/>
+        Phone no: 01741874600<br/><br/>
+        Let the sport of coding begin!🚀`,
+      })}
     </div>
   );
   const announcment = (
