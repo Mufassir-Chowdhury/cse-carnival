@@ -251,11 +251,11 @@ export const events = {
       },
       {
         title: "📅 Registration Date",
-        value: "15th Jan - 1st Feb"
+        value: "TBA"
       },
       {
         title: "📅 Running Time",
-        value: "2nd - 16th Feb"
+        value: "TBA"
       },
       {
         title: "💵 Registration Fee",
@@ -266,11 +266,11 @@ export const events = {
 
       {
         title: "📅 Registration Date",
-        value: "15th Jan - 1st Feb"
+        value: "TBA"
       },
       {
         title: "📅 Running Time",
-        value: "2nd - 16th Feb"
+        value: "TBA"
       },
       {
         title: "💵 Registration Fee",
