@@ -169,11 +169,11 @@ export const events = {
       },
       {
         title: "📅 Phase 1",
-        value: "15 Jan - 15 Feb"
+        value: "TBA"
       },
       {
         title: "📅 Phase 2",
-        value: "16 Feb"
+        value: "TBA"
       },
       {
         title: "💵 Registration Fee",
@@ -183,11 +183,11 @@ export const events = {
     frontDescription: [
       {
         title: "📅 Phase 1",
-        value: "15 Jan - 15 Feb"
+        value: "TBA"
       },
       {
         title: "📅 Phase 2",
-        value: "16 Feb"
+        value: "TBA"
       },
       {
         title: "💵 Registration Fee",
@@ -251,11 +251,11 @@ export const events = {
       },
       {
         title: "📅 Registration Date",
-        value: "TBA"
+        value: "15th Jan - 1st Feb"
       },
       {
         title: "📅 Running Time",
-        value: "TBA"
+        value: "2nd - 16th Feb"
       },
       {
         title: "💵 Registration Fee",
@@ -266,11 +266,11 @@ export const events = {
 
       {
         title: "📅 Registration Date",
-        value: "TBA"
+        value: "15th Jan - 1st Feb"
       },
       {
         title: "📅 Running Time",
-        value: "TBA"
+        value: "2nd - 16th Feb"
       },
       {
         title: "💵 Registration Fee",
