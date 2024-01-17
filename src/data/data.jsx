@@ -10,7 +10,7 @@ export const events = {
       {
 
         title: "📅  Pre-registration window",
-        value: "10th - 17th Jan"
+        value: "10th - 25th Jan"
       },
       {
         title: "📅  Slot Distribution",
@@ -26,7 +26,7 @@ export const events = {
       },
       {
         title: "📅 Payment Window",
-        value: "26 Jan - 31 Jan"
+        value: "31 Jan - 7 Feb"
       },
       {
         title: "💵 Registration Fee",
@@ -36,11 +36,11 @@ export const events = {
     frontDescription: [
       {
         title: "📅 Pre-registration window",
-        value: "10th - 17th Jan"
+        value: "10th - 25th Jan"
       },
       {
         title: "📅 Payment Window",
-        value: "26th - 31st Jan"
+        value: "31st Jan - 7th Feb"
       },
       {
         title: "📅 Mock Contest",
