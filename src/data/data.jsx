@@ -14,15 +14,15 @@ export const events = {
       },
       {
         title: "📅  Slot Distribution",
-        value: "25th Jan"
+        value: "30th Jan"
       },
       {
         title: "📅  Mock Contest",
-        value: "16th Feb"
+        value: "17th Feb"
       },
       {
         title: "📅 Main Contest",
-        value: "17th Feb"
+        value: "18th Feb"
       },
       {
         title: "📅 Payment Window",
@@ -44,11 +44,11 @@ export const events = {
       },
       {
         title: "📅 Mock Contest",
-        value: "16th Feb"
+        value: "17th Feb"
       },
       {
         title: "📅 Main Contest",
-        value: "17th Feb"
+        value: "18th Feb"
       },
       {
         title: "💵 Registration Fee",
@@ -104,11 +104,11 @@ export const events = {
     shortDescription: [
       {
         title: "📅 Registration Date",
-        value: "10th - 20th Jan"  //change below too
+        value: "10th - 25th Jan"  //change below too
       },
       {
         title: "📅 Hackathon",
-        value: "9 AM, 16 Feb - 9 AM, 17 Feb"
+        value: "9 AM, 17 Feb - 9 AM, 18 Feb"
       },
       {
         title: "💵 Registration Fee",
@@ -118,11 +118,11 @@ export const events = {
     frontDescription: [
       {
         title: "📅 Registration Date",
-        value: "10th - 20th Jan"
+        value: "10th - 25th Jan"
       },
       {
         title: "📅 Hackathon",
-        value: "9 AM, 16 Feb - 9 AM, 17 Feb"
+        value: "9 AM, 17 Feb - 9 AM, 18 Feb"
       },
       {
         title: "💵 Registration Fee",
@@ -419,7 +419,7 @@ export const quotesData = [
     post: 'Advisor, CSE Carnival',
     special: '',
     designation: 'Professor, Department of CSE, SUST',
-    quote: `Join us in celebrating creativity and teamwork at the 2024 SUST CSE CARNIVAL! Explore the marvels of technology on our campus on Feb 16 and 17.
+    quote: `Join us in celebrating creativity and teamwork at the 2024 SUST CSE CARNIVAL! Explore the marvels of technology on our campus on Feb 17 and 18.
   
     I appreciate your enthusiasm for critical thinking and creativity. May this event serve as a platform for learning, networking, and showcasing your talents. Your participation is the key to the success of this carnival, and I wish you a thrilling and enjoyable experience.
   
@@ -434,7 +434,7 @@ export const quotesData = [
     designation: 'Professor, Department of CSE, SUST',
     quote: `Hello tech enthusiasts, 
 
-    Prepare to ignite your circuits and unleash your creativity! CSE Society, SUST proudly presents the 2024 SUST CSE CARNIVAL – a gala celebration of innovative minds and collaborative spirit. Mark your calendars for Feb 16 and 17 as we transform our campus into a vibrant hub of technological wonders. The carnival promises an unparalleled journey into the heart of a digital revolution. 
+    Prepare to ignite your circuits and unleash your creativity! CSE Society, SUST proudly presents the 2024 SUST CSE CARNIVAL – a gala celebration of innovative minds and collaborative spirit. Mark your calendars for Feb 17 and 18 as we transform our campus into a vibrant hub of technological wonders. The carnival promises an unparalleled journey into the heart of a digital revolution. 
 
     Best wishes and cheers.`,
     imageUrl: 'https://www.sust.edu/uploads/profile-images/1677521468.png',

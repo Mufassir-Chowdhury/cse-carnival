@@ -190,7 +190,7 @@ const DLSprintTest = () => {
                                 key={value}
                                 type="button"
                                 onClick={() => handleNumberOfTeamMembersChange(value)}
-                                className={`rounded-md bg-field-body text-navbar px-4 py-2 focus:outline-none focus:bg-navbar-button`}
+                                className={`rounded-md bg-field-body text-navbar px-4 py-2 focus:outline-none focus:bg-navbar-button focus:text-body`}
                             >
                                 {value}
                             </button>
