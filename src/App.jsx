@@ -19,6 +19,7 @@ import ContactUs from "./pages/ContactUs";
 import DLSprintAnnouncement from "./pages/Registration/DLSprintAnnouncement";
 import NotFound from "./components/NotFound";
 import DLSprintTest from "./pages/Registration/DLSprintTest";
+import Status from "./pages/Status";
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
           <Route path="/dlenigma/registration" element={<DLSprintAnnouncement />}></Route>
           <Route path="/test" element={<DLSprintTest />}></Route>
           <Route path="/codebattle/registration" element={<CodeBattleRegistration />}></Route>
+          <Route path="/payment/:id" element={<Status />}></Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </section>
