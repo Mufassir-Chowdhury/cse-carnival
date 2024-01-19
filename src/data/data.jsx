@@ -168,12 +168,20 @@ export const events = {
         value: "<a href=\"https://kaggle.com\" target=\"_blank\" rel=\"noopener noreferrer\" classname=\"underline\">Kaggle</a>"
       },
       {
+        title: "📅 Competition Launch",
+        value: "20 Jan"
+      },
+      {
         title: "📅 Phase 1",
-        value: "TBA"
+        value: "20 Jan - 10 Feb (Online)"
+      },
+      {
+        title: "📅 Team Merge & Registration Deadline",
+        value: "30 Jan"
       },
       {
         title: "📅 Phase 2",
-        value: "TBA"
+        value: "18 Feb (Offline)"
       },
       {
         title: "💵 Registration Fee",
@@ -182,12 +190,20 @@ export const events = {
     ],
     frontDescription: [
       {
+        title: "📅 Competition Launch",
+        value: "20 Jan"
+      },
+      {
         title: "📅 Phase 1",
-        value: "TBA"
+        value: "20 Jan - 10 Feb (Online)"
+      },
+      {
+        title: "📅 Team Merge & Registration Deadline",
+        value: "30 Jan"
       },
       {
         title: "📅 Phase 2",
-        value: "TBA"
+        value: "18 Feb (Offline)"
       },
       {
         title: "💵 Registration Fee",

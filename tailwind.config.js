@@ -40,7 +40,7 @@ export default {
         'aboutus-body' : '#F0E0C647',
         'aboutus-border' : '#F0E0C6',
         'event-details-border' : '#FFFAF1',
-        'menu-body':'#F0E0C6CC',
+        'menu-body':'#F0E0C6EC',
         'field-body':'#F0E0C680',
         'field-border' : '#E7D1AE',
         'selectfield-body':'#3F7A7B26',
