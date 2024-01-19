@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const PrimaryButton = ({ text }) => {
+const PrimaryButton = ({ text, onClick }) => {
     return (
-        <button className="bg-navbar-button-hover shadow-md shadow-navbar-button text-navbar-link px-4 py-1 rounded-md">
+        <button
+            className="bg-navbar-button-hover shadow-md shadow-navbar-button text-navbar-link px-4 py-1 rounded-md"
+            onClick={onClick}
+        >
             {text}
         </button>
     );
