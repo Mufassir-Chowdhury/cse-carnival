@@ -221,12 +221,12 @@ const DLSprintTest = () => {
                             <FormField label="Email" type="email" name={`member${index + 1}email`} onChange={handleChange}/>
                             <FormField label="Phone number" type="tel" name={`member${index + 1}phonenumber`} onChange={handleChange}/>
                             <FormField label="University/Organization" name={`member${index + 1}university`} onChange={handleChange}/>
-                            <FormField label="Job Title/Position" name={`member${index + 1}jobtitle`} onChange={handleChange}/>
+                            <FormField label="Job Title/Position" name={`member${index + 1}jobtitle`} onChange={handleChange} example="Student, Software Engineer"/>
                             <FormField label="Student Id (Optional)" required={false} name={`member${index + 1}studentid`} onChange={handleChange}/>
                             <FormField label="Country" name={`member${index + 1}country`} onChange={handleChange}/>
                             <FormField label="Github link (Optional)" required={false} name={`member${index + 1}githublink`} onChange={handleChange}/>
                             <FormField label="LinkedIn Id (Optional)" required={false} name={`member${index + 1}linkedinid`} onChange={handleChange}/>
-                            <FormField label="Kaggle link" name={`member${index + 1}kagglelink`} onChange={handleChange}/>
+                            <FormField label="Kaggle Id link" name={`member${index + 1}kagglelink`} onChange={handleChange}/>
 
                             <SelectField label="T-Shirt size" name={`member${index + 1}tshirtsize`} options={t_shirt_size} onChange={handleChange}/>
                         </div>

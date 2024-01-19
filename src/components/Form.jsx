@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Tooltip from '@mui/material/Tooltip';
 
-const FormField = ({ label, type="text", name, classValue="", onChange, required=true, note }) => {
+const FormField = ({ label, type="text", name, classValue="", onChange, required=true, note, example }) => {
     const id = name.replaceAll(' ', '-').toLowerCase();
     const isOptional = label.toLowerCase().includes('(optional)');
-    const placeholderText = isOptional ? 'Enter if available' : `Enter ${label}`;
+    const placeholderText = isOptional ? 'Enter if available' : `Enter ${label}` + (example ? ` (e.g., ${example})` : '');
 
     return (
         <label className={`flex flex-col gap-2 label ${classValue}`}>
@@ -84,6 +84,7 @@ FormField.propTypes = {
     onChange: PropTypes.func.isRequired,
     required: PropTypes.bool,
     note: PropTypes.string,
+    example: PropTypes.string,
 };
 
 SelectField.propTypes = {
