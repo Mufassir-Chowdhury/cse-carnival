@@ -149,62 +149,8 @@ const DLSprintTest = () => {
                 "country": formData.member4country
             });
         }
-        const raw = JSON.stringify({
-            "teamName": formData.teamname,
-            "teamLeaderEmail": formData.teamleaderemail,
-            "participants": [
-                {
-                    "name": formData.member1name,
-                    "email": formData.member1email,
-                    "contact": formData.member1phonenumber,
-                    "tshirt": formData.member1tshirtsize,
-                    "githubLink": formData.member1githublink,
-                    "linkedinLink": formData.member1linkedinid,
-                    "university": formData.member1university,
-                    "jobTitle": formData.member1jobtitle,
-                    "studentId": formData.member1studentid,
-                    "country": formData.member1country
-                },
-                {
-                    "name": formData.member2name,
-                    "email": formData.member2email,
-                    "contact": formData.member2phonenumber,
-                    "tshirt": formData.member2tshirtsize,
-                    "githubLink": formData.member2githublink,
-                    "linkedinLink": formData.member2linkedinid,
-                    "university": formData.member2university,
-                    "jobTitle": formData.member2jobtitle,
-                    "studentId": formData.member2studentid,
-                    "country": formData.member2country
-                },
-                {
-                    "name": formData.member3name,
-                    "email": formData.member3email,
-                    "contact": formData.member3phonenumber,
-                    "tshirt": formData.member3tshirtsize,
-                    "githubLink": formData.member3githublink,
-                    "linkedinLink": formData.member3linkedinid,
-                    "university": formData.member3university,
-                    "jobTitle": formData.member3jobtitle,
-                    "studentId": formData.member3studentid,
-                    "country": formData.member3country,
-                },
-                {
-                    "name": formData.member4name,
-                    "email": formData.member4email,
-                    "contact": formData.member4phonenumber,
-                    "tshirt": formData.member4tshirtsize,
-                    "githubLink": formData.member4githublink,
-                    "linkedinLink": formData.member4linkedinid,
-                    "university": formData.member4university,
-                    "jobTitle": formData.member4jobtitle,
-                    "studentId": formData.member4studentid,
-                    "country": formData.member4country,
-                }
-            ]
-        });
+        const raw = JSON.stringify(formObject);
         console.log(raw);
-        console.log(JSON.stringify(formObject));
 
         const requestOptions = {
             method: 'POST',
