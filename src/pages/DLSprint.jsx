@@ -14,7 +14,7 @@ const DLSprint = () => {
       {renderShortDescriptions(shortDescription)}
       {renderLongDescriptions(longDescription)}
       {renderTitleWithList('📅 Important Dates', [
-        "Competition Launch: TBA",
+        "Competition Launch: 20th January",
         "Submission Deadline: TBA",
         "Winners Announcement: TBA",
       ])}

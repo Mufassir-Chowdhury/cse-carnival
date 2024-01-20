@@ -12,7 +12,7 @@ import DLSprint from "./pages/DLSprint";
 import CodeBattle from "./pages/CodeBattle";
 import IUPCRegistraion from "./pages/Registration/IUPCRegistration";
 import HackathonRegistration from "./pages/Registration/HackathonRegistration";
-// import DLSprintRegistration from "./pages/Registration/DLSprintRegistration";
+import DLSprintRegistration from "./pages/Registration/DLSprintRegistration";
 import CodeBattleRegistration from "./pages/Registration/CodeBattleRegistration";
 import { organizers, poweredby } from "./data/data";
 import ContactUs from "./pages/ContactUs";
@@ -37,8 +37,8 @@ const App = () => {
 
           <Route path="/iupc/registration" element={<IUPCRegistraion />}></Route>
           <Route path="/hackathon/registration" element={<HackathonRegistration />}></Route>
-          <Route path="/dlenigma/registration" element={<DLSprintAnnouncement />}></Route>
-          <Route path="/test" element={<DLSprintTest />}></Route>
+          <Route path="/dlenigma/registration" element={<DLSprintRegistration />}></Route>
+          {/* <Route path="/test" element={<DLSprintTest />}></Route> */}
           <Route path="/codebattle/registration" element={<CodeBattleRegistration />}></Route>
           <Route path="/payment/:id" element={<Status />}></Route>
           <Route path="*" element={<NotFound />} />
