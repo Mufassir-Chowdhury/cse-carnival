@@ -22,3 +22,8 @@ export const validatePhoneNumber = (phoneNumber: string) => {
     const regex = /^https:\/\/www.linkedin.com\/in\/[a-zA-Z0-9_-]+$/;
     return regex.test(linkedinLink);
   };
+
+  export const validateKaggleLink = (kaggleLink: string) => {
+    const regex = /^https:\/\/www.kaggle.com\/[a-zA-Z0-9_-]+$/;
+    return regex.test(kaggleLink);
+};
