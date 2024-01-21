@@ -184,6 +184,10 @@ export const events = {
         value: "18 Feb (Offline)"
       },
       {
+        title: "📅 Winners Announcement and Prize Giving Ceremony",
+        value: "18 Feb"
+      },
+      {
         title: "💵 Registration Fee",
         value: "Free"
       },
@@ -204,6 +208,10 @@ export const events = {
       {
         title: "📅 Phase 2",
         value: "18 Feb (Offline)"
+      },
+      {
+        title: "📅 Winners Announcement and Prize Giving Ceremony",
+        value: "18 Feb"
       },
       {
         title: "💵 Registration Fee",

@@ -48,7 +48,7 @@ const TitleWithList = ({ title, items }) => {
             <div className="text-indigo-950 text-3xl font-semibold">{title}</div>
             <ul className="text-indigo-950 text-[17px] font-medium list-disc pl-5">
                 {items.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <li key={index}>{parse(item)}</li>
                 ))}
             </ul>
         </div>

@@ -14,13 +14,15 @@ const DLSprint = () => {
       {renderShortDescriptions(shortDescription)}
       {renderLongDescriptions(longDescription)}
       {renderTitleWithList('📅 Important Dates', [
-        "Competition Launch: 20th January",
-        "Submission Deadline: TBA",
-        "Winners Announcement: TBA",
+        "Competition Launch: 20 January",
+        "Phase 1: 20 January - 10 February 2024 (Online)",
+        "Team Merge and Registration Deadline: 30 January 2024",
+        "Phase 2: 18 February 2024 (Offline)",
+        "Winners Announcement and Prize Giving Ceremony: 18 February 2024",
       ])}
       {renderTitleWithList('👩‍💻 How to Participate', [
-        "Join Kaggle if you haven't already: TBA",
-        "Access the competition page: TBA",
+        "Join Kaggle if you haven't already: <a href=\"https://www.kaggle.com/competitions/dl-enigma-10-sust-cse-carnival-2024\" target=\"_blank\" rel=\"noopener noreferrer\" classname=\"underline\">https://www.kaggle.com/competitions/dl-enigma-10-sust-cse-carnival-2024</a>",
+        "Access the competition page: <a href=\"https://www.kaggle.com/competitions/dl-enigma-10-sust-cse-carnival-2024/rules\" target=\"_blank\" rel=\"noopener noreferrer\" classname=\"underline\">https://www.kaggle.com/competitions/dl-enigma-10-sust-cse-carnival-2024/rules</a>",
         "Download the dataset and immerse yourself in the challenges of Bangladesh road conditions for autonomous vehicles.",
         "Train your model, submit predictions, and witness your algorithm's prowess in real-world scenarios.",
       ])}
