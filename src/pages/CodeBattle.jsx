@@ -27,7 +27,11 @@ const CodeBattle = () => {
         "🏆 Champion - 25K BDT",
         "🥈 1st Runners up - 15K BDT",
         "🥉 2nd Runners up - 10K BDT",
+        "🏅 4th Prize - 7K BDT",
+        "🎖️ 5th Prize - 5K BDT",
+        "🎖️ SUST Emerging Player - 5K BDT",
       ])}
+      <DetailsWithoutTitle description={{ value: "<b>*SUST Emerging participant</b>: Best Positioned Player from SUST who is not in the top five" }} />
       <DetailsWithoutTitle description={{ value: "This is your chance to shine and demonstrate your coding finesse. Are you up for the challenge? Mark your calendars and join us for an unforgettable <b>Code Battle</b>!" }} />
       {renderDetails({
         title: "For queries, Contact:",
