@@ -76,7 +76,7 @@ const ContactItems = ({ contact }) => {
 const SponsorItem = ({ sponsor }) => {
     return (
         <div className={`flex flex-col md:flex-row md:odd:justify-between md:odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-10 rounded-2xl`}>
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 aspect-square h-64">
                 <img src={sponsor.image} alt="sponsor 1" className="h-[250]" />
             </div>
             <div className="text-navbar flex flex-col">
