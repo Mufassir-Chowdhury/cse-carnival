@@ -83,34 +83,64 @@ const Status = (props) => {
     };
 
     return (
-        <div className='flex flex-col items-center justify-center'>
+        <div className='flex flex-col items-center justify-center sm:px-12'>
             {paymentData ? (
                 <div>
                     {/* <VectorGraphics /> */}
-                    <div className='text-navbar z-10 relative px-4 mt-24 pb-0 lg:px-28'>
+                    <div className='text-navbar z-10 relative px-4 mt-24 pb-0 xl:px-28'>
                         <EventTitle title={getCompetitionTitle(paymentData.competition)} />
+                        <div className='grid grid-cols-1 md:grid-cols-3'>
+                            <div className='col-span-2'>
+
+                                <div className="px-4 sm:px-0">
+                                    <h3 className="text-base font-semibold leading-7 text-gray-900">Applicant Information</h3>
+                                    <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Personal details and application.</p>
+                                </div>
+                                <div className="mt-6 border-t border-gray-200">
+                                    <dl className="divide-y divide-gray-200">
+                                        <div className="px-4 py-4 grid grid-cols-2 sm:grid-cols-3 sm:gap-4 sm:px-0">
+                                            <dt className="text-sm font-medium leading-6 text-gray-900">Team Name</dt>
+                                            <dd className="mt-1 text-sm leading-6 text-gray-700 col-span-1 sm:col-span-2 sm:mt-0">{paymentData.teamInfo.teamName}</dd>
+                                        </div>
+                                        {getParticipantInfo().map((participant, index) => (
+                                            <div key={index} className="px-4 py-4 grid grid-cols-2 sm:grid-cols-3 sm:gap-4 sm:px-0">
+                                                <dt className="text-sm font-medium leading-6 text-gray-900">{participant.title}</dt>
+                                                <dd className="mt-1 text-sm leading-6 text-gray-700 col-span-1 sm:col-span-2 sm:mt-0">{participant.name}</dd>
+                                            </div>
+                                        ))}
+                                    </dl>
+                                </div>
+                            </div>
+                            <div className='m-8 p-8 border border-yellow-300'>
+
+                                <div className="px-4 sm:px-0">
+                                    <h3 className="text-base font-semibold leading-7 text-gray-900">Payment Status</h3>
+                                    <p className={`mt-1 max-w-2xl text-sm leading-6 ${paymentData.isPaid ? "text-green-500": "text-red-500"}`}>{paymentData.isPaid ? '' : 'Not'} paid</p>
+                                </div>
+                                <div className="mt-6 border-t border-gray-200">
+                                    <dl className="divide-y divide-gray-200">
+                                        <div className="px-4 py-4 grid grid-cols-2 sm:grid-cols-3 sm:gap-4 sm:px-0">
+                                            <dt className="text-sm font-medium leading-6 text-gray-900">Total</dt>
+                                            <dd className="mt-1 text-sm leading-6 text-end text-gray-700 sm:col-span-2 sm:mt-0">{paymentData.amount}৳</dd>
+                                        </div>
+                                        <div className='py-10 w-full flex justify-center font-lato'>
+                                            <button
+                                                className="w-full  bg-yellow-500 text-white px-4 py-1 "
+                                                onClick={handleProceedToPay}
+                                                disabled={paymentData.isPaid}
+                                            >
+                                                {paymentData.isPaid ? 'Paid' : 'Pay'}
+                                            </button>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
                         <div className='text-center'>
-
-                            <h3>Team Name: {paymentData.teamInfo.teamName}</h3>
-                            {getParticipantInfo().map((participant, index) => (
-                                <p key={index}>
-
-                                    {participant.title}: {participant.name}
-                                </p>
-                            ))}
-
-
-                            <p>Registration Fee : {paymentData.amount} BDT</p>
 
                             {/* <p>Is Paid: {paymentData.isPaid ? 'Yes' : 'No'}</p> */}
                         </div>
-                        <div className='py-10 w-full flex justify-center font-lato'>
-                            {paymentData.isPaid ? (
-                                <PrimaryButton text="Paid" disabled />
-                            ) : (
-                                <PrimaryButton text="Proceed to Pay" onClick={handleProceedToPay} />
-                            )}
-                        </div>
+                        
 
                         {/* <SponsoredBy title={"Sponsored By"} list={""} sponsors={events[id].sponsors} /> */}
                         <div className="lg:mx-0 z-10 relative pb-0">
@@ -121,7 +151,10 @@ const Status = (props) => {
                 </div>
 
             ) : (
-                <NotFound/>
+                <div className="text-center py-28 h-screen flex flex-col justify-center">
+                    <h1 className="text-4xl font-bold text-red-500">Invalid Payment Link</h1>
+                    <p className="text-lg mt-4">Please check your email for the correct payment link.</p>
+                </div>
             )}
         </div>
     );
