@@ -105,7 +105,7 @@ export const events = {
     shortDescription: [
       {
         title: "📅 Registration Date",
-        value: "10th - 25th Jan"  //change below too
+        value: "10th - 27th Jan"  //change below too
       },
       {
         title: "📅 Hackathon",
@@ -119,7 +119,7 @@ export const events = {
     frontDescription: [
       {
         title: "📅 Registration Date",
-        value: "10th - 25th Jan"
+        value: "10th - 27th Jan"
       },
       {
         title: "📅 Hackathon",
