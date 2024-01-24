@@ -240,7 +240,9 @@ export const events = {
     sponsors: [
       {
         name: "eGeneration",
-        description: `description`,
+        description: `eGeneration Ltd. is one of the leading IT consulting and software solutions company of Bangladesh. eGeneration's IPO is going to be the very first in Bangladesh for the software technology companies. 
+        eGeneration has been working diligently to provide leading innovative solutions, having highest number of clients in the Banking and Financial sector, eGovernance and Manufacturing. To achieve that, eGeneration has been developing expert skills in cutting-edge technologies including AI and machine learning, NLP, data analytics, blockchain and cyber security. eGeneration is the only Bangladeshi company to be LSP (Licensing Solution Partner) of Microsoft right now. It is also one of the premium licensing and implementation partners of SAP, Oracle, Barracuda, VMware, CISCO, Kaspersky among others.
+        `,
         image: "/image/sponsor/eGen.png",
         linkedin: "https://www.linkedin.com/company/egeneration",
         website: "https://egeneration.co/"
@@ -312,7 +314,7 @@ export const events = {
     sponsors: [
       {
         name: "kinetik",
-        description: `description`,
+        description: `Kinetik is a healthcare technology company that has built the nation’s first digitally integrated healthcare transportation platform connecting members, health plans, health systems, and transportation providers. Our interoperable platform allows for seamless delivery of non-emergency medical transportation services, providing full visibility into the life cycle of each trip for health plans and their members while allowing transportation providers to get paid on time. Key benefits include program transparency, improved access to care, an enhanced member experience, ability to auto-generate timely and accurate claims, and reduction of fraud, waste, and abuse (FWA).`,
         image: "/image/sponsor/kinetik.png",
         linkedin: "https://www.linkedin.com/company/kinetikcare/",
         website: "https://kinetik.care/"
