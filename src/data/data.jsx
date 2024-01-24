@@ -77,7 +77,7 @@ export const events = {
         description: `We are a team of tech enthusiasts who like to develop ground breaking apps for iOS & Android. Kite Games Studio was founded in 2014 with a vision of developing softwares with bleeding edge technology. We have millions of users all around the globe & always working hard to make the most remarkable apps for our beloved users. So, despite all our hard work, we are always researching on the most tough problems to solve & looking forward to change the world a bit all the way from Bangladesh.`,
         image: "/image/sponsor/KiteGames.png",
         linkedin: "https://www.linkedin.com/company/kite-games-studio/",
-        website : "https://www.kitegamesstudio.com/",
+        website: "https://www.kitegamesstudio.com/",
       },
     ],
     contact: [
@@ -141,6 +141,7 @@ export const events = {
     On a mission to build the silicon valley of Bangladesh - a city of hackers, builders and leaders.`,
         image: "/image/sponsor/Recruit.png",
         linkedin: "https://www.linkedin.com/company/recruit-so/",
+        website: "https://recruit.com/"
       },
     ],
     contact: [
@@ -237,11 +238,7 @@ export const events = {
     bg: "bg-dlsprint-body",
     border: "border-dlsprint-border",
     sponsors: [
-      // {
-      //   name: "Re:cruit",
-      //   description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
-      //   image: "/image/sponsor/Recruit.png",
-      // }
+      
     ],
     contact: [
       {
@@ -307,11 +304,7 @@ export const events = {
 
     ],
     sponsors: [
-      // {
-      //   name: "Re:cruit",
-      //   description: "Description for Event 1. Lorem ijjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj j j j j j j j j j j j j psum dolor sit amet, consectetur adipiscing elit.",
-      //   image: "/image/sponsor/Recruit.png",
-      // }
+      
     ],
     contact: [
       {
@@ -336,7 +329,8 @@ export const poweredby = [
     name: "Dynamic Solution Innovators",
     description: `DSi, an international company established in 2001, specializes in web-enabled e-commerce, ERP systems, and wireless systems across various industries. Offering comprehensive software development services globally, they emphasize client-centric approaches, deploying skilled teams at corporate centers or client sites. Their commitment involves proficient project management, employing methodologies like advanced use-case and a Two-phase Quality Assurance process for innovative applications. DSi prioritizes deep-rooted problem-solving, aiming not just to fix issues but to anticipate opportunities by bridging the gap between business and IT. Their focus extends beyond mere solutions, seeking to empower clients for long-term independence and success.`,
     image: "/image/sponsor/DSI.png",
-    linkedin : "https://www.linkedin.com/company/dsinnovators/",
+    linkedin: "https://www.linkedin.com/company/dsinnovators/",
+    website: "https://www.dsinnovators.com/",
   }
 ]
 
