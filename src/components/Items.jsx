@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import parse from 'html-react-parser';
 import { PrimaryButton, SecondaryButton } from "./Button";
 import PropTypes from 'prop-types';
-import { faFacebook,faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedin,} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope,faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faGlobe, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const EventItems = ({ event }) => {
     return (
@@ -51,16 +51,16 @@ const ContactItems = ({ contact }) => {
             <div className="text-navbar  text-center lg:text-left  font-merriweather font-semibold flex-1">
                 <h3 className="text-3xl  font-bold mb-4">{contact.name}</h3>
                 <div className='font-lato flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6 '>
-                    {contact.contact.map((item,i) => (
+                    {contact.contact.map((item, i) => (
                         <div key={i} className="flex flex-col font-normal items-center lg:items-start space-y-3 font-lato">
 
                             {/* <p className="text-sm font-semibold">Name:</p> */}
                             <p className="text-lg">{item.name}</p>
                             <a className="text-sm hover:underline" href={`mailto:${item.gmail}`}>
-                            <p className="flex"><FontAwesomeIcon icon={faEnvelope}  className="mr-[6px] my-auto" /> {item.gmail}</p> 
+                                <p className="flex"><FontAwesomeIcon icon={faEnvelope} className="mr-[6px] my-auto" /> {item.gmail}</p>
                             </a>
 
-                            <p className="text-sm"><FontAwesomeIcon icon={faPhone} className="mr-[6px] "/>{item.phone}</p>
+                            <p className="text-sm"><FontAwesomeIcon icon={faPhone} className="mr-[6px] " />{item.phone}</p>
 
                         </div>
                     ))}
@@ -75,8 +75,8 @@ const ContactItems = ({ contact }) => {
 
 const SponsorItem = ({ sponsor }) => {
     return (
-        <div className={`flex flex-col md:flex-row md:odd:justify-between md:odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body p-10 rounded-2xl`}>
-            <div className="flex-shrink-0 aspect-square h-64">
+        <div className={`flex flex-col md:flex-row md:odd:justify-between md:odd:flex-row-reverse items-center mb-8 gap-10 bg-sponsor-body px-10 py-6 rounded-2xl`}>
+            <div className="flex-shrink-0 aspect-square h-64 flex items-center" >
                 <img src={sponsor.image} alt="sponsor 1" className="h-[250]" />
             </div>
             <div className="text-navbar flex flex-col">
@@ -100,6 +100,15 @@ const SponsorItem = ({ sponsor }) => {
                             rel="noopener noreferrer"
                         >
                             <FontAwesomeIcon icon={faFacebook} className="text-2xl hover:text-blue-500" />
+                        </a>
+                    )}
+                    {sponsor.website && (
+                        <a
+                            href={sponsor.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FontAwesomeIcon icon={faGlobe} className="text-2xl hover:text-blue-500" />
                         </a>
                     )}
                 </div>
