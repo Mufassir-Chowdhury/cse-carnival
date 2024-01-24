@@ -74,9 +74,10 @@ export const events = {
     sponsors: [
       {
         name: "Kite Games Studio ",
-        description: `We are a team of tech enthusiasts who like to develop ground breaking apps for iOS & Android. Kite Games Studio was founded in 2014 with a vision of developing softwares & games with bleeding edge technology. We have millions of users all around the globe & always working hard to make the most remarkable apps for our beloved users. So, despite all our hard work, we are always researching on the most tough problems to solve & looking forward to change the world a bit all the way from Bangladesh.`,
+        description: `We are a team of tech enthusiasts who like to develop ground breaking apps for iOS & Android. Kite Games Studio was founded in 2014 with a vision of developing softwares with bleeding edge technology. We have millions of users all around the globe & always working hard to make the most remarkable apps for our beloved users. So, despite all our hard work, we are always researching on the most tough problems to solve & looking forward to change the world a bit all the way from Bangladesh.`,
         image: "/image/sponsor/KiteGames.png",
         linkedin: "https://www.linkedin.com/company/kite-games-studio/",
+        website : "https://www.kitegamesstudio.com/",
       },
     ],
     contact: [
