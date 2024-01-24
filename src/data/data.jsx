@@ -238,7 +238,13 @@ export const events = {
     bg: "bg-dlsprint-body",
     border: "border-dlsprint-border",
     sponsors: [
-      
+      {
+        name: "eGeneration",
+        description: `description`,
+        image: "/image/sponsor/eGen.png",
+        linkedin: "https://www.linkedin.com/company/egeneration",
+        website: "https://egeneration.co/"
+      }
     ],
     contact: [
       {
@@ -304,7 +310,13 @@ export const events = {
 
     ],
     sponsors: [
-      
+      {
+        name: "kinetik",
+        description: `description`,
+        image: "/image/sponsor/kinetik.png",
+        linkedin: "https://www.linkedin.com/company/kinetikcare/",
+        website: "https://kinetik.care/"
+      }
     ],
     contact: [
       {
