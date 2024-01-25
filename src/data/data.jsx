@@ -141,7 +141,7 @@ export const events = {
     On a mission to build the silicon valley of Bangladesh - a city of hackers, builders and leaders.`,
         image: "/image/sponsor/Recruit.png",
         linkedin: "https://www.linkedin.com/company/recruit-so/",
-        website: "https://recruit.com/"
+        website: "https://recruit.so/"
       },
     ],
     contact: [
