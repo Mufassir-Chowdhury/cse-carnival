@@ -20,6 +20,7 @@ import DLSprintAnnouncement from "./pages/Registration/DLSprintAnnouncement";
 import NotFound from "./components/NotFound";
 import DLSprintTest from "./pages/Registration/DLSprintTest";
 import Status from "./pages/Status";
+import IUPCAnnouncement from "./pages/Registration/IUPCAnnouncement";
 
 const App = () => {
   return (
@@ -35,7 +36,7 @@ const App = () => {
           <Route path="/codebattle" element={<CodeBattle />}></Route>
           <Route path="/contactus" element={<ContactUs />}></Route>
 
-          <Route path="/iupc/registration" element={<IUPCRegistraion />}></Route>
+          <Route path="/iupc/registration" element={<IUPCAnnouncement />}></Route>
           <Route path="/hackathon/registration" element={<HackathonRegistration />}></Route>
           <Route path="/dlenigma/registration" element={<DLSprintRegistration />}></Route>
           {/* <Route path="/test" element={<DLSprintTest />}></Route> */}
