@@ -348,6 +348,17 @@ export const poweredby = [
   }
 ]
 
+export const techPartner = [
+  {
+    name: "Smart Technologies (BD)",
+    description: `Smart Technologies (BD) Ltd. is the largest ICT products distribution company in Bangladesh. It’s dealing with PC hardware, Laptop, telecom, networking goods & software business in Bangladesh. Smart Technologies (BD) Ltd is the authorized distributor of more than 100 renowned international ICT Brands.
+    Along with distribution, Smart Technologies (BD) Ltd. is also the leading technology solutions provider in Bangladesh specializing in delivering innovative and cutting-edge IT services to businesses across various industries. Established in 1998, we have emerged as a trusted organization for our clients, offering a wide range of services and solutions that empower them to achieve their business objectives.`,
+    image: "/image/sponsor/SmartBD.png",
+    linkedin: "https://www.linkedin.com/company/smarttechnologiesbdlimited/",
+    website: "https://smartbd.com/",
+  }
+]
+
 
 export const aboutus = [
   {

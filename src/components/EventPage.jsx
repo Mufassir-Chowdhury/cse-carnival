@@ -45,7 +45,7 @@ const EventPage = ({ id, children }) => {
                 </Link>
                 <SponsoredBy title={"Sponsored By"} list={""} sponsors={events[id].sponsors} />
                 <div className="lg:mx-0 z-10 relative pb-0">
-                    <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} />
+                    {/* <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} /> */}
                     <SponsoredBy title={"Organized By"} list={"list"} sponsors={organizers} />
                 </div>
             </div>
@@ -101,7 +101,7 @@ const EventRegistrationPage = ({ title, id, children }) => {
                 {children}
                 <SponsoredBy title={"Sponsored By"} list={""} sponsors={events[id].sponsors} />
                 <div className="lg:mx-0 z-10 relative ">
-                    <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} />
+                    {/* <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} /> */}
                     <SponsoredBy title={"Organized By"} list={"list"} sponsors={organizers} />
                 </div>
             </div>
