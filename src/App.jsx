@@ -10,7 +10,7 @@ import IUPC from "./pages/IUPC";
 import Hackathon from "./pages/Hackathon";
 import DLSprint from "./pages/DLSprint";
 import CodeBattle from "./pages/CodeBattle";
-import IUPCRegistraion from "./pages/Registration/IUPCRegistration";
+import HackathonAnnouncement from "./pages/Registration/HackathonAnnouncement";
 import HackathonRegistration from "./pages/Registration/HackathonRegistration";
 import DLSprintRegistration from "./pages/Registration/DLSprintRegistration";
 import CodeBattleRegistration from "./pages/Registration/CodeBattleRegistration";
@@ -21,6 +21,8 @@ import NotFound from "./components/NotFound";
 import DLSprintTest from "./pages/Registration/DLSprintTest";
 import Status from "./pages/Status";
 import IUPCAnnouncement from "./pages/Registration/IUPCAnnouncement";
+
+const hackathonOffdate = new Date("2021-01-28");
 
 const App = () => {
   return (
@@ -35,8 +37,11 @@ const App = () => {
           <Route path="/dlenigma" element={<DLSprint />}></Route>
           <Route path="/codebattle" element={<CodeBattle />}></Route>
           <Route path="/contactus" element={<ContactUs />}></Route>
-
           <Route path="/iupc/registration" element={<IUPCAnnouncement />}></Route>
+          {/*change the element of /hackathon/registration to hackathonannouncement after 27 january */}
+          <Route path="/hackathon/registration" element={hackathonOffdate > new Date() ? <HackathonRegistration /> : <HackathonAnnouncement />}></Route>
+
+
           <Route path="/hackathon/registration" element={<HackathonRegistration />}></Route>
           <Route path="/dlenigma/registration" element={<DLSprintRegistration />}></Route>
           {/* <Route path="/test" element={<DLSprintTest />}></Route> */}
