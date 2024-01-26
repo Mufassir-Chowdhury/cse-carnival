@@ -22,7 +22,7 @@ import DLSprintTest from "./pages/Registration/DLSprintTest";
 import Status from "./pages/Status";
 import IUPCAnnouncement from "./pages/Registration/IUPCAnnouncement";
 
-const hackathonOffdate = new Date("2021-01-28");
+const hackathonOffdate = new Date("2024-01-28");
 
 const App = () => {
   return (
