@@ -62,8 +62,18 @@ const Status = (props) => {
         return allParticipants;
     };
 
-    const handleProceedToPay = () => {
+    const handleProceedToPay = async (e) => {
+        e.preventDefault();
         // Add logic to handle the action when the "Proceed to Pay" button is clicked
+        // Make fetch request 
+        const response = await fetch(`https://csecarnival.sust.edu.bd/api/v1/payment/getCheckoutURL/${id}`);
+
+        // Get checkout URL from response
+        const checkoutURL = await response.json();
+        console.log(checkoutURL.url);
+
+        // Redirect browser to checkout URL 
+        window.location.href = checkoutURL.url;
         console.log('Proceed to Pay button clicked');
     };
 
@@ -126,7 +136,8 @@ const Status = (props) => {
                                         <div className='py-10 w-full flex justify-center font-lato'>
                                             <button
                                                 className="w-full  bg-yellow-500 text-white px-4 py-1 "
-                                                onClick={handleProceedToPay}
+                                                onClick={(e)=>handleProceedToPay(e)}
+                                                type='button'
                                                 disabled={paymentData.isPaid}
                                             >
                                                 {paymentData.isPaid ? 'Paid' : 'Pay'}
