@@ -51,13 +51,13 @@ const Hackathon = () => {
     </div>
   );
 
-  const announcment = (
+  const announcement = (
     <div className='py-20'>
       Introducing our upcoming online 🔥𝗛𝗮𝗰𝗸𝗮𝘁𝗵𝗼𝗻 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 🔥, led by the brilliant 𝗗𝗵𝗮𝗻𝗻𝗷𝗼𝘆 𝗕𝗶𝘀𝘄𝗮𝘀 on 𝗝𝗮𝗻𝘂𝗮𝗿𝘆 𝟮𝟲, 𝟮𝟬𝟮𝟰, 𝗮𝘁 𝟲:𝟬𝟬 𝗣𝗠! Get ready for an exhilarating journey of innovation and creativity.
-      <br/>
+      <br />
       Join us for this exclusive 🔵𝘧𝘢𝘤𝘦𝘣𝘰𝘰𝘬 𝘭𝘪𝘷𝘦 𝘴𝘦𝘴𝘴𝘪𝘰𝘯 where you'll have the chance to learn about Hackathons. Whether you're a seasoned coder, a tech enthusiast, or simply someone passionate about innovation, this is your opportunity to learn
       <div className='my-8 md:mx-8 flex justify-center w-full aspect-video md:h-96'>
-        <img src="/image/banner/hackathonDJ.jpg" alt="" className=""/>
+        <img src="/image/banner/hackathonDJ.jpg" alt="" className="" />
       </div>
     </div>
   );
@@ -106,7 +106,7 @@ const Hackathon = () => {
 
   return (
     <EventPage id="hackathon">
-      <Tab child1={mainDescription} child2={announcment} child3={download} />
+      <Tab child1={mainDescription} child2={announcement} child3={download} />
     </EventPage>
   );
 };

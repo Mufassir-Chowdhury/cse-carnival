@@ -38,7 +38,7 @@ const IUPC = () => {
       })}
     </div>
   );
-  const announcment = (
+  const announcement = (
     <div className='py-20'>
       No Announcements Yet
     </div>
@@ -51,7 +51,7 @@ const IUPC = () => {
 
   return (
     <EventPage id="iupc">
-      <Tab child1={mainDescription} child2={announcment} child3={download} />
+      <Tab child1={mainDescription} child2={announcement} child3={download} />
     </EventPage>
   );
 };

@@ -40,9 +40,56 @@ const DLSprint = () => {
     </div>
   );
 
-  const announcment = (
-    <div className='py-20'>
-      No Announcements Yet
+  const announcement = (
+    <div className='py-10'>
+      <strong><h1 style={{ fontSize: '1.3em' }}>Announcement 1: 27 January 2024 <br /><br /></h1></strong>
+      🚗 Exciting News for Deep Learning Enthusiasts! Join us for the DL Enigma 1.0 Workshop hosted by our esteemed alumnus, 𝗦𝗼𝘄𝗺𝗲𝗻 𝗗𝗮𝘀, currently a ML Research Engineer at 𝗠𝗲𝗱𝗶𝗮𝘁𝗲𝗸 𝗥𝗲𝘀𝗲𝗮𝗿𝗰𝗵 𝗨𝗞! 🌟🤖
+      <br />
+      <br />
+      🌐 𝗗𝗲𝗺𝘆𝘀𝘁𝗶𝗳𝘆𝗶𝗻𝗴 𝗢𝗯𝗷𝗲𝗰𝘁 𝗗𝗲𝘁𝗲𝗰𝘁𝗶𝗼𝗻: 𝗔 𝗕𝗲𝗴𝗶𝗻𝗻𝗲𝗿'𝘀 𝗚𝘂𝗶𝗱𝗲 𝘁𝗼 𝗗𝗟 𝗘𝗻𝗶𝗴𝗺𝗮 𝟭.𝟬
+
+      <br />
+      <br />
+      Embark on a journey with us as we demystify the intricacies of Object Detection in our special workshop designed for beginners. Here's a glimpse into what awaits you:
+      <br />
+      <br />
+
+      🌟 𝗪𝗼𝗿𝗸𝘀𝗵𝗼𝗽 𝗔𝗴𝗲𝗻𝗱𝗮:
+      <br />
+      <br />
+
+      1. 𝗗𝗟 𝗘𝗻𝗶𝗴𝗺𝗮 𝟭.𝟬 𝗘𝘃𝗲𝗻𝘁 𝗜𝗻𝗳𝗼:
+      <br />
+      - Unpacking the competition details<br />
+
+      - Overview of the dataset<br />
+
+      <br />
+      2. 𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝘁𝗼 𝗢𝗯𝗷𝗲𝗰𝘁 𝗗𝗲𝘁𝗲𝗰𝘁𝗶𝗼𝗻:<br />
+
+      - Grasping the basics for beginners<br />
+
+      - Understanding key concepts and terminologies<br />
+
+      - Practical Coding Examples<br />
+
+      <br />
+
+      3. 𝗤&𝗔 𝗦𝗲𝘀𝘀𝗶𝗼𝗻:<br />
+
+      - A dedicated time to address your queries<br />
+
+      - Interact with Sowmen Das and fellow participants<br />
+      <br />
+
+      📅 𝗗𝗮𝘁𝗲: 28 January 2024<br />
+
+      🕒𝗧𝗶𝗺𝗲: 10:00 P.M.<br />
+
+      📍 𝗩𝗲𝗻𝘂𝗲: Zoom Meeting and Facebook Live<br />
+      <div className='my-8 md:mx-8 flex justify-center w-full aspect-video md:h-96'>
+        <img src="/image/banner/dlenigmaSowmen.jpg" alt="" className="" />
+      </div>
     </div>
   );
 
@@ -54,7 +101,7 @@ const DLSprint = () => {
 
   return (
     <EventPage id="dlsprint" >
-      <Tab child1={mainDescription} child2={announcment} child3={download} />
+      <Tab child1={mainDescription} child2={announcement} child3={download} />
     </EventPage>
   );
 };
