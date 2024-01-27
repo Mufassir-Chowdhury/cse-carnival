@@ -7,6 +7,8 @@ import { PrimaryButton, SecondaryButton } from '../components/Button';
 import SponsoredBy from '../components/SponsoredBy';
 import { organizers, poweredby } from '../data/data';
 import NotFound from '../components/NotFound';
+import Loader from '../components/Loader';
+import { faL } from '@fortawesome/free-solid-svg-icons';
 
 const VectorGraphics = () => {
     return (
@@ -17,31 +19,39 @@ const VectorGraphics = () => {
     )
 };
 
+
+
 const Status = (props) => {
     const { id } = useParams();
-    const [paymentData, setPaymentData] = useState(null);
+    // const [paymentData, setPaymentData] = useState(null);
+    const [Loading, setLoading] = useState(true);
 
     useEffect(() => {
         // Make API call when the component mounts
-        const fetchPaymentData = async () => {
-            try {
-                const requestOptions = {
-                    method: 'GET',
-                    redirect: 'follow',
-                };
+        //add loader while fetching is not complete
+        setTimeout(() => {
+            const fetchPaymentData = async () => {
+                try {
+                    const requestOptions = {
+                        method: 'GET',
+                        redirect: 'follow',
+                    };
 
-                const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/payment/${id}`, requestOptions);
-                const result = await response.json();
+                    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/payment/${id}`, requestOptions);
+                    const result = await response.json();
 
-                if (result && result.data && result.data.length > 0) {
-                    setPaymentData(result.data[0]);
+                    if (result && result.data && result.data.length > 0) {
+                        setPaymentData(result.data[0]);
+                    }
+                } catch (error) {
+                    console.log('error', error);
+                } finally {
+                    setLoading(false);
                 }
-            } catch (error) {
-                console.log('error', error);
-            }
-        };
+            };
 
-        fetchPaymentData();
+            fetchPaymentData();
+        }, 1000);
     }, [id]);
 
     const getParticipantInfo = () => {
@@ -66,7 +76,7 @@ const Status = (props) => {
         e.preventDefault();
         // Add logic to handle the action when the "Proceed to Pay" button is clicked
         // Make fetch request 
-        const response = await fetch(`https://csecarnival.sust.edu.bd/api/v1/payment/getCheckoutURL/${id}`);
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/payment/getCheckoutURL/${id}`);
 
         // Get checkout URL from response
         const checkoutURL = await response.json();
@@ -91,6 +101,31 @@ const Status = (props) => {
                 return competition;
         }
     };
+
+    if (Loading) {
+        return <Loader />;
+    }
+
+    const paymentData = {
+        teamInfo: {
+            teamName: 'Team Name',
+            coach: {
+                name: 'Coach Name',
+            },
+            participant1: {
+                name: 'Participant 1 Name',
+            },
+            participant2: {
+                name: 'Participant 2 Name',
+            },
+            participant3: {
+                name: 'Participant 3 Name',
+            },
+        },
+        isPaid: true,
+        amount: 1000,
+        competition: 'iUPC',
+    }
 
     return (
         <div className='flex flex-col items-center justify-center sm:px-12'>
@@ -121,22 +156,22 @@ const Status = (props) => {
                                     </dl>
                                 </div>
                             </div>
-                            <div className='m-8 p-8 border border-yellow-300'>
+                            <div className='m-8 p-8 h-fit border border-yellow-300'>
 
-                                <div className="px-4 sm:px-0">
-                                    <h3 className="text-base font-semibold leading-7 text-gray-900">Payment Status</h3>
-                                    <p className={`mt-1 max-w-2xl text-sm leading-6 ${paymentData.isPaid ? "text-green-500": "text-red-500"}`}>{paymentData.isPaid ? '' : 'Not'} paid</p>
+                                <div className="px-4 sm:px-0 flex flex-col items-center">
+                                    <h3 className="text-2xl font-semibold leading-7 text-gray-900 ">Payment Status</h3>
+                                    <p className={`mt-2 w-fit px-2 py-1 rounded-md font-medium leading-6 text-white ${paymentData.isPaid ? "bg-green-700" : "bg-red-600"}`}>{paymentData.isPaid ? '' : 'NOT'} PAID</p>
                                 </div>
-                                <div className="mt-6 border-t border-gray-200">
+                                <div className="mt-3 border-t border-gray-200">
                                     <dl className="divide-y divide-gray-200">
                                         <div className="px-4 py-4 grid grid-cols-2 sm:grid-cols-3 sm:gap-4 sm:px-0">
                                             <dt className="text-sm font-medium leading-6 text-gray-900">Total</dt>
                                             <dd className="mt-1 text-sm leading-6 text-end text-gray-700 sm:col-span-2 sm:mt-0">{paymentData.amount}৳</dd>
                                         </div>
-                                        <div className='py-10 w-full flex justify-center font-lato'>
+                                        <div className='pt-5 w-full flex justify-center font-lato'>
                                             <button
-                                                className="w-full  bg-yellow-500 text-white px-4 py-1 "
-                                                onClick={(e)=>handleProceedToPay(e)}
+                                                className={`w-full text-white px-4 py-1 ${paymentData.isPaid ? "bg-gray-500" : "bg-yellow-600"}`}
+                                                onClick={(e) => handleProceedToPay(e)}
                                                 type='button'
                                                 disabled={paymentData.isPaid}
                                             >
@@ -151,11 +186,11 @@ const Status = (props) => {
 
                             {/* <p>Is Paid: {paymentData.isPaid ? 'Yes' : 'No'}</p> */}
                         </div>
-                        
+
 
                         {/* <SponsoredBy title={"Sponsored By"} list={""} sponsors={events[id].sponsors} /> */}
                         <div className="lg:mx-0 z-10 relative pb-0">
-                            <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} />
+                            {/* <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} /> */}
                             <SponsoredBy title={"Organized By"} list={"list"} sponsors={organizers} />
                         </div>
                     </div>
