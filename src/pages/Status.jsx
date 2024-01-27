@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { IUPCLeft, IUPCRight } from '../data/vector';
-import { useParams } from 'react-router-dom';
+import { useParams, useSearchParams } from 'react-router-dom';
 import Banner from '../components/Banner';
 import EventTitle from '../components/EventTitle';
 import { PrimaryButton, SecondaryButton } from '../components/Button';
@@ -9,6 +9,7 @@ import { organizers, poweredby } from '../data/data';
 import NotFound from '../components/NotFound';
 import Loader from '../components/Loader';
 import { faL } from '@fortawesome/free-solid-svg-icons';
+import Swal from 'sweetalert2'
 
 const VectorGraphics = () => {
     return (
@@ -23,9 +24,9 @@ const VectorGraphics = () => {
 
 const Status = (props) => {
     const { id } = useParams();
-    // const [paymentData, setPaymentData] = useState(null);
+    const [paymentData, setPaymentData] = useState(null);
     const [Loading, setLoading] = useState(true);
-
+    const status = useSearchParams()[0].get('status');
     useEffect(() => {
         // Make API call when the component mounts
         //add loader while fetching is not complete
@@ -51,6 +52,34 @@ const Status = (props) => {
             };
 
             fetchPaymentData();
+            
+            console.log(status);
+            if(status === 'success'){
+                Swal.fire({
+                    title: "Successful!",
+                    text: "Your payment was successful!",
+                    icon: "success"
+                });
+            } else if(status === 'failed'){
+                Swal.fire({
+                    icon: "error",
+                    title: "Failed!",
+                    text: "Payment failed!",
+                  });
+            } else if(status === 'need_verification'){
+                Swal.fire({
+                    icon: "question",
+                    title: "Oops...",
+                    text: "Your payment is on hold.",
+                    footer: '<a href="#">Please contact us through our official communication channels. Check your email for further instructions.</a>'
+                  });
+            } else if(status === 'cancelled'){
+                Swal.fire({
+                    icon: "error",
+                    title: "Cancelled!",
+                    text: "Payment was cancelled. You can try again",
+                  });
+            }
         }, 1000);
     }, [id]);
 
@@ -106,26 +135,26 @@ const Status = (props) => {
         return <Loader />;
     }
 
-    const paymentData = {
-        teamInfo: {
-            teamName: 'Team Name',
-            coach: {
-                name: 'Coach Name',
-            },
-            participant1: {
-                name: 'Participant 1 Name',
-            },
-            participant2: {
-                name: 'Participant 2 Name',
-            },
-            participant3: {
-                name: 'Participant 3 Name',
-            },
-        },
-        isPaid: true,
-        amount: 1000,
-        competition: 'iUPC',
-    }
+    // const paymentData = {
+    //     teamInfo: {
+    //         teamName: 'Team Name',
+    //         coach: {
+    //             name: 'Coach Name',
+    //         },
+    //         participant1: {
+    //             name: 'Participant 1 Name',
+    //         },
+    //         participant2: {
+    //             name: 'Participant 2 Name',
+    //         },
+    //         participant3: {
+    //             name: 'Participant 3 Name',
+    //         },
+    //     },
+    //     isPaid: true,
+    //     amount: 1000,
+    //     competition: 'iUPC',
+    // }
 
     return (
         <div className='flex flex-col items-center justify-center sm:px-12'>
