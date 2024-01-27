@@ -56,14 +56,14 @@ const Status = (props) => {
             console.log(status);
             if(status === 'success'){
                 Swal.fire({
-                    title: "Good job!",
+                    title: "Successful!",
                     text: "Your payment was successful!",
                     icon: "success"
                 });
             } else if(status === 'failed'){
                 Swal.fire({
                     icon: "error",
-                    title: "Oops...",
+                    title: "Failed!",
                     text: "Payment failed!",
                   });
             } else if(status === 'need_verification'){
@@ -76,7 +76,7 @@ const Status = (props) => {
             } else if(status === 'cancelled'){
                 Swal.fire({
                     icon: "error",
-                    title: "Oops...",
+                    title: "Cancelled!",
                     text: "Payment was cancelled. You can try again",
                   });
             }
