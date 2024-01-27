@@ -42,7 +42,7 @@ const App = () => {
           <Route path="/hackathon/registration" element={hackathonOffdate > new Date() ? <HackathonRegistration /> : <HackathonAnnouncement />}></Route>
 
 
-          <Route path="/hackathon/registration" element={<HackathonRegistration />}></Route>
+          {/* <Route path="/hackathon/registration" element={<HackathonRegistration />}></Route> */}
           <Route path="/dlenigma/registration" element={<DLSprintRegistration />}></Route>
           {/* <Route path="/test" element={<DLSprintTest />}></Route> */}
           <Route path="/codebattle/registration" element={<CodeBattleRegistration />}></Route>
