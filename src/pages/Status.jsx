@@ -24,7 +24,7 @@ const VectorGraphics = () => {
 
 const Status = (props) => {
     const { id } = useParams();
-    const [paymentData, setPaymentData] = useState(null);
+    // const [paymentData, setPaymentData] = useState(null);
     const [Loading, setLoading] = useState(true);
     const status = useSearchParams()[0].get('status');
     useEffect(() => {
@@ -103,7 +103,9 @@ const Status = (props) => {
 
     const handleProceedToPay = async (e) => {
         e.preventDefault();
-        // Add logic to handle the action when the "Proceed to Pay" button is clicked
+        e.target.disabled = true;
+        e.target.innerHTML = '<div class="animate-spin rounded-full h-6 w-6 border-b-2 border-black"></div>';
+
         // Make fetch request 
         const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/payment/getCheckoutURL/${id}`);
 
@@ -135,26 +137,26 @@ const Status = (props) => {
         return <Loader />;
     }
 
-    // const paymentData = {
-    //     teamInfo: {
-    //         teamName: 'Team Name',
-    //         coach: {
-    //             name: 'Coach Name',
-    //         },
-    //         participant1: {
-    //             name: 'Participant 1 Name',
-    //         },
-    //         participant2: {
-    //             name: 'Participant 2 Name',
-    //         },
-    //         participant3: {
-    //             name: 'Participant 3 Name',
-    //         },
-    //     },
-    //     isPaid: true,
-    //     amount: 1000,
-    //     competition: 'iUPC',
-    // }
+    const paymentData = {
+        teamInfo: {
+            teamName: 'Team Name',
+            coach: {
+                name: 'Coach Name',
+            },
+            participant1: {
+                name: 'Participant 1 Name',
+            },
+            participant2: {
+                name: 'Participant 2 Name',
+            },
+            participant3: {
+                name: 'Participant 3 Name',
+            },
+        },
+        isPaid: false,
+        amount: 1000,
+        competition: 'iUPC',
+    }
 
     return (
         <div className='flex flex-col items-center justify-center sm:px-12'>
@@ -168,7 +170,7 @@ const Status = (props) => {
 
                                 <div className="px-4 sm:px-0">
                                     <h3 className="text-base font-semibold leading-7 text-gray-900">Applicant Information</h3>
-                                    <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Personal details and application.</p>
+                                    {/* <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Personal details</p> */}
                                 </div>
                                 <div className="mt-6 border-t border-gray-200">
                                     <dl className="divide-y divide-gray-200">
@@ -185,21 +187,21 @@ const Status = (props) => {
                                     </dl>
                                 </div>
                             </div>
-                            <div className='m-8 p-8 h-fit border border-yellow-300'>
+                            <div className='m-8 p-8  border border-yellow-300'>
 
-                                <div className="px-4 sm:px-0 flex flex-col items-center">
+                                <div className="px-4 sm:px-0">
                                     <h3 className="text-2xl font-semibold leading-7 text-gray-900 ">Payment Status</h3>
                                     <p className={`mt-2 w-fit px-2 py-1 rounded-md font-medium leading-6 text-white ${paymentData.isPaid ? "bg-green-700" : "bg-red-600"}`}>{paymentData.isPaid ? '' : 'NOT'} PAID</p>
                                 </div>
-                                <div className="mt-3 border-t border-gray-200">
+                                <div className="mt-6 border-t border-gray-200">
                                     <dl className="divide-y divide-gray-200">
                                         <div className="px-4 py-4 grid grid-cols-2 sm:grid-cols-3 sm:gap-4 sm:px-0">
                                             <dt className="text-sm font-medium leading-6 text-gray-900">Total</dt>
-                                            <dd className="mt-1 text-sm leading-6 text-end text-gray-700 sm:col-span-2 sm:mt-0">{paymentData.amount}৳</dd>
+                                            <dd className="mt-2 text-sm leading-6 text-end text-gray-700 sm:col-span-2 sm:mt-0">{paymentData.amount} BDT</dd>
                                         </div>
-                                        <div className='pt-5 w-full flex justify-center font-lato'>
+                                        <div className='pt-10 w-full text-center font-lato'>
                                             <button
-                                                className={`w-full text-white px-4 py-1 ${paymentData.isPaid ? "bg-gray-500" : "bg-yellow-600"}`}
+                                                className={`w-full flex items-center justify-center font-medium text-black px-4 py-2 ${paymentData.isPaid ? "bg-gray-500" : "bg-yellow-500"}`}
                                                 onClick={(e) => handleProceedToPay(e)}
                                                 type='button'
                                                 disabled={paymentData.isPaid}

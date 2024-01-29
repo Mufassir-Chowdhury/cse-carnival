@@ -1,48 +1,83 @@
 import { SecondaryButton } from "../components/Button"
+import { useState } from "react";
 
 const people = [
 
 
     {
       name: 'Team Name',
-      university: 'Fake University of Technology',
-      url: 'payment Link',
+      university: 'University of Technology',
+      url: '/payment/id',
+    },
+    {
+      name: 'Team Name',
+      university: 'Fak University of Technology',
+      url: '/payment/id',
+
+    },
+    {
+      name: 'Team Name',
+      university: 'Fa University of Technology',
+      url: '/payment/id',
+
+    },
+    {
+      name: 'Team Name',
+      university: 'F University of Technology',
+      url: '/payment/id',
+
+    },
+    {
+      name: 'Team Name',
+      university: 'Fakee University of Technology',
+      url: '/payment/id',
+
     },
     {
       name: 'Team Name',
       university: 'Fake University of Technology',
-      url: 'payment Link',
-    },
-    {
-      name: 'Team Name',
-      university: 'Fake University of Technology',
-      url: 'payment Link',
-    },
-    {
-      name: 'Team Name',
-      university: 'Fake University of Technology',
-      url: 'payment Link',
-    },
-    {
-      name: 'Team Name',
-      university: 'Fake University of Technology',
-      url: 'payment Link',
-    },
-    {
-      name: 'Team Name',
-      university: 'Fake University of Technology',
-      url: 'payment Link',
+      url: '/payment/id',
+
     },
   ]
   
 export default function HackathonList() {
+    const [search, setSearch] = useState("");
+    const [filteredPeople, setFilteredPeople] = useState(people);
+    const handleSearch = (e) => {
+      setSearch(e.target.value);
+      setFilteredPeople(
+        people.filter((person) =>
+          person.name.toLowerCase().includes(search.toLowerCase())||
+          person.university.toLowerCase().includes(search.toLowerCase())
+        )
+      );
+    };
+
     return (
-      <ul className="divide-y divide-gray-100 p-6 sm:p-28">
+      <ul className="divide-y divide-gray-100 p-6 pt-28 sm:p-28">
         <h2 className="text-center text-3xl font-semibold mt-4">Hackathon Team List</h2>
-        {people.map((person, index) => (
+        
+        <div className=" mt-4 flex justify-center ">
+          <input
+            type="text"
+            placeholder="Search by Team Name or University Name"
+            className="border-2 border-navbar rounded-md p-2 w-[80%] md:w-[50%]"
+            value={search}
+            onChange={handleSearch}
+          />
+          
+        </div>
+
+        {filteredPeople.length === 0 && (
+          <div className="text-center text-2xl font-semibold mt-4 max-h-screen">No Team Found</div>
+        )}
+
+
+        {filteredPeople.map((person, index) => (
           <li key={person.url} className="flex justify-between gap-x-2 md:gap-x-6 py-5 items-center">
             <div className="flex min-w-0 gap-x-2 sm:gap-x-4 items-center">
-                <div className="h-6 w-6 md:h-12 md:w-12 flex rounded-full bg-gray-700 text-center text-white justify-center items-center">{index}</div>
+                <div className="h-6 w-6 md:h-12 md:w-12 flex rounded-full bg-gray-700 text-center text-white justify-center items-center">{index+1}</div>
               {/* <img className="h-12 w-12 flex-none rounded-full bg-gray-50" src={person.imageUrl} alt="" /> */}
               <div className="min-w-0 flex-auto">
                 <p className="text-sm font-semibold leading-6 text-gray-900">{person.name}</p>
@@ -50,7 +85,6 @@ export default function HackathonList() {
               </div>
             </div>
             <div className="shrink-0 flex flex-col items-end">
-              <p className="text-sm leading-6 text-gray-900">{person.role}</p>
               <a href={person.url}>
                 <SecondaryButton text="Payment Link"/>
               </a>
