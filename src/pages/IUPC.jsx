@@ -6,6 +6,7 @@ import { events } from '../data/data';
 import { EventPage } from '../components/EventPage';
 import { renderLongDescriptions, renderShortDescriptions, renderTitleWithList, renderDetailsWithoutTitle, renderDetails } from '../components/Render';
 import { Details } from '../components/Details';
+import { SecondaryButton } from '../components/Button';
 
 const IUPC = () => {
   const { shortDescription, longDescription } = events['iupc'];
@@ -40,7 +41,11 @@ const IUPC = () => {
   );
   const announcement = (
     <div className='py-20'>
-      No Announcements Yet
+      Attention coders! 
+  🚀 The preliminary slot list for the SUST Inter-University Programming Contest is out! 📢 The slots are allocated based on performances at CUET IUPC 2024, ICPC Dhaka Regionals 2023, and BUET IUPC 2023. Some extra slots are given to universities that arranged IUPCs in 2023-24 to encourage further IUPC hosts. The payment procedure will be published tomorrow.
+      <a href="/iupc/slot">
+        Slot Distribution
+        </a>
     </div>
   );
   const download = (
