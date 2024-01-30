@@ -43,9 +43,15 @@ const IUPC = () => {
     <div className='py-20'>
       Attention coders! 
   🚀 The preliminary slot list for the SUST Inter-University Programming Contest is out! 📢 The slots are allocated based on performances at CUET IUPC 2024, ICPC Dhaka Regionals 2023, and BUET IUPC 2023. Some extra slots are given to universities that arranged IUPCs in 2023-24 to encourage further IUPC hosts. The payment procedure will be published tomorrow.
-      <a href="/iupc/slot">
-        Slot Distribution
-        </a>
+      <div className='w-full flex justify-end'>
+        <a href="/iupc/slot">
+          <div className='px-3 mt-4 py-1 bg-navbar-button w-fit text-white'>
+            Slot Distribution
+
+          </div>
+          </a>
+
+      </div>
     </div>
   );
   const download = (
