@@ -24,7 +24,7 @@ const VectorGraphics = () => {
 
 const Status = (props) => {
     const { id } = useParams();
-    // const [paymentData, setPaymentData] = useState(null);
+    const [paymentData, setPaymentData] = useState(null);
     const [Loading, setLoading] = useState(true);
     const status = useSearchParams()[0].get('status');
     useEffect(() => {
@@ -137,26 +137,26 @@ const Status = (props) => {
         return <Loader />;
     }
 
-    const paymentData = {
-        teamInfo: {
-            teamName: 'Team Name',
-            coach: {
-                name: 'Coach Name',
-            },
-            participant1: {
-                name: 'Participant 1 Name',
-            },
-            participant2: {
-                name: 'Participant 2 Name',
-            },
-            participant3: {
-                name: 'Participant 3 Name',
-            },
-        },
-        isPaid: false,
-        amount: 1000,
-        competition: 'iUPC',
-    }
+    // const paymentData = {
+    //     teamInfo: {
+    //         teamName: 'Team Name',
+    //         coach: {
+    //             name: 'Coach Name',
+    //         },
+    //         participant1: {
+    //             name: 'Participant 1 Name',
+    //         },
+    //         participant2: {
+    //             name: 'Participant 2 Name',
+    //         },
+    //         participant3: {
+    //             name: 'Participant 3 Name',
+    //         },
+    //     },
+    //     isPaid: true,
+    //     amount: 1000,
+    //     competition: 'iUPC',
+    // }
 
     return (
         <div className='flex flex-col items-center justify-center sm:px-12'>
@@ -191,7 +191,7 @@ const Status = (props) => {
 
                                 <div className="px-4 sm:px-0">
                                     <h3 className="text-2xl font-semibold leading-7 text-gray-900 ">Payment Status</h3>
-                                    <p className={`mt-2 w-fit px-2 py-1 rounded-md font-medium leading-6 text-white ${paymentData.isPaid ? "bg-green-700" : "bg-red-600"}`}>{paymentData.isPaid ? '' : 'NOT'} PAID</p>
+                                    <p className={`mt-2 w-fit px-2 py-0 text-sm rounded-md leading-6 text-white ${paymentData.isPaid ? "bg-green-700" : "bg-red-600"}`} style={{fontWeight:"800"}}>{paymentData.isPaid ? '' : 'NOT'} PAID</p>
                                 </div>
                                 <div className="mt-6 border-t border-gray-200">
                                     <dl className="divide-y divide-gray-200">
