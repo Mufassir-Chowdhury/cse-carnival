@@ -32,7 +32,7 @@ export default function IUPCList() {
         <p className="text-center text-md font-semibold py-1 text-white">**IUPC Payment Deadline: 7th February, 2024** </p>
       </Marquee>
       <div className="container mx-auto">
-        <ul className="divide-y divide-gray-100 px-6 sm:px-28 lg:px-48" >
+        <ul className="divide-y divide-gray-100 p-6 pt-0 sm:px-28 lg:px-48" >
           {/* add a marquee to show the payment deadline repeated*/}
           <h2 className="text-center text-3xl font-semibold mt-4">IUPC Selected Teams</h2>
           <div className=" my-4 flex justify-center ">
