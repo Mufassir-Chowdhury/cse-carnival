@@ -739,7 +739,7 @@ export const iupcSelectedTeams = [
   },
   {
     "name": "BUET_Ragnarok",
-    "university": "Bangladesh University of Business & Technology",
+    "university": "Bangladesh University of Engineering & Technology",
     "url": "https://csecarnival.sust.edu.bd/payment/d9fcbd99-55b6-4981-943e-991cb83efd5f"
   },
   {
@@ -996,5 +996,36 @@ export const iupcSelectedTeams = [
     "name": "VU_Strangers",
     "university": "Varendra University",
     "url": "https://csecarnival.sust.edu.bd/payment/9ca46548-e346-4736-be5b-539503b1c1f1"
+  },
+  {
+    "name": "MIST_Warfaze",
+    "university": "Military Institute of Science & Technology",
+    "url": "https://csecarnival.sust.edu.bd/payment/08237429-18ef-4890-a152-f59dea2b4a5b"
+  },
+  {
+    "name": "MIST_Greenhorns",
+    "university": "Military Institute of Science & Technology",
+    "url": "https://csecarnival.sust.edu.bd/payment/9d1096de-f7bd-4543-ac35-4a11a60a7f02"
+  },
+  {
+    "name": "LU MageMasters ",
+    "university": "Leading University",
+    "url": "https://csecarnival.sust.edu.bd/payment/fe98e046-0eeb-4479-856f-b5644f1ee5dd"
+  },
+  {
+    "name": "RU_NowOrNever",
+    "university": "University of Rajshahi",
+    "url": "https://csecarnival.sust.edu.bd/payment/65749f6c-c481-4e78-84d7-fc144e851433"
+  },
+  {
+    "name": "RU_SFS_2.0",
+    "university": "University of Rajshahi",
+    "url": "https://csecarnival.sust.edu.bd/payment/fb6ba758-3e65-4205-a027-0d2e09ccd971"
+  },
+  {
+    "name": "RU_Alvish_Rings",
+    "university": "University of Rajshahi",
+    "url": "https://csecarnival.sust.edu.bd/payment/23fd7c90-f9cc-4e10-8cfa-fb5bcc606fb4"
   }
 ]
+

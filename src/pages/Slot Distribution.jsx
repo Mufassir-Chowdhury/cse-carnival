@@ -235,7 +235,7 @@ export default function IUPCSlot() {
     <div >
       <div className="container mx-auto"> 
 
-        <ul className="divide-y divide-gray-100 overflow-scroll p-6 pt-28 sm:p-28 lg:px-48" >
+        <ul className="divide-y divide-gray-100 p-6 pt-28 sm:p-28 lg:px-48" >
           <h2 className="text-center text-3xl font-semibold mt-4">IUPC Slot Distribution</h2>
           <div className="w-full flex justify-center md:justify-end py-4">
             <a href="/resources/iupc_slot_distribution.pdf" download="iupc_slot_distribution.pdf" target="_blank" rel="noopener noreferrer">
