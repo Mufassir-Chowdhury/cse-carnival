@@ -26,8 +26,8 @@ export default function IUPCList() {
 
     
 
-      <Marquee gradient={false} speed={100} className=" overflow-y-hidden bg-navbar-button-hover">
-        <p className="text-center text-xl font-semibold py-1 text-white">**IUPC Payment Deadline: 7th February, 2024** </p>
+      <Marquee gradient={false} speed={100}  className=" overflow-y-hidden bg-navbar-button-hover">
+        <p className="text-center text-md font-semibold py-1 text-white">**IUPC Payment Deadline: 7th February, 2024** </p>
       </Marquee>
       <div className="container mx-auto">
     <ul className="divide-y divide-gray-100 px-6 sm:px-28 lg:px-48" >
