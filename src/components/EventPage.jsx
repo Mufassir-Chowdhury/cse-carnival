@@ -38,11 +38,21 @@ const EventPage = ({ id, children }) => {
                 <EventTitle title={events[id].name} />
                 <ToastContainer className=" mt-28 z-50" />
                 {children}
-                <Link to={events[id].registration}>
-                    <div className='py-10 w-full flex justify-center font-lato'>
-                        <PrimaryButton text='Register Now' />
-                    </div>
-                </Link>
+                {events[id].selected_teams && (
+                    <Link to={events[id].selected_teams}>
+                        <div className='py-10 w-full flex justify-center font-lato'>
+                            <PrimaryButton text='Selected Teams' />
+                        </div>
+                    </Link>
+                )}
+                {events[id].registration && (
+                    <Link to={events[id].registration}>
+                        <div className='py-10 w-full flex justify-center font-lato'>
+                            <PrimaryButton text='Register Now' />
+                        </div>
+                    </Link>
+                )}
+
                 <SponsoredBy title={"Sponsored By"} list={""} sponsors={events[id].sponsors} />
                 <div className="lg:mx-0 z-10 relative pb-0">
                     {/* <SponsoredBy title={"Powered By"} list={""} sponsors={poweredby} /> */}

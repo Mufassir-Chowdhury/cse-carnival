@@ -31,6 +31,11 @@ const EventItems = ({ event }) => {
                             <PrimaryButton text="Register" />
                         </Link>
                     )}
+                    {event.selected_teams && (
+                        <Link to={event.selected_teams}>
+                            <PrimaryButton text="Selected Teams" />
+                        </Link>
+                    )}
                     {event.link && (
                         <Link to={event.link}>
                             <SecondaryButton text="View Event" />

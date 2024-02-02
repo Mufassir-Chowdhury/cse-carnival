@@ -24,7 +24,7 @@ const VectorGraphics = () => {
 
 const Status = (props) => {
     const { id } = useParams();
-    const [paymentData, setPaymentData] = useState(null);
+    // const [paymentData, setPaymentData] = useState(null);
     const [Loading, setLoading] = useState(true);
     const status = useSearchParams()[0].get('status');
     useEffect(() => {
@@ -116,6 +116,9 @@ const Status = (props) => {
         // Redirect browser to checkout URL 
         window.location.href = checkoutURL.url;
         console.log('Proceed to Pay button clicked');
+        e.target.innerHTML = 'Pay';
+        e.target.disabled = false;
+
     };
 
     const getCompetitionTitle = (competition) => {
@@ -137,26 +140,26 @@ const Status = (props) => {
         return <Loader />;
     }
 
-    // const paymentData = {
-    //     teamInfo: {
-    //         teamName: 'Team Name',
-    //         coach: {
-    //             name: 'Coach Name',
-    //         },
-    //         participant1: {
-    //             name: 'Participant 1 Name',
-    //         },
-    //         participant2: {
-    //             name: 'Participant 2 Name',
-    //         },
-    //         participant3: {
-    //             name: 'Participant 3 Name',
-    //         },
-    //     },
-    //     isPaid: true,
-    //     amount: 1000,
-    //     competition: 'iUPC',
-    // }
+    const paymentData = {
+        teamInfo: {
+            teamName: 'Team Name',
+            coach: {
+                name: 'Coach Name',
+            },
+            participant1: {
+                name: 'Participant 1 Name',
+            },
+            participant2: {
+                name: 'Participant 2 Name',
+            },
+            participant3: {
+                name: 'Participant 3 Name',
+            },
+        },
+        isPaid: false,
+        amount: 1000,
+        competition: 'iUPC',
+    }
 
     return (
         <div className='flex flex-col items-center justify-center sm:px-12'>
@@ -169,7 +172,7 @@ const Status = (props) => {
                             <div className='col-span-2'>
 
                                 <div className="px-4 sm:px-0">
-                                    <h3 className="text-base font-semibold leading-7 text-gray-900">Applicant Information</h3>
+                                    <h3 className="text-base font-semibold leading-7 text-gray-900">Team Details</h3>
                                     {/* <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Personal details</p> */}
                                 </div>
                                 <div className="mt-6 border-t border-gray-200">
