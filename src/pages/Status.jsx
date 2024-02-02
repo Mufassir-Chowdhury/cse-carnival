@@ -24,7 +24,7 @@ const VectorGraphics = () => {
 
 const Status = (props) => {
     const { id } = useParams();
-    // const [paymentData, setPaymentData] = useState(null);
+    const [paymentData, setPaymentData] = useState(null);
     const [Loading, setLoading] = useState(true);
     const status = useSearchParams()[0].get('status');
     useEffect(() => {
@@ -140,26 +140,26 @@ const Status = (props) => {
         return <Loader />;
     }
 
-    const paymentData = {
-        teamInfo: {
-            teamName: 'Team Name',
-            coach: {
-                name: 'Coach Name',
-            },
-            participant1: {
-                name: 'Participant 1 Name',
-            },
-            participant2: {
-                name: 'Participant 2 Name',
-            },
-            participant3: {
-                name: 'Participant 3 Name',
-            },
-        },
-        isPaid: false,
-        amount: 1000,
-        competition: 'iUPC',
-    }
+    // const paymentData = {
+    //     teamInfo: {
+    //         teamName: 'Team Name',
+    //         coach: {
+    //             name: 'Coach Name',
+    //         },
+    //         participant1: {
+    //             name: 'Participant 1 Name',
+    //         },
+    //         participant2: {
+    //             name: 'Participant 2 Name',
+    //         },
+    //         participant3: {
+    //             name: 'Participant 3 Name',
+    //         },
+    //     },
+    //     isPaid: false,
+    //     amount: 1000,
+    //     competition: 'iUPC',
+    // }
 
     return (
         <div className='flex flex-col items-center justify-center sm:px-12'>
