@@ -5,17 +5,15 @@ import { iupcSelectedTeams } from "../data/data";
 import Marquee from "react-fast-marquee";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import people from "../data/iupcSelectedTeams.json";
 
-// add people from a json file
-const people = iupcSelectedTeams;
-
-//sort the people array by university name
+// sort the people array by university name
 people.sort((a, b) => a.university.localeCompare(b.university));
 
 export default function IUPCList() {
   const [search, setSearch] = useState("");
   const [filteredPeople, setFilteredPeople] = useState(people);
-  {/*search by word given in input field*/}
+  {/*search by word given in input field*/ }
   const handleSearch = (e) => {
     const searchText = e.target.value.toLowerCase();
     setSearch(searchText);
@@ -49,7 +47,7 @@ export default function IUPCList() {
               className="border-2 border-navbar rounded-md p-2 w-[80%] md:w-[50%]"
               value={search}
               onChange={handleSearch}
-              
+
             />
 
           </div>
