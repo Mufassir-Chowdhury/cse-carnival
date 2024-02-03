@@ -55,7 +55,6 @@ export default function IUPCList() {
           </div>
           {/* {filteredPeople.length === 0 && <p className="text-center text-2xl mt-4 font-semibold max-h-screen">No Team Found</p>} */}
 
-          {filteredPeople.length === 0 && <p className="text-center text-2xl mt-4 font-semibold max-h-screen">No Team Found</p>}
           <li className="flex justify-between gap-x-2 md:gap-x-6 py-5 items-center bg-slate-900 bg-opacity-10 px-4 text-lg font-semibold">
             <div className="flex min-w-0 gap-x-2 sm:gap-x-4 items-center">
               <div className="min-w-0 flex-auto">
@@ -66,6 +65,7 @@ export default function IUPCList() {
               <p className="leading-6 text-navbar">Payment Link</p>
             </div>
           </li>
+          {filteredPeople.length === 0 && <p className="text-center text-2xl mt-4 font-semibold max-h-screen">No Team Found</p>}
           {filteredPeople.map((person, index) => (
             <li key={person.url} className="flex justify-between odd:bg-slate-500 odd:bg-opacity-10 px-4 gap-x-2 md:gap-x-6 py-5 items-center">
               <div className="grid grid-cols-12 min-w-0 gap-x-2 sm:gap-x-4 items-center">
