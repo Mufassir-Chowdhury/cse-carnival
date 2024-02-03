@@ -1,5 +1,6 @@
 import { SecondaryButton } from "../components/Button"
 import { useState } from "react";
+import { useEffect } from "react";
 import { iupcSelectedTeams } from "../data/data";
 import Marquee from "react-fast-marquee";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,15 +15,21 @@ people.sort((a, b) => a.university.localeCompare(b.university));
 export default function IUPCList() {
   const [search, setSearch] = useState("");
   const [filteredPeople, setFilteredPeople] = useState(people);
+  {/*search by word given in input field*/}
   const handleSearch = (e) => {
-    setSearch(e.target.value);
+    const searchText = e.target.value.toLowerCase();
+    setSearch(searchText);
+  };
+
+  useEffect(() => {
     setFilteredPeople(
-      people.filter((person) =>
-        person.name.toLowerCase().includes(search.toLowerCase()) ||
-        person.university.toLowerCase().includes(search.toLowerCase())
+      people.filter(
+        (person) =>
+          person.name.toLowerCase().includes(search.toLowerCase()) ||
+          person.university.toLowerCase().includes(search.toLowerCase())
       )
     );
-  };
+  }, [search]);
   return (
     <div className=" pt-24">
 
@@ -42,11 +49,13 @@ export default function IUPCList() {
               className="border-2 border-navbar rounded-md p-2 w-[80%] md:w-[50%]"
               value={search}
               onChange={handleSearch}
+              
             />
 
           </div>
           {/* {filteredPeople.length === 0 && <p className="text-center text-2xl mt-4 font-semibold max-h-screen">No Team Found</p>} */}
 
+          {filteredPeople.length === 0 && <p className="text-center text-2xl mt-4 font-semibold max-h-screen">No Team Found</p>}
           <li className="flex justify-between gap-x-2 md:gap-x-6 py-5 items-center bg-slate-900 bg-opacity-10 px-4 text-lg font-semibold">
             <div className="flex min-w-0 gap-x-2 sm:gap-x-4 items-center">
               <div className="min-w-0 flex-auto">
@@ -57,9 +66,8 @@ export default function IUPCList() {
               <p className="leading-6 text-navbar">Payment Link</p>
             </div>
           </li>
-          {filteredPeople.length === 0 && <p className="text-center text-2xl mt-4 font-semibold max-h-screen">No Team Found</p>}
           {filteredPeople.map((person, index) => (
-            <li key={person.university} className="flex justify-between odd:bg-slate-500 odd:bg-opacity-10 px-4 gap-x-2 md:gap-x-6 py-5 items-center">
+            <li key={person.url} className="flex justify-between odd:bg-slate-500 odd:bg-opacity-10 px-4 gap-x-2 md:gap-x-6 py-5 items-center">
               <div className="grid grid-cols-12 min-w-0 gap-x-2 sm:gap-x-4 items-center">
                 <div className="h-6 w-6 col-span-1 md:h-12 md:w-12 flex rounded-full bg-gray-700 text-center text-white justify-center items-center">{index + 1}</div>
                 <div className="min-w-0 flex-auto col-span-9 pl-2">

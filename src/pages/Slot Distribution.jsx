@@ -1,5 +1,6 @@
 import { SecondaryButton } from "../components/Button"
 import { useState } from "react";
+import { useEffect } from "react";
 
 const people = [
   {
@@ -224,13 +225,18 @@ export default function IUPCSlot() {
   const [search, setSearch] = useState("");
   const [filteredPeople, setFilteredPeople] = useState(people);
   const handleSearch = (e) => {
-    setSearch(e.target.value);
+    const searchText = e.target.value.toLowerCase();
+    setSearch(searchText);
+  };
+
+  useEffect(() => {
     setFilteredPeople(
-      people.filter((person) =>
-        person.university.toLowerCase().includes(search.toLowerCase())
+      people.filter(
+        (person) =>
+          person.university.toLowerCase().includes(search.toLowerCase())
       )
     );
-  };
+  }, [search]);
   return (
     <div >
       <div className="container mx-auto"> 
