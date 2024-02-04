@@ -1,4 +1,4 @@
-[
+export const iupcSelectedTeams = [
   {
     "name": "AUST_RedX",
     "university": "Ahsanullah University of Science and Technology",

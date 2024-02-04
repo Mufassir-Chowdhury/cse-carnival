@@ -1,14 +1,17 @@
 import { SecondaryButton } from "../components/Button"
 import { useState } from "react";
 import { useEffect } from "react";
-import { iupcSelectedTeams } from "../data/data";
 import Marquee from "react-fast-marquee";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
-import people from "../data/iupcSelectedTeams.json";
+import { iupcSelectedTeams } from "../data/iupcSelectedTeams";
+
+
+const people = iupcSelectedTeams;
 
 // sort the people array by university name
 people.sort((a, b) => a.university.localeCompare(b.university));
+
 
 export default function IUPCList() {
   const [search, setSearch] = useState("");
@@ -36,7 +39,7 @@ export default function IUPCList() {
       <Marquee gradient={false} speed={100} className=" overflow-y-hidden bg-navbar-button-hover">
         <p className="text-center text-md font-semibold py-1 text-white">**IUPC Payment Deadline: 7th February, 2024** </p>
       </Marquee>
-      <div className="container mx-auto">
+      <div className="container mx-auto min-h-screen">
         <ul className="divide-y divide-gray-100 p-6 pt-0 sm:px-28 lg:px-48" >
           {/* add a marquee to show the payment deadline repeated*/}
           <h2 className="text-center text-3xl font-semibold mt-4">IUPC Selected Teams</h2>
