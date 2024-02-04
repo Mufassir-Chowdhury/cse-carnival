@@ -399,16 +399,16 @@ export const iupcSelectedTeams = [
     "university": "University of Information Technology & Sciences",
     "url": "https://csecarnival.sust.edu.bd/payment/8aa0f6c8-9818-4a7b-9812-0ac6a10be79f"
   },
-  {
-    "name": "MBSTU_Novatos",
-    "university": "Mawlana Bhashani Science & Technology University",
-    "url": "https://csecarnival.sust.edu.bd/payment/fb56f3f2-69c1-4ca0-af8b-3c9c48861dc2"
-  },
-  {
-    "name": "MBSTU_Valo_Dekhe_Ekta_Naam",
-    "university": "Mawlana Bhashani Science & Technology University",
-    "url": "https://csecarnival.sust.edu.bd/payment/064251d6-edb0-49c9-9f17-8d1abdf72638"
-  },
+  // {
+  //   "name": "MBSTU_Novatos",
+  //   "university": "Mawlana Bhashani Science & Technology University",
+  //   "url": "https://csecarnival.sust.edu.bd/payment/fb56f3f2-69c1-4ca0-af8b-3c9c48861dc2"
+  // },
+  // {
+  //   "name": "MBSTU_Valo_Dekhe_Ekta_Naam",
+  //   "university": "Mawlana Bhashani Science & Technology University",
+  //   "url": "https://csecarnival.sust.edu.bd/payment/064251d6-edb0-49c9-9f17-8d1abdf72638"
+  // },
   {
     "name": "EWU_Constant_Factor",
     "university": "East West University",
