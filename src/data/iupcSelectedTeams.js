@@ -398,5 +398,50 @@ export const iupcSelectedTeams = [
     "name": "UITS_O(struggle)",
     "university": "University of Information Technology & Sciences",
     "url": "https://csecarnival.sust.edu.bd/payment/8aa0f6c8-9818-4a7b-9812-0ac6a10be79f"
+  },
+  {
+    "name": "MBSTU_Novatos",
+    "university": "Mawlana Bhashani Science & Technology University",
+    "url": "https://csecarnival.sust.edu.bd/payment/fb56f3f2-69c1-4ca0-af8b-3c9c48861dc2"
+  },
+  {
+    "name": "MBSTU_Valo_Dekhe_Ekta_Naam",
+    "university": "Mawlana Bhashani Science & Technology University",
+    "url": "https://csecarnival.sust.edu.bd/payment/064251d6-edb0-49c9-9f17-8d1abdf72638"
+  },
+  {
+    "name": "EWU_Constant_Factor",
+    "university": "East West University",
+    "url": "https://csecarnival.sust.edu.bd/payment/bc9d2456-b5a4-478e-bfd9-4e56d749b55d"
+  },
+  {
+    "name": "EWU_NotThreeDimension",
+    "university": "East West University",
+    "url": "https://csecarnival.sust.edu.bd/payment/99288a69-5a10-4425-8195-7b2cf8a64380"
+  },
+  {
+    "name": "Rebooters_SHU",
+    "university": "Sheikh Hasina University",
+    "url": "https://csecarnival.sust.edu.bd/payment/b0f7ff82-0062-412d-9c92-ccd487cf410a"
+  },
+  {
+    "name": "RUET_ALTernators",
+    "university": "Rajshahi University of Engineering and Technology",
+    "url": "https://csecarnival.sust.edu.bd/payment/47e86cc5-fcf2-456c-ad33-5f54f69616b9"
+  },
+  {
+    "name": "RUET_TTF",
+    "university": "Rajshahi University of Engineering and Technology",
+    "url": "https://csecarnival.sust.edu.bd/payment/02b0ed81-a7d6-4150-b175-e1570c44be26"
+  },
+  {
+    "name": "RUET_i/0",
+    "university": "Rajshahi University of Engineering and Technology",
+    "url": "https://csecarnival.sust.edu.bd/payment/d1115a7d-f436-4f1d-afc5-a3c7eb38e39e"
+  },
+  {
+    "name": "RUET_Eliminated",
+    "university": "Rajshahi University of Engineering and Technology",
+    "url": "https://csecarnival.sust.edu.bd/payment/ed706efa-9714-4f8a-a6e6-9846cefdf6c7"
   }
 ]
