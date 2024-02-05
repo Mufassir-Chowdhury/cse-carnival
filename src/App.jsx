@@ -51,7 +51,7 @@ const App = () => {
           <Route path="/hackathon/registration" element={<HackathonAnnouncement />}></Route>
           <Route path="/dlenigma/registration" element={<DLSprintAnnouncement />}></Route>
           {/* <Route path="/test" element={<DLSprintTest />}></Route> */}
-          <Route path="/codebattle/registration" element={<CodeBattleAnnouncement />}></Route>
+          <Route path="/codebattle/registration" element={<CodeBattleRegistration />}></Route>
           <Route path="/payment/:id" element={<Status />}></Route>
           <Route path="/contributor" element={<Contributor />}></Route>
           <Route path="*" element={<NotFound />} />
