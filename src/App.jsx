@@ -24,6 +24,8 @@ import IUPCAnnouncement from "./pages/Registration/IUPCAnnouncement";
 import IUPCList from "./pages/IUPCList";
 import HackathonList from "./pages/HackathonList";
 import IUPCSlot from "./pages/Slot Distribution";
+import Contributor from "./pages/Contributor";
+import CodeBattleAnnouncement from "./pages/Registration/CodeBattleAnnouncement";
 
 const hackathonOffdate = new Date("2024-01-28");
 
@@ -49,8 +51,9 @@ const App = () => {
           <Route path="/hackathon/registration" element={<HackathonAnnouncement />}></Route>
           <Route path="/dlenigma/registration" element={<DLSprintAnnouncement />}></Route>
           {/* <Route path="/test" element={<DLSprintTest />}></Route> */}
-          <Route path="/codebattle/registration" element={<CodeBattleRegistration />}></Route>
+          <Route path="/codebattle/registration" element={<CodeBattleAnnouncement />}></Route>
           <Route path="/payment/:id" element={<Status />}></Route>
+          <Route path="/contributor" element={<Contributor />}></Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </section>
