@@ -443,5 +443,50 @@ export const iupcSelectedTeams = [
     "name": "RUET_Eliminated",
     "university": "Rajshahi University of Engineering and Technology",
     "url": "https://csecarnival.sust.edu.bd/payment/ed706efa-9714-4f8a-a6e6-9846cefdf6c7"
+  },
+  {
+    "name": "Three Caballeros",
+    "university": "Chittagong University of Engineering & Technology",
+    "url": "https://csecarnival.sust.edu.bd/payment/f715e44a-8959-4041-b0d9-6c307a82b198"
+  },
+  {
+    "name": "Trio Leveling",
+    "university": "Chittagong University of Engineering & Technology",
+    "url": "https://csecarnival.sust.edu.bd/payment/24692974-af39-4a81-a6a5-d85e62f6768b"
+  },
+  {
+    "name": "CUET_EQUINOX",
+    "university": "Chittagong University of Engineering & Technology",
+    "url": "https://csecarnival.sust.edu.bd/payment/9fed93ae-0548-4753-af13-cec44fc6cfa4"
+  },
+  {
+    "name": "CUET_CodeCrafters",
+    "university": "Chittagong University of Engineering & Technology",
+    "url": "https://csecarnival.sust.edu.bd/payment/0999277b-7832-41f0-a495-996c7adafd22"
+  },
+  {
+    "name": "BSMRU_NewHorizon",
+    "university": "Bangabandhu Sheikh Mujibur Rahman University, Kishoreganj",
+    "url": "https://csecarnival.sust.edu.bd/payment/6e4760c8-d455-4fbb-9d15-7ab258c15a12"
+  },
+  {
+    "name": "Uap_Amogus",
+    "university": "University of Asia Pacific",
+    "url": "https://csecarnival.sust.edu.bd/payment/d8598bbb-386f-411b-9a25-b3855cfb9c80"
+  },
+  {
+    "name": "UAP_Tenacious_Titans",
+    "university": "University of Asia Pacific",
+    "url": "https://csecarnival.sust.edu.bd/payment/0d19c8c6-f160-4347-81ee-a050d4516c19"
+  },
+  {
+    "name": "MBSTU_Novatos",
+    "university": "Mawlana Bhashani Science & Technology University",
+    "url": "https://csecarnival.sust.edu.bd/payment/7da3af91-0ebc-4d47-b51f-351bb92c8c65"
+  },
+  {
+    "name": "MBSTU_Lazy_Programmer",
+    "university": "Mawlana Bhashani Science & Technology University",
+    "url": "https://csecarnival.sust.edu.bd/payment/ee0d842b-1e6d-4820-afa7-d9e67428f5da"
   }
 ]
