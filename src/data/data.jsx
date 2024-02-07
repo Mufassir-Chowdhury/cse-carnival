@@ -4,7 +4,7 @@ export const events = {
     description: "",
     image: "/image/event/Event 1.jpg",
     // registration: "/iupc/registration",
-    selected_teams: "/iupc/selected_teams",
+    // selected_teams: "/iupc/selected_teams",
     link: "/iupc",
     details: "",
     shortDescription: [
