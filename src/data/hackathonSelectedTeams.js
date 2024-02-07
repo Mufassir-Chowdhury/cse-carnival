@@ -100,9 +100,9 @@ export const hackathonSelectedTeams = [
       "url": "https://csecarnival.sust.edu.bd/payment/08e28652-27a3-4de0-b356-924d721e970e"
     },
     {
-      "name": "Team BitBusters",
+      "name": "The_Deprivers",
       "university": "Shahjalal University of Science & Technology",
-      "url": "https://csecarnival.sust.edu.bd/payment/9b9d1d56-c5b9-4e32-9a65-caf874a044c2"
+      "url": "https://csecarnival.sust.edu.bd/payment/8affcac2-725d-4186-b6d9-7faa664d56c5 "
     },
     {
       "name": "LU_Big_Brain",

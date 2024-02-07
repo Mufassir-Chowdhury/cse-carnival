@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { t_shirt_size, universities } from '../../data/data';
 import { FormField, SelectField } from '../../components/Form';
 import { EventRegistrationPage } from '../../components/EventPage';
-import { PrimaryButton } from '../../components/Button';
+import { PrimaryButton, SecondaryButton } from '../../components/Button';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import { validateEmail, validatePhoneNumber, validateTshirtSize } from '../../data/validate';
@@ -112,7 +112,7 @@ const CodeBattleRegistration = () => {
         Join the discord server to get the latest updates and announcements about the event.
         <div className='flex justify-center'>
           <a href="https://discord.gg/3un8by9q" target="_blank" rel="noopener noreferrer">
-            <PrimaryButton text="Join Discord" />
+            <SecondaryButton text="Join Discord" />
           </a>
         </div>
       </div>

@@ -290,12 +290,12 @@ export const iupcSelectedTeams = [
     "url": "https://csecarnival.sust.edu.bd/payment/9ca46548-e346-4736-be5b-539503b1c1f1"
   },
   {
-    "name": "MIST_Warfaze",
+    "name": "MIST_FrostByte_1.3",
     "university": "Military Institute of Science & Technology",
     "url": "https://csecarnival.sust.edu.bd/payment/08237429-18ef-4890-a152-f59dea2b4a5b"
   },
   {
-    "name": "MIST_Greenhorns",
+    "name": "MIST_Genesis",
     "university": "Military Institute of Science & Technology",
     "url": "https://csecarnival.sust.edu.bd/payment/9d1096de-f7bd-4543-ac35-4a11a60a7f02"
   },
