@@ -108,6 +108,14 @@ const CodeBattleRegistration = () => {
   return (
     <EventRegistrationPage title="Code Battle" id="codebattle">
       <ToastContainer className="mt-20" />
+      <div className='my-10'>
+        Join the discord server to get the latest updates and announcements about the event.
+        <div className='flex justify-center'>
+          <a href="https://discord.gg/3un8by9q" target="_blank" rel="noopener noreferrer">
+            <PrimaryButton text="Join Discord" />
+          </a>
+        </div>
+      </div>
       <form method='post' className='flex flex-col gap-3' onSubmit={handleSubmit}>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-4'>
           <FormField label="Participant's Name" name="participantname" onChange={handleChange} />

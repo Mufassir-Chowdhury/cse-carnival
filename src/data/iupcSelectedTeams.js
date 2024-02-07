@@ -488,5 +488,25 @@ export const iupcSelectedTeams = [
     "name": "MBSTU_Lazy_Programmer",
     "university": "Mawlana Bhashani Science & Technology University",
     "url": "https://csecarnival.sust.edu.bd/payment/ee0d842b-1e6d-4820-afa7-d9e67428f5da"
+  },
+  {
+    "name": "SEC_LATERALUS",
+    "university": "Sylhet Engineering College",
+    "url": "https://csecarnival.sust.edu.bd/payment/6f603a41-04d0-46ed-b668-87fcf3a1adcd"
+  },
+  {
+    "name": "SEC_BinaryTernary",
+    "university": "Sylhet Engineering College",
+    "url": "https://csecarnival.sust.edu.bd/payment/59b78f7d-c328-4f28-8b5d-d2931092df7c"
+  },
+  {
+    "name": "SEC_Contrivers",
+    "university": "Sylhet Engineering College",
+    "url": "https://csecarnival.sust.edu.bd/payment/91cd924e-1927-4e59-b860-14c15534a96c"
+  },
+  {
+    "name": "SEC_NotSureYet",
+    "university": "Sylhet Engineering College",
+    "url": "https://csecarnival.sust.edu.bd/payment/13ff44b4-6d0b-45fe-9726-b397220b33cd"
   }
 ]

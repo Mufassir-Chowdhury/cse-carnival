@@ -42,7 +42,7 @@ export default function HackathonList() {
       <div className="container mx-auto min-h-screen">
         <ul className="divide-y divide-gray-100 p-6 pt-0 sm:px-28 lg:px-48" >
           {/* add a marquee to show the payment deadline repeated*/}
-          <h2 className="text-center text-3xl font-semibold mt-4">Hackathon Selected Teams</h2>
+          <h2 className="text-center text-3xl font-semibold mt-4">Selected Teams for Hackathon</h2>
           <div className=" my-4 flex justify-center ">
             <input
               type="text"
