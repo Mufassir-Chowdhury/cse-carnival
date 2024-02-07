@@ -46,7 +46,7 @@ const App = () => {
           {/*change the element of /hackathon/registration to hackathonannouncement after 27 january */}
           {/* <Route path="/hackathon/registration" element={hackathonOffdate > new Date() ? <HackathonRegistration /> : <HackathonAnnouncement />}></Route> */}
           <Route path="/iupc/selected_teams" element={<IUPCList />}></Route>
-          <Route path="/hackathon/list" element={<HackathonList />}></Route>
+          <Route path="/hackathon/selected_teams" element={<HackathonList />}></Route>
           <Route path="/iupc/slot" element={<IUPCSlot />}></Route>
           <Route path="/hackathon/registration" element={<HackathonAnnouncement />}></Route>
           <Route path="/dlenigma/registration" element={<DLSprintAnnouncement />}></Route>

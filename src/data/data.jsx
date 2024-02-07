@@ -99,7 +99,7 @@ export const events = {
     name: "Hackathon",
     description: "Ready-set-hack! Join the Hackathon and show your skills!",
     image: "/image/event/Event 2.jpg",
-    registration: "/hackathon/registration",
+    selected_teams: "/hackathon/selected_teams",
     link: "/hackathon",
     details: "",
     bg: "bg-hackathon-body",
