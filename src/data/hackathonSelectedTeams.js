@@ -135,9 +135,9 @@ export const hackathonSelectedTeams = [
       "url": "https://csecarnival.sust.edu.bd/payment/122aea32-d724-4774-9a17-1144f8586349"
     },
     {
-      "name": "DU_sikhte_noy_jitte_eshechi",
+      "name": "DU_Sorting_Hats",
       "university": "University of Dhaka",
-      "url": "https://csecarnival.sust.edu.bd/payment/47e08047-5211-4d9e-b6fd-1ac5bdbca735"
+      "url": "https://csecarnival.sust.edu.bd/payment/bd8edcd4-7585-4f5d-a518-1e7814d5fc8c"
     },
     {
       "name": "Hack In Shell",
@@ -180,3 +180,4 @@ export const hackathonSelectedTeams = [
       "url": "https://csecarnival.sust.edu.bd/payment/8d99c4d0-199e-4629-82a6-c4187b77b5c0"
     }
   ]
+  
