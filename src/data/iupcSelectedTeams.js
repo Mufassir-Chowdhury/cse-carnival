@@ -497,11 +497,11 @@ export const iupcSelectedTeams = [
   {
     "name": "SMUCT_Labyrinth_Leets",
     "university": "Shanto-Mariam University of Creative Technology",
-    "url": "https://csecarnival.sust.edu.bd/payment/47d1af81-4573-4536-abd9-f1b882cb52e9"
+    "url": "https://csecarnival.sust.edu.bd/payment/9ce5dc07-5dff-49f1-b25c-041554b54e40"
   },
   {
     "name": "NITER CodeSpecters",
     "university": "National Institute of Textile Engineering and Research - NITER",
-    "url": "https://csecarnival.sust.edu.bd/payment/05b6fd0a-2002-4c97-b59c-83b56feae9e2"
+    "url": "https://csecarnival.sust.edu.bd/payment/70ed1d93-e75c-454d-a5b0-8899e1ee92dc"
   }
 ]
