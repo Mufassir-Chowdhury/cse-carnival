@@ -120,10 +120,6 @@ export const iupcSelectedTeams = [
     "university": "Islamic University of Technology"
   },
   {
-    "name": "JnUxTeam",
-    "university": "Jagannath University"
-  },
-  {
     "name": "JU_the0dd1out",
     "university": "Jahangirnagar University"
   },
@@ -134,10 +130,6 @@ export const iupcSelectedTeams = [
   {
     "name": "JU_LoopTroop",
     "university": "Jahangirnagar University"
-  },
-  {
-    "name": "Team_No_Name",
-    "university": "Jatiya Kabi Kazi Nazrul Islam University"
   },
   {
     "name": "JUST_LIMITLESS",
@@ -190,10 +182,6 @@ export const iupcSelectedTeams = [
   {
     "name": "PCIU_BitRangers",
     "university": "Port City International University"
-  },
-  {
-    "name": "PU_Dcoders",
-    "university": "Premier University"
   },
   {
     "name": "TC_ERROR_PROOF",
@@ -406,5 +394,15 @@ export const iupcSelectedTeams = [
   {
     "name": "SEC_NotSureYet",
     "university": "Sylhet Engineering College"
+  },
+  {
+    "name": "SMUCT_Labyrinth_Leets",
+    "university": "Shanto-Mariam University of Creative Technology",
+    "url": "https://csecarnival.sust.edu.bd/payment/47d1af81-4573-4536-abd9-f1b882cb52e9"
+  },
+  {
+    "name": "NITER CodeSpecters",
+    "university": "National Institute of Textile Engineering and Research - NITER",
+    "url": "https://csecarnival.sust.edu.bd/payment/05b6fd0a-2002-4c97-b59c-83b56feae9e2"
   }
 ]
