@@ -503,5 +503,10 @@ export const iupcSelectedTeams = [
     "name": "NITER CodeSpecters",
     "university": "National Institute of Textile Engineering and Research - NITER",
     "url": "https://csecarnival.sust.edu.bd/payment/70ed1d93-e75c-454d-a5b0-8899e1ee92dc"
+  },
+  {
+    "name": "IIUC_Big_Brothers",
+    "university": "International Islamic University Chittagong",
+    "url": "https://csecarnival.sust.edu.bd/payment/a611a527-141e-4426-b46d-e8d4a12c84a2"
   }
 ]
