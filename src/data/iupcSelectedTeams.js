@@ -15,11 +15,6 @@ export const iupcSelectedTeams = [
     "url": "https://csecarnival.sust.edu.bd/payment/bd2e58f2-8eb9-4c04-b5c1-cd68371e2ee1"
   },
   {
-    "name": "ERROR404!",
-    "university": "Bangamata Sheikh Fojilatunnesa Mujib Science and Technology University",
-    "url": "https://csecarnival.sust.edu.bd/payment/1aaf98a1-53ed-485c-9180-039158960534"
-  },
-  {
     "name": "BAIUST_PeriColoso",
     "university": "Bangladesh Army International University of Science & Technology(BAIUST) ,Comilla",
     "url": "https://csecarnival.sust.edu.bd/payment/1e2c3d9d-383d-4d7b-af0b-1b288db0b865"
@@ -215,24 +210,9 @@ export const iupcSelectedTeams = [
     "url": "https://csecarnival.sust.edu.bd/payment/addf6868-0729-4320-bcf6-23de7609ed87"
   },
   {
-    "name": "True_False",
-    "university": "Pabna University of Science and Technology",
-    "url": "https://csecarnival.sust.edu.bd/payment/3887944f-e6b7-441d-b668-94d909b1c957"
-  },
-  {
     "name": "PSTU : MoonCalves",
     "university": "Patuakhali Science And Technology University",
     "url": "https://csecarnival.sust.edu.bd/payment/9c60ba57-a91b-4595-9bae-794ff405f977"
-  },
-  {
-    "name": "PCIU_BitRangers",
-    "university": "Port City International University",
-    "url": "https://csecarnival.sust.edu.bd/payment/10edad2b-4690-4f24-a5dd-565aba299218"
-  },
-  {
-    "name": "TC_ERROR_PROOF",
-    "university": "Tejgaon College",
-    "url": "https://csecarnival.sust.edu.bd/payment/906bae5d-09ab-4e5a-b875-711facc09432"
   },
   {
     "name": "UIU_Metamorphosis01",
