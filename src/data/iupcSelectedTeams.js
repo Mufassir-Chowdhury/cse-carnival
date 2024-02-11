@@ -488,5 +488,20 @@ export const iupcSelectedTeams = [
     "name": "IIUC_Big_Brothers",
     "university": "International Islamic University Chittagong",
     "url": "https://csecarnival.sust.edu.bd/payment/a611a527-141e-4426-b46d-e8d4a12c84a2"
+  },
+  {
+    "name": "Hidden_leaf",
+    "university": "Chittagong Independent University",
+    "url": "https://csecarnival.sust.edu.bd/payment/9fc862c0-07eb-4100-9c49-b57ac0ec9927"
+  },
+  {
+    "name": "BU MatrixMinds",
+    "university": "University of Barishal",
+    "url": "https://csecarnival.sust.edu.bd/payment/af0d378a-8d34-427d-a629-3a059b56b25f"
+  },
+  {
+    "name": "JUST_TrinomialCodecast",
+    "university": "Jessore University of Science & Technology",
+    "url": "https://csecarnival.sust.edu.bd/payment/72b07600-7833-41d3-aeb9-a4f0fa3b4e6a"
   }
 ]
