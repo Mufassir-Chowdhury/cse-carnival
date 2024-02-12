@@ -14,6 +14,7 @@ import HackathonAnnouncement from "./pages/Registration/HackathonAnnouncement";
 import HackathonRegistration from "./pages/Registration/HackathonRegistration";
 import DLSprintRegistration from "./pages/Registration/DLSprintRegistration";
 import CodeBattleRegistration from "./pages/Registration/CodeBattleRegistration";
+import IUPCRegistraion from "./pages/Registration/IUPCRegistration";
 import { organizers, poweredby } from "./data/data";
 import ContactUs from "./pages/ContactUs";
 import DLSprintAnnouncement from "./pages/Registration/DLSprintAnnouncement";
@@ -42,7 +43,7 @@ const App = () => {
           <Route path="/dlenigma" element={<DLSprint />}></Route>
           <Route path="/codebattle" element={<CodeBattle />}></Route>
           <Route path="/contactus" element={<ContactUs />}></Route>
-          <Route path="/iupc/registration" element={<IUPCAnnouncement />}></Route>
+          <Route path="/iupc/registration" element={<IUPCRegistraion />}></Route>
           {/*change the element of /hackathon/registration to hackathonannouncement after 27 january */}
           {/* <Route path="/hackathon/registration" element={hackathonOffdate > new Date() ? <HackathonRegistration /> : <HackathonAnnouncement />}></Route> */}
           <Route path="/iupc/selected_teams" element={<IUPCList />}></Route>
