@@ -503,5 +503,10 @@ export const iupcSelectedTeams = [
     "name": "JUST_TrinomialCodecast",
     "university": "Jessore University of Science & Technology",
     "url": "https://csecarnival.sust.edu.bd/payment/72b07600-7833-41d3-aeb9-a4f0fa3b4e6a"
+  },
+  {
+    "name": "MBSTU_NP_HARD",
+    "university": "Mawlana Bhashani Science & Technology University",
+    "url": "https://csecarnival.sust.edu.bd/payment/6d55907f-265d-4b20-8ab8-97911a494487"
   }
 ]
