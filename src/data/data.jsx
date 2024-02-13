@@ -360,6 +360,16 @@ export const techPartner = [
   }
 ]
 
+export const SilverSponsor = [
+  {
+    name: "Zicore Technologies - Idea & Innovation",
+    description: `Zicore Technologies is a customer-oriented electronic Higher safety security, and customized IT (CCTV, Surveillance, Access Control, Fire Alarm System, Networking, Intruder Alarm System, Smart Education System)  solution provider In Bangladesh, with a far-reaching vision of adding values to society and industry we operate in. Most of our solutions are backed up by years of market experience and client demand. Zicore Technologies is an Importer, Distributor, system integrator of higher safety and security Products in Bangladesh. Zicore Technologies understand their customer’s requirements and satisfy them by providing unique solutions specifically tailored to individual customer’s need and also enables us to provide unparalleled after-sale service.`,
+    image: "/image/sponsor/Zicore.jpg",
+    linkedin: "https://www.linkedin.com/company/zicore-technologies/",
+    website: "https://zicoretech.com/",
+  }
+]
+
 
 export const aboutus = [
   {
