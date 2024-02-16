@@ -271,7 +271,7 @@ export const events = {
     name: "Code Battle",
     description: "Calling all CS undergrads! <br/> Join us for an  adrenaline-pumping <b>Code Battle</b> <br/> where Gaming Meets Coding,  and Victory is Written in Code!",
     image: "/image/event/Event 4.jpg",
-    registration: "/codebattle/registration",
+    // registration: "/codebattle/registration",
     link: "/codebattle",
     details: "",
     bg: "bg-codebattle-body",
