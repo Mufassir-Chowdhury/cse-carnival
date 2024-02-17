@@ -7,7 +7,63 @@ import { renderLongDescriptions, renderShortDescriptions, renderTitleWithList, r
 
 const CodeBattle = () => {
   const { shortDescription, longDescription } = events['codebattle'];
-
+  const data = [
+    {
+      rank: 1,
+      rankText: "Champion",
+      name: "Mehedi Hasan",
+      university: "Shahjalal University of Science & Technology",
+      
+    },
+  
+    {
+      rank: 2,
+      rankText: "1st Runners Up",
+      name: "Fazla Rabbi",
+      university: "Shahjalal University of Science & Technology",
+      
+    },
+  
+    {
+      rank: 3,
+      rankText: "2nd Runners Up",
+      name: "MD. Nayem Islam",
+      university: "Shahjalal University of Science & Technology",
+      
+    },
+  
+    {
+      rank: 4,
+      rankText: "4th",
+      name: "ABDULLAH AL MAMUN",
+      university: "North East University Bangladesh",
+      
+    },
+  
+    {
+      rank: 5,
+      rankText: "5th",
+      name: "Fahim Fuad Prottoy",
+      university: "Southeast University",
+      
+    },
+  
+    {
+      rank: 6,
+      rankText: "SUST emerging player",
+      name: "MD. Shibly Rahman Alve",
+      university: "Shahjalal University of Science & Technology",
+      
+    },
+  
+    {
+      rank: 7,
+      rankText: "Honorable Mention",
+      name: "Md. Ashikujjaman Nur",
+      university: "Mawlana Bhashani Science & Technology University",
+      
+    },
+  ];
   // const [pdfUrl, setPdfUrl] = useState('/resources/coding-game-rulebook.pdf');
   const pdfUrl = "/resources/coding-game-rulebook.pdf";
 
@@ -44,7 +100,20 @@ const CodeBattle = () => {
   );
   const announcement = (
     <div className='py-20'>
-      No Announcements Yet
+            <strong><h1 style={{ fontSize: '1.3em' }}>Winners <br /><br /></h1></strong>
+
+      <div className='flex flex-col gap-4'>
+        {data.map((item, index) => (
+          <div key={index} className='flex flex-col gap-2'>
+            <div className='flex gap-2'>
+              <span className='font-bold'>{item.rankText}</span>
+              <span>{item.rank === 1 ? '🏆' : item.rank === 2 ? '🥈' : item.rank === 3 ? '🥉' : item.rank === 4 ? '🏅' : item.rank === 5 ? '🎖️' : item.rank === 6 ? '🎖️' : '🎖️'}</span>
+              <span>{item.name}</span>
+              <span>({item.university})</span>
+            </div>  
+          </div>
+        ))}
+      </div>
     </div>
   );
   const download = (
@@ -82,7 +151,7 @@ const CodeBattle = () => {
   )
   return (
     <EventPage id="codebattle" >
-      <Tab child1={mainDescription} child2={announcement} child3={download} />
+      <Tab child1={announcement} child2={mainDescription} child3={download}  title1="Announcements" title2="Event Descriptions" />
     </EventPage>
   );
 };

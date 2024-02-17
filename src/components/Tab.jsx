@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const Tab = ({ child1, child2, child3 }) => {
+const Tab = ({ child1, child2, child3, title1, title2 }) => {
     const [activeTab, setActiveTab] = useState(0);
 
     const handleTabClick = (index) => {
@@ -15,13 +15,13 @@ const Tab = ({ child1, child2, child3 }) => {
                     className={activeTab === 0 ? 'bg-navbar text-white px-4 py-1 rounded-md' : 'bg-body text-navbar px-4 py-1 rounded-md'}
                     onClick={() => handleTabClick(0)}
                 >
-                    Event Description
+                    {title1 || 'Event Description'}
                 </button>
                 <button
                     className={activeTab === 1 ? 'bg-navbar text-white px-4 py-1 rounded-md' : 'bg-body text-navbar px-4 py-1 rounded-md'}
                     onClick={() => handleTabClick(1)}
                 >
-                    Announcements
+                    {title2 || 'Announcements'}
                 </button>
                 <button
                     className={activeTab === 2 ? 'bg-navbar text-white px-4 py-1 rounded-md' : 'bg-body text-navbar px-4 py-1 rounded-md'}
@@ -43,6 +43,8 @@ Tab.propTypes = {
     child1: PropTypes.node.isRequired,
     child2: PropTypes.node.isRequired,
     child3: PropTypes.node.isRequired,
+    title1: PropTypes.string,
+    title2: PropTypes.string,
 };
 
 export default Tab;

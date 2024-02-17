@@ -8,6 +8,7 @@ import { renderLongDescriptions, renderShortDescriptions, renderDetailsWithoutTi
 
 const DLSprint = () => {
   const { shortDescription, longDescription } = events['dlsprint'];
+  
 
   const mainDescription = (
     <div className='flex flex-col px-4 gap-6'>
@@ -101,7 +102,7 @@ const DLSprint = () => {
 
   return (
     <EventPage id="dlsprint" >
-      <Tab child1={mainDescription} child2={announcement} child3={download} />
+      <Tab child1={mainDescription} child2={announcement} child3={download}/>
     </EventPage>
   );
 };
